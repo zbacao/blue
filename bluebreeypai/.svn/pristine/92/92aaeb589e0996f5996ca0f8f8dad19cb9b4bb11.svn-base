@@ -1,0 +1,162 @@
+        .login-mengban{
+            position:fixed;
+            top:20%;
+            left:0;
+            background:rgba(0,0,0,0) no-repeat center center;
+            width:100%;
+            display: none;
+        }
+        .login-mengban .login-box{
+            width:300px;
+            height:364px;
+            background:rgba(0,0,0,0.4);
+            position:absolute;
+            left:39.375%;
+            top:8.3333%;
+            padding:18px 20px;
+        }
+        .login-reg-select a{
+            display:block;
+            float:left;
+            width:143px;
+            height:40px;
+            text-align:center;
+            line-height:40px;
+            font-size:18px;
+        }
+        .login-reg-select a.login-select-btn{
+            background:#fff;
+            color:#000;
+            margin-right:12px;
+            position:relative;
+        }
+        .a1 .login-on{
+            content:"";
+            width:0;
+            height:0;
+            position:absolute;
+            top:40px;
+            left:61px;
+            border-top:11px solid #fff;
+            border-right:11px solid transparent;
+            border-bottom:11px solid transparent;
+            border-left:11px solid transparent;
+            /*display:none;*/
+        }
+        .a1 .reg-on{
+            content:"";
+            width:0;
+            height:0;
+            position:absolute;
+            top:58px;
+            left:236px;
+            border-top:11px solid #e65e42;
+            border-right:11px solid transparent;
+            border-bottom:11px solid transparent;
+            border-left:11px solid transparent;
+            /*display:block;*/
+        }
+        .login-reg-select a.reg-select-btn{
+            background:#e65e42;
+            color:#fff;
+        }
+        .login-mengban .login-box{
+            position:relative;
+        }
+        .login-mengban .login-box .account-box{
+            position: absolute;
+            top: 70px;
+            left: 20px;
+            display: block;
+            width:300px;
+        }
+        #login_account,#login_pwd,
+        #reg_account,#reg_pwd,#reg_pwd_confirm{
+            width:99%;
+            height:38px;
+            border:1px solid #fff;
+            background:#fff;
+            text-indent:1em;
+            font-size:14px;
+            padding:0;
+        }
+        #login_pwd,
+        #reg_pwd,#reg_pwd_confirm{
+            margin-top:10px;
+        }
+        .check_code{
+            margin-top:10px;
+            width:99%;
+            height:40px;
+        }
+        .check_code div:nth-child(1){
+            float:left;
+            width:143px;
+        }
+        .check_code div:nth-child(2){
+            float:right;
+            width:143px;;
+        }
+        #check_code_input1,
+        #check_code_input2{
+            width:141px;
+            height:38px;
+            border:1px solid #fff;
+            background:#fff;
+            text-indent:1em;
+            font-size:14px;
+            padding:0;
+        }
+        .check_code .check-pic img{
+            width:143px;
+            height:40px;
+            padding:0;
+        }
+        .check_code .check-pic img:hover{
+            cursor:pointer;
+        }
+        #login-btn,#reg-btn{
+            display:block;
+            width:99%;
+            height:38px;
+            border:1px solid #7fa900;
+            margin-top:30px;
+            background:#7fa900;
+            color:#fff;
+            font-size:18px;
+            font-family:"微软雅黑";
+            transition:background 0.4s;
+        }
+        #login-btn:hover{
+            background: #94cb00;
+            cursor:pointer;
+        }
+        #reg-btn:hover{
+            background: #94cb00;
+            cursor:pointer;
+        }
+        .other-login{
+            width:100%;
+            border:1px solid transparent;
+        }
+        .other-login p{
+            font-size:12px;
+            color:#fff;
+            margin-top:23px;
+        }
+        .other-login a{
+            display:inline-block;
+            width:38px;
+            height:30px;
+            margin-right:10px;
+            margin-top:14px;
+        }
+        .login-box .findback-pwd{
+            position:absolute;
+            bottom:10px;
+            right:10px;
+            color:#fff;
+        }
+        .login-box .findback-pwd:hover{
+            color:#2ECC71;
+        }

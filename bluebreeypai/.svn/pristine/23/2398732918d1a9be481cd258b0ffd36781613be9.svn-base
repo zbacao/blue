@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <title>蓝莓派</title>
+    <script src="script/jquery-2.1.1.min.js"></script>
+    <script src="script/swiper-3.3.1.jquery.min.js"></script>
+    <link rel="stylesheet" href="style/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" href="style/init.css"/>
+    <link rel="stylesheet" href="style/commonHeader.css"/>
+    <link rel="stylesheet" href="style/header.css"/>
+</head>
+<body>
+    <!-- --------------------------------------公共主导航栏  start----------------------------------------->
+    <div class="header">
+        <div class="header-in clearFix">
+            <div class="logo clearFix">
+                <img src="indexImg/logo_03.png" alt="logo"/>
+                <div class="flag-word">
+                    <strong>蓝莓派</strong>
+                    <h3>和音乐一起分享时光</h3>
+                </div>
+            </div>
+            <div class="main-nav clearFix">
+                <ul class="clearFix">
+                    <li><a href="#" class="navs on" id="n_index">首页</a></li>
+                    <li><a href="#" class="navs" id="n_yz">乐章</a></li>
+                    <li><a href="#" class="navs" id="n_ts">听说<i>12</i></a></li>
+                    <li><a href="#" class="navs" id="n_yq">乐趣</a></li>
+                    <li><a href="#" class="navs" id="n_ll">聊聊</a></li>
+                    <li><a href="#" class="navs" id="n_yj">游记</a></li>
+                    <li><a href="#" class="navs" id="n_sy">摄影</a></li>
+                    <li><a href="#" class="navs" id="n_cp">诚品</a></li>
+                    <li><a href="#" class="navs" id="n_lmj">蓝莓酱</a></li>
+                    <li><a href="#" class="navs" id="n_sq">社区</a></li>
+                </ul>
+            </div>
+            <div class="login clearFix">
+                <div class="search">
+                    <form action="">
+                        <input type="search" id="infinitySearch"/>
+                        <label for="infinitySearch" id="search-button"></label>
+                    </form>
+                </div>
+                <div class="login-register">
+                    <a href="#" class="log" id="log">登录</a>
+                    <a href="#" class="reg" id="reg">注册</a>
+                    <i class="triangle"></i>
+                    <div class="account-info">
+                        <ul class="clearFix">
+                            <li><a href="#" class="a-info-details" id="a_tz">我的帖子</a></li>
+                            <li><a href="#" class="a-info-details" id="a_pl">我的评论</a></li>
+                            <li><a href="#" class="a-info-details" id="a_sc">我的收藏</a></li>
+                            <li><a href="#" class="a-info-details" id="a_sz">设置</a></li>
+                            <li><a href="#" class="a-info-details" id="a_tc">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------公共主导航栏  end----------------------------------------->
+
+    <!-- ----------------------------------------自动轮播图 start------------------------------------------>
+    <div class="swiper-container" id="swiper-container1">
+        <div class="swiper-wrapper" id="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="swper1img" src="indexImg/banner_02.png">
+            </div>
+            <div class="swiper-slide">
+                <img class="swper1img" src="indexImg/banner3.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img class="swper1img" src="indexImg/banner2.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img class="swper1img" src="indexImg/banner3.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img class="swper1img" src="indexImg/banner_02.png">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+</body>
+<script>
+    var mySwiper1 = new Swiper('#swiper-container1', {
+        pagination: '.swiper-pagination',
+        autoplay: 2000,
+        speed: 1000,
+        autoplayDisableOnInteraction: false,
+        loop: true
+    });
+
+//    var mySwiper2 = new Swiper('#swiper-container2', {
+//        pagination: '.swiper-pagination',
+//        loop: true,
+//        noSwiping: true
+//    });
+//    mySwiper2.params.autoplay = false;
+
+
+</script>
+</html>

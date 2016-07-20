@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <title>蓝莓派,和音乐一起分享时光</title>
+    <script src="script/jquery-2.1.1.min.js"></script>
+    <script src="script/swiper-3.3.1.jquery.min.js"></script>
+    <link rel="stylesheet" href="style/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" href="style/init.css"/>
+    <link rel="stylesheet" href="style/commonHeader.css"/>
+    <link rel="stylesheet" href="style/commonFooter.css">
+    <link rel="stylesheet" href="style/base.css"/>
+</head>
+<body>
+    <!-- --------------------------------------公共主导航栏  start----------------------------------------->
+    <div class="header">
+        <div class="header-in clearFix">
+            <div class="logo clearFix">
+                <img src="indexImg/logo_03.png" alt="logo"/>
+                <div class="flag-word">
+                    <strong>蓝莓派</strong>
+                    <h3>和音乐一起分享时光</h3>
+                </div>
+            </div>
+            <div class="main-nav clearFix">
+                <ul class="clearFix">
+                    <li><a href="#" class="navs on" id="n_index">首页</a></li>
+                    <li><a href="#" class="navs" id="n_yz">乐章</a></li>
+                    <li><a href="#" class="navs" id="n_ts">听说<i>12</i></a></li>
+                    <li><a href="#" class="navs" id="n_yq">乐趣</a></li>
+                    <li><a href="#" class="navs" id="n_ll">聊聊</a></li>
+                    <li><a href="#" class="navs" id="n_yj">游记</a></li>
+                    <li><a href="#" class="navs" id="n_sy">摄影</a></li>
+                    <li><a href="#" class="navs" id="n_cp">诚品</a></li>
+                    <li><a href="#" class="navs" id="n_lmj">蓝莓酱</a></li>
+                    <li><a href="#" class="navs" id="n_sq">社区</a></li>
+                </ul>
+            </div>
+            <div class="login clearFix">
+                <div class="search">
+                    <form action="">
+                        <input type="search" id="infinitySearch"/>
+                        <label for="infinitySearch" id="search-button"></label>
+                    </form>
+                </div>
+                <div class="login-register">
+                    <a href="#" class="log" id="log">登录</a>
+                    <a href="#" class="reg" id="reg">注册</a>
+                    <i class="triangle"></i>
+                    <div class="account-info">
+                        <ul class="clearFix">
+                            <li><a href="#" class="a-info-details" id="a_tz">我的帖子</a></li>
+                            <li><a href="#" class="a-info-details" id="a_pl">我的评论</a></li>
+                            <li><a href="#" class="a-info-details" id="a_sc">我的收藏</a></li>
+                            <li><a href="#" class="a-info-details" id="a_sz">设置</a></li>
+                            <li><a href="#" class="a-info-details" id="a_tc">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------公共主导航栏  end----------------------------------------->
+
+    <!-- ----------------------------------------自动轮播图 start------------------------------------------>
+    <div class="swiper-container" id="swiper-container1">
+        <div class="swiper-wrapper" id="swiper-wrapper1">
+            <div class="swiper-slide">
+                <img class="swper1img" src="indexImg/banner_02.png">
+            </div>
+            <div class="swiper-slide">
+                <img class="swper1img" src="indexImg/banner3.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img class="swper1img" src="indexImg/banner2.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img class="swper1img" src="indexImg/banner3.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img class="swper1img" src="indexImg/banner_02.png">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="banner-word">
+            <a href="#">
+                <h3 id="ban_title">我在爱尔兰，看着世界的阳光</h3>
+                <p id="ban_cont">爱尔兰（爱尔兰语：Poblacht na hÉireann；英语：Republic of Ireland）， 是一个西欧的议会共和制国家，西临大西洋，东靠爱尔兰海，与英国隔海相望，是北美通向欧洲的通道爱尔兰自然
+                    环境保持得相当好，素有“翡翠岛国”之称，全国绿树成荫，河流纵横。草地遍布，所以又有“绿岛”和“绿宝石”之称。</p>
+            </a>
+        </div>
+    </div>
+    <!-- ----------------------------------------自动轮播图 start------------------------------------------>
+
+    <!-- ----------------------------------中部 start------------------------------------>
+    <div class="main">
+        <!---------------------乐章板块  start -------------------->
+        <div class="product p-yz" id="p_yz">
+            <a class="p-title" href="#">
+                <span class="p-title-c">乐章</span>
+                <div class="icon"><img src="indexImg/yuezhangIcon_05.png" alt=""/></div>
+                <span class="p-title-e">MOVEMENT</span>
+            </a>
+            <div class="p-details">
+                <div class="swiper-container" id="swiper-container2">
+                    <div class="swiper-wrapper" id="swiper-wrapper2">
+                        <!------------------------ 第一屏4个  start----------------------->
+                        <div class="swiper-slide swiper-p-yz">                                                         <!--产品展示里面的大块,可以动态添加,里面的数据来自后台(需适配)-->
+                            <ul class="clearFix">
+                                <li class="p-yz-cont clearFix">
+                                    <div class="p-yz-cont-L">
+                                        <a href="#"><img src="indexImg/yuezhangPic_05.png" alt=""/></a>
+                                    </div>
+                                    <div class="p-yz-cont-R">
+                                        <a href="#" class="artical-title">岁月不老，一世倾城</a>
+                                        <a href="#" class="author"><span>小夏同学</span></a>
+                                        <p>时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            散发着幽幽的暗香，我忍不住深吸一口气...
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                        </p>
+                                        <div class="time"> <i class="time-icon"></i><i id="date1">5/23</i><i id="hour_minute1">16:15</i></div>
+                                        <div class="zan">
+                                            <i id="zan_num1" class="zan-num">22</i>
+                                            <i class="zan-icon"></i>
+                                            <i id="pl_num1" class="pl-num">33</i>
+                                            <i class="pl-icon"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="p-yz-cont">
+                                    <div class="p-yz-cont-L">
+                                        <a href="#"><img src="indexImg/yuezhangPic_05.png" alt=""/></a>
+                                    </div>
+                                    <div class="p-yz-cont-R">
+                                        <a href="#" class="artical-title">岁月不老，一世倾城</a>
+                                        <a href="#" class="author"><span>小夏同学</span></a>
+                                        <p>时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            散发着幽幽的暗香，我忍不住深吸一口气...
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                        </p>
+                                        <div class="time"><i class="time-icon"></i><i id="date2">5/23</i><i id="hour_minute2">16:15</i></div>
+                                        <div class="zan">
+                                            <i id="zan_num2" class="zan-num">22</i>
+                                            <i class="zan-icon"></i>
+                                            <i id="pl_num2" class="pl-num">33</i>
+                                            <i class="pl-icon"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="p-yz-cont">
+                                    <div class="p-yz-cont-L">
+                                        <a href="#"><img src="indexImg/yuezhangPic_05.png" alt=""/></a>
+                                    </div>
+                                    <div class="p-yz-cont-R">
+                                        <a href="#" class="artical-title">岁月不老，一世倾城</a>
+                                        <a href="#" class="author"><span>小夏同学</span></a>
+                                        <p>时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            散发着幽幽的暗香，我忍不住深吸一口气...
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                        </p>
+                                        <div class="time"><i class="time-icon"></i><i id="date3">5/23</i><i id="hour_minute3">16:15</i></div>
+                                        <div class="zan">
+                                            <i id="zan_num3" class="zan-num">22</i>
+                                            <i class="zan-icon"></i>
+                                            <i id="pl_num3" class="pl-num">33</i>
+                                            <i class="pl-icon"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="p-yz-cont">
+                                    <div class="p-yz-cont-L">
+                                        <a href="#"><img src="indexImg/yuezhangPic_05.png" alt=""/></a>
+                                    </div>
+                                    <div class="p-yz-cont-R">
+                                        <a href="#" class="artical-title">岁月不老，一世倾城</a>
+                                        <a href="#" class="author"><span>小夏同学</span></a>
+                                        <p>时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            散发着幽幽的暗香，我忍不住深吸一口气...
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                        </p>
+                                        <div class="time"><i class="time-icon"></i><i id="date4">5/23</i><i id="hour_minute4">16:15</i></div>
+                                        <div class="zan">
+                                            <i id="zan_num4" class="zan-num">22</i>
+                                            <i class="zan-icon"></i>
+                                            <i id="pl_num4" class="pl-num">33</i>
+                                            <i class="pl-icon"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!------------------------ 第一屏4个  end----------------------->
+
+                        <!------------------------ 第二屏4个  start----------------------->
+                        <div class="swiper-slide swiper-p-yz">                        <!--产品展示里面的大块,可以动态添加,里面的数据来自后台(需适配)-->
+                            <ul class="clearFix">
+                                <li class="p-yz-cont clearFix">
+                                    <div class="p-yz-cont-L">
+                                        <a href="#"><img src="indexImg/yuezhangPic_05.png" alt=""/></a>
+                                    </div>
+                                    <div class="p-yz-cont-R">
+                                        <a href="#" class="artical-title">岁月不老，一世倾城</a>
+                                        <a href="#" class="author"><span>小夏同学</span></a>
+                                        <p>时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            散发着幽幽的暗香，我忍不住深吸一口气...
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                        </p>
+                                        <div class="time"> <i class="time-icon"></i><i id="date1">5/23</i><i id="hour_minute1">16:15</i></div>
+                                        <div class="zan">
+                                            <i id="zan_num1" class="zan-num">22</i>
+                                            <i class="zan-icon"></i>
+                                            <i id="pl_num1" class="pl-num">33</i>
+                                            <i class="pl-icon"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="p-yz-cont">
+                                    <div class="p-yz-cont-L">
+                                        <a href="#"><img src="indexImg/yuezhangPic_05.png" alt=""/></a>
+                                    </div>
+                                    <div class="p-yz-cont-R">
+                                        <a href="#" class="artical-title">岁月不老，一世倾城</a>
+                                        <a href="#" class="author"><span>小夏同学</span></a>
+                                        <p>时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            散发着幽幽的暗香，我忍不住深吸一口气...
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                        </p>
+                                        <div class="time"><i class="time-icon"></i><i id="date2">5/23</i><i id="hour_minute2">16:15</i></div>
+                                        <div class="zan">
+                                            <i id="zan_num2" class="zan-num">22</i>
+                                            <i class="zan-icon"></i>
+                                            <i id="pl_num2" class="pl-num">33</i>
+                                            <i class="pl-icon"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="p-yz-cont">
+                                    <div class="p-yz-cont-L">
+                                        <a href="#"><img src="indexImg/yuezhangPic_05.png" alt=""/></a>
+                                    </div>
+                                    <div class="p-yz-cont-R">
+                                        <a href="#" class="artical-title">岁月不老，一世倾城</a>
+                                        <a href="#" class="author"><span>小夏同学</span></a>
+                                        <p>时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            散发着幽幽的暗香，我忍不住深吸一口气...
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                        </p>
+                                        <div class="time"><i class="time-icon"></i><i id="date3">5/23</i><i id="hour_minute3">16:15</i></div>
+                                        <div class="zan">
+                                            <i id="zan_num3" class="zan-num">22</i>
+                                            <i class="zan-icon"></i>
+                                            <i id="pl_num3" class="pl-num">33</i>
+                                            <i class="pl-icon"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="p-yz-cont">
+                                    <div class="p-yz-cont-L">
+                                        <a href="#"><img src="indexImg/yuezhangPic_05.png" alt=""/></a>
+                                    </div>
+                                    <div class="p-yz-cont-R">
+                                        <a href="#" class="artical-title">岁月不老，一世倾城</a>
+                                        <a href="#" class="author"><span>小夏同学</span></a>
+                                        <p>时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            散发着幽幽的暗香，我忍不住深吸一口气...
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                        </p>
+                                        <div class="time"><i class="time-icon"></i><i id="date4">5/23</i><i id="hour_minute4">16:15</i></div>
+                                        <div class="zan">
+                                            <i id="zan_num4" class="zan-num">22</i>
+                                            <i class="zan-icon"></i>
+                                            <i id="pl_num4" class="pl-num">33</i>
+                                            <i class="pl-icon"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!------------------------ 第二屏4个  end----------------------->
+
+                        <!------------------------ 第三屏4个  start----------------------->
+                        <div class="swiper-slide swiper-p-yz">                        <!--产品展示里面的大块,可以动态添加,里面的数据来自后台(需适配)-->
+                            <ul class="clearFix">
+                                <li class="p-yz-cont clearFix">
+                                    <div class="p-yz-cont-L">
+                                        <a href="#"><img src="indexImg/yuezhangPic_05.png" alt=""/></a>
+                                    </div>
+                                    <div class="p-yz-cont-R">
+                                        <a href="#" class="artical-title">岁月不老，一世倾城</a>
+                                        <a href="#" class="author"><span>小夏同学</span></a>
+                                        <p>时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            散发着幽幽的暗香，我忍不住深吸一口气...
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                        </p>
+                                        <div class="time"> <i class="time-icon"></i><i id="date1">5/23</i><i id="hour_minute1">16:15</i></div>
+                                        <div class="zan">
+                                            <i id="zan_num1" class="zan-num">22</i>
+                                            <i class="zan-icon"></i>
+                                            <i id="pl_num1" class="pl-num">33</i>
+                                            <i class="pl-icon"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="p-yz-cont">
+                                    <div class="p-yz-cont-L">
+                                        <a href="#"><img src="indexImg/yuezhangPic_05.png" alt=""/></a>
+                                    </div>
+                                    <div class="p-yz-cont-R">
+                                        <a href="#" class="artical-title">岁月不老，一世倾城</a>
+                                        <a href="#" class="author"><span>小夏同学</span></a>
+                                        <p>时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            散发着幽幽的暗香，我忍不住深吸一口气...
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                        </p>
+                                        <div class="time"><i class="time-icon"></i><i id="date2">5/23</i><i id="hour_minute2">16:15</i></div>
+                                        <div class="zan">
+                                            <i id="zan_num2" class="zan-num">22</i>
+                                            <i class="zan-icon"></i>
+                                            <i id="pl_num2" class="pl-num">33</i>
+                                            <i class="pl-icon"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="p-yz-cont">
+                                    <div class="p-yz-cont-L">
+                                        <a href="#"><img src="indexImg/yuezhangPic_05.png" alt=""/></a>
+                                    </div>
+                                    <div class="p-yz-cont-R">
+                                        <a href="#" class="artical-title">岁月不老，一世倾城</a>
+                                        <a href="#" class="author"><span>小夏同学</span></a>
+                                        <p>时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            散发着幽幽的暗香，我忍不住深吸一口气...
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                        </p>
+                                        <div class="time"><i class="time-icon"></i><i id="date3">5/23</i><i id="hour_minute3">16:15</i></div>
+                                        <div class="zan">
+                                            <i id="zan_num3" class="zan-num">22</i>
+                                            <i class="zan-icon"></i>
+                                            <i id="pl_num3" class="pl-num">33</i>
+                                            <i class="pl-icon"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="p-yz-cont">
+                                    <div class="p-yz-cont-L">
+                                        <a href="#"><img src="indexImg/yuezhangPic_05.png" alt=""/></a>
+                                    </div>
+                                    <div class="p-yz-cont-R">
+                                        <a href="#" class="artical-title">岁月不老，一世倾城</a>
+                                        <a href="#" class="author"><span>小夏同学</span></a>
+                                        <p>时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            散发着幽幽的暗香，我忍不住深吸一口气...
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                            缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花
+                                        </p>
+                                        <div class="time"><i class="time-icon"></i><i id="date4">5/23</i><i id="hour_minute4">16:15</i></div>
+                                        <div class="zan">
+                                            <i id="zan_num4" class="zan-num">22</i>
+                                            <i class="zan-icon"></i>
+                                            <i id="pl_num4" class="pl-num">33</i>
+                                            <i class="pl-icon"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!------------------------ 第三屏4个  end----------------------->
+                    </div>
+                    <!--小圆点 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!---------------------乐章板块  end -------------------->
+
+        <!---------------------听说板块  start -------------------->
+        <div class="product p-ts" id="p_ts">
+            <a class="p-title" href="#">
+                <span class="p-title-c">听说</span>
+                <div class="icon"><img src="indexImg/tingshuoIcon_13.png" alt=""/></div>
+                <span class="p-title-e">LISTENING</span>
+            </a>
+            <div class="p-details clearFix">
+                <div class="horizontal clearFix">
+                    <div class="p-album">
+                        <div class="album-pic">
+                            <img src="indexImg/tupian_05.png" alt=""/>
+                        </div>
+                        <div class="album-introduce">
+                            <h4 class="singer" id="index_singer1">国语/周杰伦</h4>
+                            <h3 class="album-name" id="index_album_name1">不能说的秘密</h3>
+                            <p class="album-desc" id="index_album-desc1">总的而言，是一张很不错的原声带。特别是在国内电影普遍没那么重
+                                视电影音乐的大趋势下，这部主打音乐的电影在配乐上制作的用心便显得十分难得。作为周董的处女作，这部电影中的...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-album">
+                        <div class="album-pic">
+                            <img src="indexImg/tupian_05.png" alt=""/>
+                        </div>
+                        <div class="album-introduce">
+                            <h4 class="singer" id="index_singer2">国语/周杰伦</h4>
+                            <h3 class="album-name" id="index_album_name2">不能说的秘密</h3>
+                            <p class="album-desc" id="index_album-desc2">总的而言，是一张很不错的原声带。特别是在国内电影普遍没那么重
+                                视电影音乐的大趋势下，这部主打音乐的电影在配乐上制作的用心便显得十分难得。作为周董的处女作，这部电影中的...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-album">
+                        <div class="album-introduce">
+                            <h4 class="singer" id="index_singer3">国语/周杰伦</h4>
+                            <h3 class="album-name" id="index_album_name3">不能说的秘密</h3>
+                            <p class="album-desc" id="index_album-desc3">总的而言，是一张很不错的原声带。特别是在国内电影普遍没那么重
+                                视电影音乐的大趋势下，这部主打音乐的电影在配乐上制作的用心便显得十分难得。作为周董的处女作，这部电影中的...
+                            </p>
+                        </div>
+                        <div class="album-pic">
+                            <img src="indexImg/tupian_05.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="p-album">
+                        <div class="album-introduce">
+                            <h4 class="singer" id="index_singer4">国语/周杰伦</h4>
+                            <h3 class="album-name" id="index_album_name4">不能说的秘密</h3>
+                            <p class="album-desc" id="index_album-desc4">总的而言，是一张很不错的原声带。特别是在国内电影普遍没那么重
+                                视电影音乐的大趋势下，这部主打音乐的电影在配乐上制作的用心便显得十分难得。作为周董的处女作，这部电影中的...
+                            </p>
+                        </div>
+                        <div class="album-pic">
+                            <img src="indexImg/tupian_05.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="p-album">
+                        <div class="album-pic">
+                            <img src="indexImg/tupian_05.png" alt=""/>
+                        </div>
+                        <div class="album-introduce">
+                            <h4 class="singer" id="index_singer5">国语/周杰伦</h4>
+                            <h3 class="album-name" id="index_album_name5">不能说的秘密</h3>
+                            <p class="album-desc" id="index_album-desc5">总的而言，是一张很不错的原声带。特别是在国内电影普遍没那么重
+                                视电影音乐的大趋势下，这部主打音乐的电影在配乐上制作的用心便显得十分难得。作为周董的处女作，这部电影中的...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------听说板块  end -------------------->
+
+        <!---------------------乐趣板块  start -------------------->
+        <div class="product p-yq" id="p_yq">
+            <a class="p-title" href="#">
+                <span class="p-title-c">乐趣</span>
+                <div class="icon"><img src="indexImg/lequIcon_26.png" alt=""/></div>
+                <span class="p-title-e">INTERESTING</span>
+            </a>
+            <div class="p-details">
+                <div class="swiper-container" id="swiper-container3">
+                    <div class="swiper-wrapper" id="swiper-wrapper3">
+                        <div class="swiper-slide">
+                            <img class="swper1img" src="indexImg/banner_02.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swper1img" src="indexImg/banner3.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swper1img" src="indexImg/banner2.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!---------------------乐趣板块  end -------------------->
+
+        <!---------------------聊聊板块  start -------------------->
+        <div class="product p-ll" id="p_ll">
+            <a class="p-title" href="#">
+                <span class="p-title-c">聊聊</span>
+                <div class="icon"><img src="indexImg/charingIcon_03.png" alt=""/></div>
+                <span class="p-title-e">CHATING</span>
+            </a>
+            <div class="p-details">
+                <div class="swiper-container" id="swiper-container4">
+                    <div class="swiper-wrapper" id="swiper-wrapper4">
+                        <div class="swiper-slide">
+                            <img class="swper1img" src="indexImg/banner_02.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swper1img" src="indexImg/banner3.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swper1img" src="indexImg/banner2.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!---------------------聊聊板块  end -------------------->
+
+        <!---------------------游记板块  start -------------------->
+        <div class="product p-yj" id="p_yj">
+            <a class="p-title" href="#">
+                <span class="p-title-c">游记</span>
+                <div class="icon"><img src="indexImg/youjiIcon_38.png" alt=""/></div>
+                <span class="p-title-e">TRAVELNOTE</span>
+            </a>
+            <div class="p-details">
+                <div class="swiper-container" id="swiper-container5">
+                    <div class="swiper-wrapper" id="swiper-wrapper5">
+                        <div class="swiper-slide">
+                            <img class="swper1img" src="indexImg/banner_02.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swper1img" src="indexImg/banner3.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swper1img" src="indexImg/banner2.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!---------------------游记板块  end -------------------->
+        <div class="product p-other" id="p_other">
+            <a class="p-title" href="#">
+                <span class="p-title-c">其他</span>
+                <div class="icon"><img src="indexImg/lequIcon_26.png" alt=""/></div>
+                <span class="p-title-e">OTHER</span>
+            </a>
+            <div class="p-details"></div>
+        </div>
+    </div>
+    <!-- ----------------------------------中部 end------------------------------------>
+    <!-- ----------------------------------底部 start----------------------------------->
+    <div class="footer">
+        <div class="blink-con">
+            <div class="btn-l">
+                <span>友情链接</span>
+                <p class="link-cont">
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                </p>
+            </div>
+            <div class="btn-r">
+                <div class="weibo">
+                    <img src="image/footer-ewm1.jpg" alt="twitter">
+                    <span>微博二维码</span>
+                </div>
+                <div class="weixin">
+                    <img src="image/footer-ewm2.jpg" alt="weichat">
+                    <span>微信二维码</span>
+                </div>
+                <div class="connect">
+                    <p>电话:51336808</p>
+                    <p><i>邮编:100062</i>&nbsp;&nbsp;<i>传真:51337666</i></p>
+                    <p>邮箱:info@newworldtours.cn</p>
+                    <p>地址:北京市东城区广渠门内大街安化北里1号长保大厦13层</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bot-con">
+            <span><a href="#">关于我们</a></span>
+            <span><a href="#">联系我们</a></span>
+            <span><a href="#">加入我们</a></span>
+            <span><a href="#">团队成员</a></span>
+            <span><a href="#">商务合作</a></span>
+            <p class="bot-foot">
+                <em>蓝莓派版权所有</em><em>京ICP备12346335号</em>
+            </p>
+        </div>
+    </div>
+    <!-- ----------------------------------底部 end----------------------------------->
+</body>
+<script>
+    var mySwiper1 = new Swiper('#swiper-container1', {
+        pagination: '.swiper-pagination',
+        autoplay: 2000,
+        speed: 1000,
+        autoplayDisableOnInteraction: false,
+        loop: true
+    });
+
+    var mySwiper2 = new Swiper('#swiper-container2', {
+        pagination: '.swiper-pagination',
+        loop: true,
+        noSwiping: true,
+        autoplayDisableOnInteraction: false
+    });
+    mySwiper2.params.autoplay = false;
+
+    var mySwiper3 = new Swiper('#swiper-container3', {
+        pagination: '.swiper-pagination',
+        loop: true,
+        noSwiping: true,
+        autoplayDisableOnInteraction: false
+    });
+    mySwiper3.params.autoplay = false;
+
+    var mySwiper4 = new Swiper('#swiper-container4', {
+        pagination: '.swiper-pagination',
+        loop: true,
+        noSwiping: true,
+        autoplayDisableOnInteraction: false
+    });
+    mySwiper4.params.autoplay = false;
+
+    var mySwiper5 = new Swiper('#swiper-container5', {
+        pagination: '.swiper-pagination',
+        loop: true,
+        noSwiping: true,
+        autoplayDisableOnInteraction: false
+    });
+    mySwiper5.params.autoplay = false;
+
+
+</script>
+</html>

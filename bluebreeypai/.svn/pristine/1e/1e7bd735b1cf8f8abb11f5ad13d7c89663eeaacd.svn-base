@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="style/init.css">
+    <title>蓝莓派</title>
+    <script src="script/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+   
+</body>
+</html>

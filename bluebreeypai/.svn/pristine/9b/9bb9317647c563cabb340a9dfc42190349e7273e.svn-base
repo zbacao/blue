@@ -1,0 +1,344 @@
+/**
+ * @Author:      geekarl
+ * @DateTime:    2016-07-16 10:05:28
+ * @Description: 听说选项卡的页面
+ */
+/*页面的副导航栏样式*/
+.wrap{
+	background-color: #f2f2f2;
+}
+.clearfix::after{
+	content:"";
+	clear: both;
+	display: block;
+}
+.ts-header{
+	width: 100%;
+	background-color: #fff;
+}
+.ts-nav{
+	width: 1200px;
+	min-width: 1200px;
+	background-color: #fff;
+	height: 70px;
+	margin: 0 auto;
+}
+.ts-nav .ts-drag{
+	float: left;
+	width: 90px;
+	border-right: 1px solid #f5f5f5;
+	border-left: 1px solid #f5f5f5;
+	background-color: #fff;
+	height: 70px;
+	overflow: hidden;
+	color: #4c4c4c;
+	position: absolute;
+}
+.ts-nav .ts-drag.on{
+	height: auto;
+}
+.ts-nav .ts-drag .ts-navtitle{
+	width: 100%;
+	text-indent: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	height: 70px;
+	line-height: 70px;
+	display: block;
+	cursor: pointer;
+}
+.ts-nav .ts-drag .ts-navtitle i{
+	display: inline-block;
+	background: url(../image/listenSpeak/spriteicon.png) 0 -37px;
+	width: 12px;
+	height: 6px;
+	margin-left: 10px;
+}
+.ts-nav .ts-drag em{
+	line-height: 40px;
+	text-indent: 10px;
+	display: block;
+	height: 40px;
+	color: #383838;
+	cursor: pointer;
+}
+.ts-nav .ts-drag em.on{
+	background-color: #f6faf8;
+	color: #109d59;
+}
+.ts-nav .ts-navsel{
+	float: left;
+	height: 100%;
+	width: 1000px;
+	text-align: center;
+	margin-left: 90px;
+}
+
+.ts-nav .ts-navsel>span{
+	display: block;
+	width: 100%;
+	font-size: 0px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.ts-nav .ts-seareng i{
+	font-size: 14px;
+	display: inline-block;
+	margin:10px 10px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.ts-nav .ts-seareng i.on{
+	background-color: #248675;
+	color: #fff;
+	border-radius:2px;
+}
+.ts-nav .ts-searchs .ts-searchs-cont{
+	font-size: 0px;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 24px;
+	overflow: hidden;
+}
+.ts-nav .ts-searchs .ts-searchs-cont span{
+	display: inline-block;
+	white-space: nowrap;
+	width: 900px;
+	overflow: hidden;
+}
+.ts-nav .ts-searchs-cont a{
+	font-size: 14px;
+	display: inline-block;
+	width: 54px;
+	text-align: center;
+	position: relative;
+	left: 0;
+}
+.ts-nav .ts-searchs-cont a.on{
+	color: #109d59;
+}
+.ts-nav .ts-searchs .ts-navbtn-l{
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-left: 35px;
+	width: 10px;
+	height: 20px;
+	background:url(../image/listenSpeak/spriteicon.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.ts-nav .ts-searchs .ts-navbtn-r{
+	display: block;
+	margin-top: 5px;
+	margin-right: 35px;
+	float: right;
+	width: 10px;
+	height: 20px;
+	background:url(../image/listenSpeak/spriteicon.png) -14px 0 no-repeat;
+	cursor: pointer;
+}
+.ts-nav .ts-searchs-cont a{
+	padding: 0 8px;
+}
+.ts-nav .ts-push{
+	float: right;
+	width: 100px;
+	height: 30px;
+	margin-top: 20px;
+	border-radius: 15px;
+	border:1px solid #109d59;
+	cursor: pointer;
+}
+.ts-nav .tsfb-btn{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	color: #109d59;
+	text-align: center;
+	width: 100%;
+}
+.ts-nav .tsfb-btn i{
+	background: url(../image/listenSpeak/spriteicon.png) 0 -118px no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	margin-right: 6px;
+}
+/*副导航样式结束*/
+
+/*左侧绿色的导航栏样式*/
+.ts-leftnav{
+	position: fixed;
+	left: 0;
+	top:260px;
+	width: 54px;
+	height: 200px;
+	background-color: #109d59;
+}
+.ts-leftnav .ts-leftnav-cont{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+.ts-leftnav .ts-leftnav-cont a{
+	display: block;
+	margin:15px auto;
+	width: 20px;
+	height: 15px;
+	background-image: url(../image/listenSpeak/spriteicon.png);
+	text-align: center;
+}
+.ts-leftnav .ts-leftnav-tab1{
+	background-position: 3px -57px;
+}
+.ts-leftnav .ts-leftnav-cont .ts-leftnav-tab2{
+	
+	background-position: 0 -135px;
+}
+.ts-leftnav .ts-leftnav-tab3{
+	background-position: 4px -22px;
+}
+.ts-leftnav .ts-leftnav-tab4{
+	background-position: 3px -42px;
+}
+.ts-leftnav .ts-leftnav-tab5{
+	background-position: 3px -87px;
+}
+.ts-leftnav .ts-leftnav-tab6{
+	background-position: 3px -102px;
+}
+/*.arrowL{height:11px;width:6px;background-position:0 0;}
+.arrowR{height:11px;width:6px;background-position:-14px 0;}
+.lnav-3{height:15px;width:11px;background-position:0 -22px;}
+.arrow1{height:6px;width:12px;background-position:0 -37px;}
+.lnav-4{height:14px;width:14px;background-position:0 -43px;}
+.lnav-1{height:16px;width:14px;background-position:0 -57px;}
+.gray-appl{height:14px;width:14px;background-position:0 -73px;}
+.lnav-5{height:15px;width:15px;background-position:0 -87px;}
+.lnav-6{height:15px;width:16px;background-position:0 -102px;}
+.pencil{height:16px;width:16px;background-position:0 -117px;}
+.lnav-2{height:14px;width:20px;background-position:0 -135px;}
+.gray-wechat{height:14px;width:20px;background-position:0 -151px;}*/
+
+/* 内容区样式 */
+.ts-container{
+	width: 1220px;
+	height: 1600px;
+	margin: 0 auto;
+	margin-top: 20px;
+
+}
+/*凡是带ts-card的都是卡片的样式*/
+.ts-container .ts-card{
+	border-radius: 5px;
+	width: 280px;
+	margin: 0 10px;
+	background-color: #fff;
+	margin-bottom: 20px;
+	display: inline-block;
+	font-size: 0;
+	vertical-align: top;
+}
+.ts-card .ts-card-head{
+	height: 80px;
+	width: 100%;
+	text-align: left;
+}
+.ts-card .ts-card-head .ts-cardicon{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../image/listenSpeak/touxiang.png) center no-repeat;
+	padding:10px;
+	padding-top: 18px;
+}
+.ts-card .ts-card-head .ts-cardname{
+	display: inline-block;
+	width: 164px;
+	text-align: left;
+	vertical-align: top;
+}
+.ts-card .ts-card-head .ts-cardname p{
+	font-weight: normal;
+	font-size: 16px;
+	color:#131719; 
+	display: block;
+	margin-top: 15px;
+}
+.ts-card .ts-card-head .ts-cardname em{
+	font-size: 12px;
+	color: #999999;
+}
+.ts-card .ts-card-head i{
+	display: inline-block;
+	font-size: 14px;
+	width: 48px;
+	height: 20px;
+	border-radius: 10px;
+	line-height: 20px;
+	border:1px solid #8dd539;
+	text-align: center;
+	vertical-align: top;
+	margin-top: 15px;
+}
+.ts-card img{
+	width: 100%;
+}
+.ts-card .ts-card-foot{
+	height: 80px;
+	width: 100%;
+}
+.ts-card .ts-card-foot p{
+	padding-top: 16px;
+	font-size: 14px;
+	padding-left: 10px;
+	color: #4c4c4c;
+}
+.ts-card .ts-card-foot .ts-cardfoot-icon{
+	display: block;
+	padding-left: 10px;
+	height:30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #cccccc;
+}
+.ts-card .ts-card-foot .ts-cardicon1{
+	display: inline-block;
+	width:14px;
+	height:14px;
+	background:url(../image/listenSpeak/spriteicon.png) 0 -73px no-repeat;
+	cursor: pointer;
+}
+.ts-card .ts-card-foot .ts-cardicon2{
+	display: inline-block;
+	width:20px;
+	height:14px;
+	background:url(../image/listenSpeak/spriteicon.png) 0 -150px no-repeat;
+	cursor: pointer;
+}
+.ts-card .ts-card-foot i{
+	padding: 5px;
+}
+/*卡片样式完成*/
+/*底部导航样式*/
+.ts-page{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+.ts-page span{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding:0 12px;
+	background-color: #fff;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+	margin:0 4px;
+}

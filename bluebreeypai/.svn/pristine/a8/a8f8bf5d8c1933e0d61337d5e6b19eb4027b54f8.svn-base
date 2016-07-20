@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="style/init.css">
+    <link rel="stylesheet" href="style/commonFooter.css">
+    <link rel="stylesheet" href="style/commonHeader.css">
+    <link rel="stylesheet" href="style/listenSpeak.css">
+    <title>蓝莓派</title>
+    <script src="script/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="header-in clearFix">
+            <div class="logo clearFix">
+                <img src="indexImg/logo_03.png" alt="logo"/>
+                <div class="flag-word">
+                    <strong>蓝莓派</strong>
+                    <h3>和音乐一起分享时光</h3>
+                </div>
+            </div>
+            <div class="main-nav clearFix">
+                <ul class="clearFix">
+                    <li><a href="#" class="navs on" id="n-index">首页</a></li>
+                    <li><a href="#" class="navs" id="n-yz">乐章</a></li>
+                    <li><a href="#" class="navs" id="n-ts">听说</a></li>
+                    <li><a href="#" class="navs" id="n-yq">乐趣</a></li>
+                    <li><a href="#" class="navs" id="n-ll">聊聊</a></li>
+                    <li><a href="#" class="navs" id="n-yj">游记</a></li>
+                    <li><a href="#" class="navs" id="n-sy">摄影</a></li>
+                    <li><a href="#" class="navs" id="n-cp">诚品</a></li>
+                    <li><a href="#" class="navs" id="n-lmj">蓝莓酱</a></li>
+                    <li><a href="#" class="navs" id="n-sq">社区</a></li>
+                </ul>
+            </div>
+            <div class="login clearFix">
+                <div class="search">
+                    <form action="">
+                        <input type="search" id="infinitySearch"/>
+                        <label for="infinitySearch" id="search-button"></label>
+                    </form>
+                </div>
+                <div class="login-register">
+                    <a href="#" class="log" id="log">登录</a>
+                    <a href="#" class="reg" id="reg">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 内容区start -->
+	<div class="ts-nav">
+		<div class="ts-drag clearfix">
+			<span class="ts-navtitle">全部<i></i></span>
+			<em class="on">全部</em>
+			<em>国语</em>
+			<em>欧美</em>
+			<em>粤语</em>
+			<em>港台</em>
+			<em>流行</em>
+			<em>影视</em>
+			<em>其他</em>
+		</div>
+		<div class="ts-navsel">
+			<span class="ts-seareng">
+				<i>A</i><i>B</i><i>C</i><i>D</i><i>E</i><i>F</i>
+				<i>A</i><i>B</i><i>C</i><i>D</i><i>E</i><i>F</i>
+				<i>A</i><i>B</i><i>C</i><i>D</i><i>E</i><i>F</i>
+				<i>A</i><i>B</i><i>C</i><i>D</i><i>E</i><i class="on">F</i>
+			</span>
+			<span class="ts-searchs clearfix">
+				<i class="ts-navbtn-l"></i>
+				<span class="ts-searchs-cont">
+					<em>周杰伦</em>
+					<em>周杰伦</em>
+					<em>周杰伦</em>
+					<em>周杰伦</em>
+					<em>周杰伦</em>
+					<em>张杰</em>
+					<em>张杰</em>
+					<em>张杰</em>
+					<em>张杰</em>
+					<em>张杰</em>
+					<em>张杰</em>
+					<em>张杰</em>
+					<em>张杰</em>
+					<em>张杰</em>
+					<em>张杰</em>
+					<em>张杰</em>
+					<em>张杰</em>
+				</span>
+				<i class="ts-navbtn-r"></i>
+			</span>
+		</div>
+		<div class="ts-push clearfix">
+			<span class="tsnav-btn">
+				<i></i>发布
+			</span>
+		</div>
+	</div>
+
+<!-- 内容区end -->
+    <div class="footer">
+		<div class="blink-con">
+			<div class="btn-l">
+				<span>友情链接</span>
+				<p class="link-cont">
+					<a href="#">乐乎</a>
+					<a href="#">数字尾巴</a>
+					<a href="#">豆瓣</a>
+					<a href="#">环球旅行</a>
+					<a href="#">乐乎</a>
+					<a href="#">数字尾巴</a>
+					<a href="#">豆瓣</a>
+					<a href="#">乐乎</a>
+					<a href="#">数字尾巴</a>
+					<a href="#">豆瓣</a>
+					<a href="#">环球旅行</a>
+					<a href="#">乐乎</a>
+					<a href="#">数字尾巴</a>
+					<a href="#">豆瓣</a>
+					<a href="#">环球旅行</a>
+					<a href="#">乐乎</a>
+					<a href="#">数字尾巴</a>
+					<a href="#">豆瓣</a>
+					<a href="#">乐乎</a>
+					<a href="#">数字尾巴</a>
+					<a href="#">豆瓣</a>
+					<a href="#">环球旅行</a>
+					<a href="#">乐乎</a>
+					<a href="#">数字尾巴</a>
+					<a href="#">豆瓣</a>
+					<a href="#">环球旅行</a>
+					<a href="#">乐乎</a>
+					<a href="#">数字尾巴</a>
+					<a href="#">豆瓣</a>
+					<a href="#">乐乎</a>
+					<a href="#">数字尾巴</a>
+					<a href="#">豆瓣</a>
+					<a href="#">环球旅行</a>
+				</p>
+			</div>
+			<div class="btn-r">
+				<div class="weibo">
+					<img src="image/footer-ewm1.jpg" alt="twitter">
+					<span>微博二维码</span>
+				</div>
+				<div class="weixin">
+					<img src="image/footer-ewm2.jpg" alt="weichat">
+					<span>微信二维码</span>
+				</div>
+				<div class="connect">
+					<p>电话:51336808</p>
+					<p><i>邮编:100062</i>&nbsp;&nbsp;<i>传真:51337666</i></p>
+					<p>邮箱:info@newworldtours.cn</p>
+					<p>地址:北京市东城区广渠门内大街安化北里1号长保大厦13层</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="bot-con">
+			<span><a href="#">关于我们</a></span>
+			<span><a href="#">联系我们</a></span>
+			<span><a href="#">加入我们</a></span>
+			<span><a href="#">团队成员</a></span>
+			<span><a href="#">商务合作</a></span>
+			<p class="bot-foot">
+				<em>蓝莓派版权所有</em><em>京ICP备12346335号</em>  
+			</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+body{
+    background:#fff;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+.header{
+    width:100%;
+    background:rgb(36,41,44);
+    height:90px;
+    color:#fff;
+}
+.header .header-in{
+    max-width:92%;
+    min-width:1200px;
+    margin:0 auto;
+    height:inherit;
+    line-height:inherit;
+}
+/************************************logo  start ***************************************8*/
+.header .header-in .logo{
+    float:left;
+    height:90px;
+}
+.header .header-in .logo img{
+    float:left;
+    margin-top:25px;
+}
+.header .header-in .logo .flag-word{
+    float:left;
+    margin:22px 0 0 15px;
+}
+.header .header-in .logo .flag-word strong{
+    font-size:24px;
+    letter-spacing: 13px;
+}
+.header .header-in .logo .flag-word strong::after{
+    content: "";
+    display:block;
+    border-top:2px solid #fff;
+    width:100px;
+}
+.header .header-in .logo .flag-word h3{
+    font-size:11px;
+    margin-left:-4px;
+}
+
+/***************************************logo  end ************************************/
+
+
+/************************************主导航 start ************************************/
+.header .header-in .main-nav{
+    float:left;
+    font-size: 16px;
+    height:90px;
+    width:610px;
+    margin-left: 40px;
+}
+.header .header-in .main-nav  .navs{
+    float:left;
+    position:relative;
+}
+.header .header-in .main-nav ul{
+    margin-top: 33px;
+}
+/*所有导航类别公共样式*/
+.header .header-in .main-nav  li a.navs{
+    display: block;
+    padding: 2px 9px;
+    color: #fff;
+    border-radius:3px;
+    margin-right:9px;
+}
+/*听说后的数字圈*/
+.header .header-in .main-nav  li a.navs#n_ts i{
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    font-size: 12px;
+    background: #e8152d;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+/*主导航栏当前按钮样式*/
+.header .header-in .main-nav  li a.navs.on{
+    background: #109d59;
+}
+/*每个导航类别下面的三角*/
+.header .header-in .main-nav   li a.navs.on::after{
+    content:"";
+    display:block;
+    width:0;
+    height:0;
+    position:absolute;
+    top:35px;
+    left:15px;
+    border-top:11px solid transparent;
+    border-right:11px solid transparent;
+    border-bottom:11px solid #fff;
+    border-left:11px solid transparent;
+}
+
+/************************************主导航 end ************************************/
+
+/************************************登录&注册  start ************************************/
+.header .header-in .login{
+    float:right;
+    font-size:14px;
+    height:90px;
+    line-height:90px;
+}
+/*搜索框*/
+.header .header-in .login .search{
+    float:left;
+    position:relative;
+}
+.header .header-in .login .search #infinitySearch{
+    width: 170px!important;
+    height: 27px!important;
+    background: #000;
+    border: none!important;
+    border-radius: 20px!important;
+    padding-left: 84px!important;
+    box-sizing: border-box!important;
+    color: #16A085!important;
+    font-size: 16px!important;
+}
+.header .header-in .login .search #search-button{
+    position: absolute;
+    top: 32px;
+    right: 0;
+    width: 30px;
+    height: 27px;
+    border-radius: 0 40px 40px 0;
+    -webkit-transition: all .2s ease;
+    line-height: 27px;
+    text-align: center;
+    margin-right: -2px;
+    background:#2ECC71 url(../indexImg/searchIcon_06.png) no-repeat center;
+    background-size: 62%;
+    cursor:pointer;
+}
+.header .header-in .login .search #search-button:hover{
+    background: #2aa756 url(../indexImg/searchIcon_06.png) no-repeat center;
+}
+/*登录和注册*/
+.header .header-in .login .login-register{
+    float:left;
+    margin-left:20px;
+    word-spacing: 5px;
+    position:relative;
+}
+/*登录和注册下面的三角*/
+.header .header-in .login .login-register .triangle{
+    content:"";
+    display:none;
+    width:0;
+    height:0;
+    position:absolute;
+    top:70px;
+    left:35px;
+    border-top:11px solid transparent;
+    border-right:11px solid transparent;
+    border-bottom:11px solid #fff;
+    border-left:11px solid transparent;
+}
+/*账户详情*/
+.header .header-in .login .login-register .account-info{
+    position:absolute;
+    top:90px;
+    left:-52px;
+    padding:10px 0;
+    z-index:99990;
+    width:120px;
+    background:#fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.4);
+    display:none;
+}
+.header .header-in .login .login-register .account-info .a-info-details{
+    display:block;
+    line-height:30px;
+    color: #3a3a3a;
+    text-indent:18px;
+}
+.header .header-in .login .login-register .account-info .a-info-details:hover{
+    background:#eee;
+}
+.header .header-in .login .login-register:hover .account-info{
+    display:block;
+}
+.header .header-in .login .login-register:hover .triangle{
+    display:block;
+
+}
+/************************************登录&注册  end ************************************/

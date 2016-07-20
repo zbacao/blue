@@ -1,0 +1,109 @@
+/**
+ * @Author:      geekarl
+ * @DateTime:    2016-07-15 20:21:27
+ * @Description: 底部公共部分的样式
+ */
+ a{
+ 	text-decoration: none;
+ 	font-size: 14px;
+ }
+ i{
+ 	font-style: normal;
+ }
+ .footer{
+ 	width: 100%;
+ 	background-color: #fff;
+ 	height: 160px;
+ 	overflow: hidden;
+ }
+ .footer .blink-con{
+ 	width: 1200px;
+ 	overflow: hidden;
+ 	margin: 0 auto;
+ 	min-width: 1200px;
+ }
+ .footer .btn-l{
+ 	float:left;
+ 	width: 48%;
+ }
+ .footer .btn-l span{
+ 	display: block;
+ 	margin-top:10px;
+ 	margin-bottom: 5px;
+ 	font-size: 14px;
+ }
+ .footer .btn-l .link-cont{
+ 	text-align: left;
+ 	margin-top: 5px;
+ 	width: 100%;
+ }
+ .footer .btn-l .link-cont a{
+ 	color: #808080;
+ 	padding-right: 3px;
+ 	margin-top: 4px;
+ 	display: inline-block;
+ 	font-size: 14px
+ }
+ .footer .btn-r{
+ 	float: right;
+ 	width: 530px;
+ 	margin-top: 16px;
+ }
+ .footer .btn-r div{
+ 	display: inline-block;
+ 	margin:0 3px;
+ }
+ .footer .btn-r span{
+ 	color: #808080;
+ 	font-size: 12px;
+ 	display: block;
+ 	margin: 0 auto;
+ 	text-align: center;
+ }
+ .footer .btn-r .connect{
+ 	float: right;
+ 	width: 62%;
+ 	margin-right: 0;
+ }
+ .footer .btn-r .connect p{
+ 	line-height: 14px;
+ 	font-size: 12px;
+ 	color: #707070;
+ 	margin-top: 7px;
+ 	margin-bottom: 7px;
+ }
+ .bottom{
+ 	width: 100%;
+ 	background-color: #fff;
+ 	height: 100px;
+ 	border-top: 1px solid #e6e6e6;
+ }
+.bottom .bot-con{
+	width: 400px;
+	height: 80px;
+	margin:0 auto;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.bottom .bot-con span{
+	width: 20%;
+	text-align: center;
+	display: block;
+	float: left;
+}
+.bottom .bot-con span a{
+	font-size: 14px;
+	color: #4c4c4c;
+}
+.bottom .bot-foot{
+	width: 100%;
+	margin: 25px auto;
+	text-align: center;
+}
+.bottom .bot-foot em{
+	font-style: normal;
+	font-size: 12px;
+	color: #999999;
+	text-align: center;
+	margin:0 10px;
+}

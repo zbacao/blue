@@ -1,0 +1,99 @@
+/**
+ * @Author:      geekarl
+ * @DateTime:    2016-07-16 10:05:28
+ * @Description: 听说选项卡的页面
+ */
+/*页面的副导航栏样式*/
+.warp{
+	background-color: #f2f2f2;
+}
+.ts-nav{
+	width: 92%;
+	min-width: 1200px;
+	background-color: #fff;
+	height: 70px;
+	margin: 0 auto;
+}
+.ts-nav .ts-drag{
+	float: left;
+	width: 90px;
+	border-right: 1px solid #f5f5f5;
+	background-color: #fff;
+	height: 70px;
+	overflow: hidden;
+}
+.ts-nav .ts-drag.on{
+	height: auto;
+	position: absolute;
+}
+.ts-nav .ts-drag .ts-navtitle{
+	width: 100%;
+	text-indent: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	height: 70px;
+	line-height: 70px;
+	display: block;
+}
+.ts-nav .ts-drag .ts-navtitle i{
+	display: inline-block;
+	background: url(../image/listenSpeak/arrow1.png) center;
+	width: 12px;
+	height: 6px;
+	margin-left: 10px;
+}
+.ts-nav .ts-drag em{
+	line-height: 40px;
+	text-indent: 10px;
+	display: block;
+	height: 40px;
+	color: #383838;
+}
+.ts-nav .ts-drag em.on{
+	background-color: #f6faf8;
+	color: #109d59;
+}
+.ts-nav .ts-navsel{
+	float: left;
+	height: 100%;
+	width: 1000px;
+	text-align: center;
+}
+.ts-nav .ts-navsel>span{
+	display: block;
+	width: 100%;
+	font-size: 0px;
+	margin: 0 auto;
+}
+.ts-nav .ts-seareng i{
+	font-size: 14px;
+	display: inline-block;
+	margin:10px 10px;
+	width: 20px;
+	height: 20px;
+}
+.ts-nav .ts-seareng i.on{
+	background-color: #248675;
+	color: #fff;
+	border-radius:2px;
+}
+.ts-nav .ts-searchs .ts-searchs-cont{
+	font-size: 14px;
+}
+.ts-nav .ts-searchs-cont em{
+		margin: 0 8px;
+}
+.ts-nav .ts-push{
+	float: right;
+	width: 100px;
+	height: 30px;
+	margin-top: 20px;
+	border-radius: 15px;
+	border:1px solid #109d59;
+}
+.clearfix::after{
+	content:"";
+	clear: both;
+	display: block;
+}

@@ -1,0 +1,270 @@
+/**
+ * @Author:      geekarl
+ * @DateTime:    2016-07-18 20:16:23
+ * @Description: 歌手网页的css样式
+ */
+body{
+ 	background-color: #f2f2f2;
+ }
+.gs-wrap{
+ 	width: 1200px;
+ 	min-width: 1200px;
+ 	overflow: hidden;
+ 	margin: 0 auto;
+ }
+.gs-cont{
+ 	width: 875px;
+ 	margin-top: 54px;
+ 	margin-bottom: 70px;
+ 	box-shadow: 0 2px 2px #aaa;
+ 	background-color: #fff;
+ 	border-radius: 5px;
+    float: left;
+ }
+ .gs-hotcomment{
+    float: right;
+    width: 300px;
+    height: 566px;
+    margin-top: 54px;
+    box-shadow: 0 2px 2px #aaa;
+    background-color: #fff;
+    border-radius: 5px;
+ }
+ /*右侧div内热评样式*/
+ .gs-hotcomment .gs-commenth{
+    margin:0 auto;
+    width: 262px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #e2e2e2;
+    overflow: hidden;
+ }
+ .gs-commenth span{
+    font-size: 18px;
+    color: #333333;
+    vertical-align: middle;
+    display: inline-block;
+ }
+ .gs-commenth a{
+    font-size: 14px;
+    color: #999999;
+    display: inline-block;
+    float: right;
+ }
+ .gs-commentb {
+    width: 260px;
+    margin: 0 auto;
+    height: 68px;
+ }
+ .gs-commentb .gs-hot-tx{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    float: left;
+    margin:6px 10px 6px 0;
+ }
+ .gs-commentb .gs-hottext{
+    display: inline-block;
+    margin-top: 6px;
+ }
+ .gs-hottext .gs-hot-t{
+    margin: 4px 0;
+    font-size: 14px;
+    color: #109d59;
+ }
+ .gs-hottext .gs-hot-c{
+    font-size: 14px;
+    color: #666666;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width:14em;
+ }
+ /*歌手div样式*/
+.gs-cont .gs-conthead{
+ 	width: 100%;
+ 	margin-top: 5px;
+ 	border-bottom: 1px solid #e6e6e6;
+    overflow: hidden;
+ }
+.gs-conthead .gs-banner{
+ 	margin:20px 24px;
+ 	border: 1px solid #e2e2e2;
+ 	border-radius: 3px;
+}
+.gs-conthead .gs-conttext{
+    float: right;
+    width: 560px;
+}
+.gs-conthead .gs-name{
+    margin-top: 20px;
+    height: 74px;
+    width: 100%;
+    border-bottom: 1px solid #e2e2e2;
+}
+.gs-conthead .gs-name h2{
+    margin: 0 16px;
+    font-size: 30px;
+    color: #000;
+}
+.gs-conthead .gs-name p{
+    margin:5px 10px 5px 16px;
+}
+.gs-conthead .gs-name span{
+    font-size: 14px;
+    color: #696969;
+    overflow: hidden;
+}
+.gs-conthead .gs-name .gs-name-right{
+    float: right;
+}
+.gs-conttext .gs-score{
+    height: 96px;
+    line-height: 96px;
+    width: 560px;
+}
+.gs-conttext .gs-score .gsscore-title{
+    font-size: 24px;
+    color: #000;
+    margin:0 16px;
+}
+.gs-score i{
+    background:url(../image/singer/star.png) center;
+    display: inline-block;
+    height: 16px;
+    width: 18px;
+    margin:0 2px;
+}
+.gs-score em{
+    margin-left: 16px;
+    font-size: 16px;
+    color: #f68344;
+}
+.gs-score .gs-scorer{
+    font-size: 12px;
+    color:#666666;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 2px;
+}
+.gs-conttext .gs-sum span{
+    width: 250px;
+    height: 90px;
+    line-height: 90px;
+    display: inline-block;
+    margin-left: 16px;
+}
+.gs-conttext .gs-sum i{
+    vertical-align:middle;
+    background-image: url(../image/singer/singersprite.png);
+    display: inline-block;
+}
+.gs-sum .gs-icon1{
+    width: 28px;
+    height: 36px;
+    background-position: 0 0;
+    margin-right: 10px;
+}
+.gs-sum .gs-icon2{
+    width: 32px;
+    height: 31px;
+    background-position: -32px 0px;
+    margin-right: 11px;
+}
+.gs-sum .gs-icon3{
+    width: 33px;
+    height: 32px;
+    background-position: -70px 0;
+    margin-right: 6px;
+}
+.gs-sum .gs-icon4{
+    width: 39px;
+    height: 28px;
+    background-position: -109px 0;
+    margin-right: 6px;
+}
+.gs-sum b{
+    vertical-align:middle;
+    font-size: 26px;
+    color: #4b4b4b;
+}
+.gs-sum em{
+    color: #e30077;
+    font-size:30px;
+    vertical-align: middle;
+}
+/*上面是歌手介绍的样式*/
+.gs-contchoice .gs-conttabs{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+.gs-contchoice .gs-conttabs span{
+    display: inline-block;
+    margin-left: 35px;
+    margin-right: 20px;
+}
+.gs-contchoice .gs-conttabs span a{
+    font-size: 16px;
+    color: #656464;
+    padding:0 8px;
+    border-bottom: 3px solid transparent;
+}
+.gs-contchoice .gs-conttabs a.on{
+    border-bottom: 3px solid #009f4f;
+}
+/*选项卡样式结束*/
+.gs-contchoice .gs-songs{
+    width: 100%;
+}
+.gs-songs li{
+    height: 35px;
+    width: 100%;
+    line-height: 35px;
+}
+.gs-songs li:nth-child(odd){
+    background-color: #fafafa;
+}
+.gs-songs a{
+    margin-left: 30px;
+    font-size: 14px;
+    color:#0090e7;
+}
+.gs-songs .song-rd{
+    width:90px;
+    height: 14px;
+    background-color: #cde456;
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+}
+.gs-songs .song-page{
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    text-align: center;
+}
+.song-page span{
+    vertical-align: middle;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666666;
+}
+.song-page span.on{
+    background-color: #109d59;
+    color: #fff;
+}
+.gs-pageadv{
+    margin-right: 30px;
+}
+.gs-pagenext{
+    margin-left: 30px;
+}
