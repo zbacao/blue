@@ -5,33 +5,6 @@
  */
 
  $(function(){
- 	//弹出的登陆框事件
-    $(".main").height($(window).height()-320);
-    $(".login-reg-select>a").each(function(index,ele){
-        $(ele).on("click",function(){
-            $(".account-box").eq(index).css("display","block").siblings(".account-box").css("display","none");
-                $(this).addClass("a1").siblings().removeClass("a1");
-        });
-    })
-    $("#log").on("click",function(){
-    	$(".main").css({display:'block'});
-    })
-    //弹出的登陆框事件结束
- 	$(".ts-nav .ts-drag em").on("click",function(){
- 		$(this).addClass('on').siblings().removeClass('on');
- 		// 此处缺包含ajax在内的向后台请求数据的函数。
- 	});
- 	$(".ts-nav .ts-drag .ts-navtitle").on("click",function(){
- 		$(this).parent().toggleClass('on');
- 	})
- 	$(".ts-nav .ts-seareng i").on("click",function(){
- 		$(this).addClass('on').siblings().removeClass('on');
- 		// 此处缺包含ajax在内的向后台请求数据的函数,这是根据字母筛选。
- 	})
- 	$(".ts-nav .ts-searchs a").on("click",function(){
- 		$(this).addClass('on').siblings().removeClass('on');
- 		// 此处缺包含ajax在内的向后台请求数据的函数,这是根据人名筛选。
- 	})
  	// 定义一个函数，传参数让每次承载人名的容器向右或者左移动62px,与轮播图的函数类似；
  	function ts_move(index){
  		var elewidth = 70;
@@ -67,13 +40,12 @@
  	})
  	//弹出框内的回复div事件
  	$(".ts-popcard .ts-popcomment").on("click",function(){
- 		console.log($(this).next('.ts-popreplay'));
  		if($(this).next('.ts-popreplay').length===0){
  			var n = $(this).index(".ts-popcomment");
  			// var cloneReply = $(".ts-popreplay").eq(0).clone(ture);
  			var cloneEle = $('<div class="ts-popreplay clearfix"><div class="tspop-tri"></div><div class="ts-replaycont"><input type="text"><a href="javascript:;">回复</a></div><i></i></div>')
  			cloneEle.insertAfter($(this));
- 			$(".ts-popreplay").eq(n).stop().slideDown(300);
+ 			$(this).next('.gs-popreplay').stop().slideDown(300);
  		}
  		$(".ts-popreplay i").on("click",function(){
 	 		$(this).parent().stop().slideUp(300,function(){
@@ -85,7 +57,6 @@
 	 		var str = $('.ts-popreplay input').val();
 	 		if(!(str)){
 	 			//这里提交回复触发ajax事件和添加回复事件。
-	 			console.log('123');
 	 		}
 	 		$('.ts-popreplay').eq(n).on("click",function(){
 	 			$(this).stop().slideUp(300,function(){

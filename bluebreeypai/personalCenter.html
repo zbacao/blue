@@ -9,17 +9,75 @@
     <link rel="stylesheet" href="style/commonFooter.css">
     <link rel="stylesheet" href="style/commonHeader.css">
     <link rel="stylesheet" href="style/personalCenter.css">
+    <link rel="stylesheet" href="style/login-tanchuceng.css">
     <title>蓝莓派</title>
     <script src="script/jquery-2.1.1.min.js"></script>
     <script src="script/birthday.js"></script>
     <script src="script/jquery.provincesCity.js"></script>
     <script src="script/provincesdata.js"></script>
     <script src="script/personalCenter.js"></script>
+    <script src="script/login-tanchuceng.js"></script>
+
 </head>
 <style>
 
+
 </style>
 <body>
+
+<!--登陆页面-->
+<div class="login-mengban"></div>
+<div class="login-box">
+    <form action="">
+        <div class="login-reg-select clearFix">
+            <a href="#" class="login-select-btn a1 "><i class="login-on"></i>登录</a>
+            <a href="#" class="reg-select-btn"><i class="reg-on"></i>注册</a>
+        </div>
+        <div class="login-details account-box"  style="display:block">
+            <label for="login_account"></label>
+            <input type="text" id="login_account" placeholder="用户账号"/>
+            <label for="login_pwd"></label>
+            <input type="password" id="login_pwd" placeholder="用户密码"/>
+            <div class="check_code clearFix">
+                <div class="check-input">
+                    <label for="check_code_input1"></label>
+                    <input type="text" id="check_code_input1" placeholder="验证码"/>
+                </div>
+                <div class="check-pic">
+                    <img src="indexImg/check-code_04.png" alt=""/>
+                </div>
+            </div>
+            <label for="login-btn"></label>
+            <input type="submit" id="login-btn" value="登录"/>
+            <div class="other-login">
+                <p>你还可以用第三方帐号登录</p>
+                <a href="#"><img src="indexImg/qqIcon.png" alt=""/></a>
+                <a href="#"><img src="indexImg/weixinIcon.png" alt=""/></a>
+                <a href="#"><img src="indexImg/weiboIcon.png" alt=""/></a>
+            </div>
+        </div>
+        <div class="reg-details account-box"  style="display:none" >
+            <label for="reg_account"></label>
+            <input type="text" id="reg_account" placeholder="取个名字吧"/>
+            <label for="reg_pwd"></label>
+            <input type="password" id="reg_pwd" placeholder="设一个密码吧"/>
+            <label for="reg_pwd_confirm"></label>
+            <input type="password" id="reg_pwd_confirm" placeholder="再输一遍密码吧"/>
+            <div class="check_code clearFix">
+                <div class="check-input">
+                    <label for="check_code_input2"></label>
+                    <input type="text" id="check_code_input2" placeholder="验证码"/>
+                </div>
+                <div class="check-pic">
+                    <img src="indexImg/check-code_04.png" alt=""/>
+                </div>
+            </div>
+            <label for="reg-btn"></label>
+            <input type="submit" id="reg-btn" value="注册"/>
+        </div>
+    </form>
+    <a class="findback-pwd" href="#">忘记密码?</a>
+</div>
 <div class="wrap">
     <!-- --------------------------------------公共主导航栏  start----------------------------------------->
     <div class="header">
@@ -36,13 +94,13 @@
             <div class="main-nav clearFix">
                 <ul class="clearFix">
                     <li><a href="index.html" class="navs" id="n_index">首页</a></li>
-                    <li><a href="#" class="navs" id="n_yz">乐章</a></li>
+                    <li><a href="movement.html" class="navs" id="n_yz">乐章</a></li>
                     <li><span id="ts-num">12</span><a href="listenSpeak.html" class="navs" id="n_ts">听说</a></li>
                     <li><a href="#" class="navs" id="n_yq">乐趣</a></li>
                     <li><a href="#" class="navs" id="n_ll">聊聊</a></li>
                     <li><a href="#" class="navs" id="n_yj">游记</a></li>
                     <li><a href="#" class="navs" id="n_sy">摄影</a></li>
-                    <li><a href="#" class="navs" id="n_cp">诚品</a></li>
+                    <li><a href="item.html" class="navs" id="n_cp">诚品</a></li>
                     <li><a href="#" class="navs" id="n_lmj">蓝莓酱</a></li>
                     <li><a href="personalCenter.html" class="navs on" id="n_sq">社区</a></li>
                 </ul>
@@ -55,7 +113,7 @@
                     </form>
                 </div>
                 <div class="login-register">
-                    <a href="login.html" class="log" id="log">登录</a>
+                    <a href="#" class="log" id="log">登录</a>
                     <a href="#" class="reg" id="reg">注册</a>
                     <i class="triangle"></i>
 
@@ -151,7 +209,7 @@
         <!--右边栏-->
         <div class="p_rc">
             <!--右边第一个页面-->
-            <div class="p_bbs">
+            <div class="p_bbs" style="display:none">
                 <div class="p_bbsTop">
                     <div class="p_pbbsTopL">
                         <span></span>
@@ -165,103 +223,166 @@
 
                 <!-- 右边下方内容-->
                 <div class="p_bbsD">
-                    <!--<div class="p_bbsDc">-->
-                        <!--&lt;!&ndash; 左边图片&ndash;&gt;-->
-                        <!--<div class="p_bbsDimg" >-->
-                            <!--<div class="p_bbsDi">-->
-                                <!--<span class="p_bbsDview">12</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--&lt;!&ndash; 右边文字&ndash;&gt;-->
-                        <!--<div class="p_bbsDtext">-->
-                            <!--<div class="p_bbsDtitle">-->
-                             <!--<p class="p_bbsDp">岁月不老，一世倾城</p>-->
-                                <!--&lt;!&ndash;帖子时间 &ndash;&gt;-->
-                                    <!--<p class="p_bbsDtd">16:15</p>-->
-                                <!--&lt;!&ndash; 帖子日期&ndash;&gt;-->
-                                <!--<p class="p_bbsDtt">5/23</p>-->
-                                <!--&lt;!&ndash; 帖子图片&ndash;&gt;-->
-                                 <!--<span class="p_bbsDt"></span>-->
-                            <!--</div>-->
-                                <!--&lt;!&ndash; 文章摘要&ndash;&gt;-->
-                            <!--<p class="p_bbsDca">-->
-                                <!--时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；这个午后，我站在开满丁香花的树下目送你走远，紫色的小花散发着幽幽的暗香，我忍不住深吸一口气...-->
-                            <!--</p>-->
-                                <!--&lt;!&ndash; 文章底部&ndash;&gt;-->
-                            <!--<div class="p_bbsfoot">-->
-                                <!--<p class="p_bbsfootb">22</p>-->
-                                <!--<span class="p_bbsfoota"></span>-->
-                                <!--<p class="p_bbsfootd">99</p>-->
-                                <!--<span class="p_bbsfootc" ></span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="p_bbsDc">-->
-                        <!--<div class="p_bbsDtexta">-->
-                            <!--<div class="p_bbsDtitlea">-->
-                                <!--<p class="p_bbsDpa">臭氧也算是大气污染物么？</p>-->
-                                <!--&lt;!&ndash;帖子时间 &ndash;&gt;-->
-                                <!--<p class="p_bbsDtda">16:15</p>-->
-                                <!--&lt;!&ndash; 帖子日期&ndash;&gt;-->
-                                <!--<p class="p_bbsDtta">5/23</p>-->
-                                <!--&lt;!&ndash; 帖子图片&ndash;&gt;-->
-                                <!--<span class="p_bbsDta"></span>-->
-                            <!--</div>-->
-                            <!--&lt;!&ndash; 文章摘要&ndash;&gt;-->
-                            <!--<p class="p_bbsDcab">-->
-                                <!--魔都公交电视会播报当天空气质量状况评价以及首要污染物。首要污染物基本以PM打头后面跟各种不同的数字,但是某天的报告说首要污染物...                            </p>-->
-                            <!--&lt;!&ndash; 文章底部&ndash;&gt;-->
-                            <!--<div class="p_bbsfoot">-->
-                                <!--<p class="p_bbsfootbb">22</p>-->
-                                <!--<span class="p_bbsfoota"></span>-->
-                                <!--<p class="p_bbsfootd">22</p>-->
-                                <!--<span class="p_bbsfootc" ></span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="p_bbsDc">-->
-                        <!--&lt;!&ndash; 左边图片&ndash;&gt;-->
-                        <!--<div class="p_bbsDimgb" style="position: relative">-->
-                            <!--<div class="p_bbsDib">-->
-                                <!--<span class="p_bbsDviewb">12</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--&lt;!&ndash; 右边文字&ndash;&gt;-->
-                        <!--<div class="p_bbsDtextb">-->
-                            <!--<div class="p_bbsDtitleb">-->
-                                <!--<p class="p_bbsDpb">不能说的秘密</p>-->
-                                <!--&lt;!&ndash; 如果为音乐，则显示该部分&ndash;&gt;-->
-                              <!--<span class="p_bbsDmu">-->
-                                    <!--<p class="p_bbsDmuL">国语</p>/-->
-                                      <!--<p class="p_bbsDmuN">周杰伦</p>-->
-                                <!--</span>-->
-                                <!--&lt;!&ndash;帖子时间 &ndash;&gt;-->
-                                <!--<p class="p_bbsDtdb">16:15</p>-->
-                                <!--&lt;!&ndash; 帖子日期&ndash;&gt;-->
-                                <!--<p class="p_bbsDttb">5/23</p>-->
-                                <!--&lt;!&ndash; 帖子图片&ndash;&gt;-->
-                                <!--<span class="p_bbsDt"></span>-->
-                            <!--</div>-->
-                            <!--&lt;!&ndash; 文章摘要&ndash;&gt;-->
-                            <!--<p class="p_bbsDcab">-->
-                                <!--总的而言，是一张很不错的原声带。特别是在国内电影普遍没那么重视电影音乐的大趋势下，这部主打音乐的电影在配乐上制作的用心便显得十分难得。作为周董的处女作，这部电影中的...                            </p>-->
-                            <!--&lt;!&ndash; 文章底部&ndash;&gt;-->
-                            <!--<div class="p_bbsfoot">-->
-                                <!--<p class="p_bbsfootbb">22</p>-->
-                                <!--<span class="p_bbsfoota"></span>-->
-                                <!--<p class="p_bbsfootdb">22</p>-->
-                                <!--<span class="p_bbsfootc" ></span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
+
+                </div>
+            </div>
+            <!-- 右边第二个页面,关注的人-->
+            <div class="p_Follow" style="display: none;">
+                <!-- 右边第二个页面上-->
+                <div class="p_FollowTop">
+                    <div class="p_FollowTopL">
+                        <span></span>
+                        <p>我关注的人</p>
+                        <b class="p_followNun">(4)</b>
+                    </div>
+                </div>
+                <!-- 第二个页面下-->
+                <div class="p_FollowDown">
+                    <div class="p_FollowDownR">
+                        <div class="p_Fcontain" >
+                            <img src="images/follow2.png">
+                            <div class="p_FcontainR">
+                            <p class="p_FollowTitle">蓝莓派</p>
+                            <p class="p_FollowTime">1小时前更新</p>
+                            </div>
+                        </div>
+                        <div class="p_Fcontain" >
+                            <img src="images/follow2.png">
+                            <div class="p_FcontainR">
+                                <p class="p_FollowTitle">蓝莓派</p>
+                                <p class="p_FollowTime">1小时前更新</p>
+                            </div>
+                        </div>
+                        <div class="p_Fcontain" >
+                            <img src="images/follow2.png">
+                            <div class="p_FcontainR">
+                                <p class="p_FollowTitle">蓝莓派</p>
+                                <p class="p_FollowTime">1小时前更新</p>
+                            </div>
+                        </div>
+                        <div class="p_Fcontain" >
+                            <img src="images/follow2.png">
+                            <div class="p_FcontainR">
+                                <p class="p_FollowTitle">蓝莓派</p>
+                                <p class="p_FollowTime">1小时前更新</p>
+                            </div>
+                        </div>
+                        <div class="p_Fcontain" >
+                            <img src="images/follow2.png">
+                            <div class="p_FcontainR">
+                                <p class="p_FollowTitle">蓝莓派</p>
+                                <p class="p_FollowTime">1小时前更新</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 消息中心-->
+            <div class="p_message" style="display: none">
+                <div class="p_messageTop">
+                    <!-- 消息中心左边-->
+                    <div class="p_messageTl">
+                        <span></span>
+                        <p>消息中心</p>
+                    </div>
+                    <div class="p_messageTr">
+                        <span class="p_mesTa p_mesClick" ><p>通知</p></span>
+                        <span class="p_mesTb"><p>私信</p></span>
+                    </div>
+                </div>
+                <div class="p_mesDown">
+                    <!-- 通知-->
+                    <div class="p_mesNot">
+                        <div class="p_mesNcon">
+                            <div class="p_mesNtop">
+                                <p class="p_mesNtime">2015年7月25号</p>
+                            </div>
+                            <div class="p_mesNdown">
+                                <img src="images/mes2.png">
+                                <p class="p_mesName">蓝莓派</p>
+                                <p class="p_mesNa">关注了您</p>
+                            </div>
+                        </div>
+                        <div class="p_mesNcon">
+                            <div class="p_mesNtop">
+                                <p class="p_mesNtime">2015年7月25号</p>
+                            </div>
+                            <div class="p_mesNdown">
+                                <img src="images/mes2.png">
+                                <p class="p_mesName">蓝莓派</p>
+                                <p class="p_mesNa">关注了您</p>
+                            </div>
+                        </div>
+                        <div class="p_mesNcon">
+                            <div class="p_mesNtop">
+                                <p class="p_mesNtime">2015年7月25号</p>
+                            </div>
+                            <div class="p_mesNdown">
+                                <img src="images/mes2.png">
+                                <p class="p_mesName">蓝莓派</p>
+                                <p class="p_mesNa">关注了您</p>
+                            </div>
+                        </div>
+                        <div class="p_mesNcon">
+                            <div class="p_mesNtop">
+                                <p class="p_mesNtime">2015年7月25号</p>
+                            </div>
+                            <div class="p_mesNdown">
+                                <img src="images/mes2.png">
+                                <p class="p_mesName">蓝莓派</p>
+                                <p class="p_mesNa">关注了您</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 私信-->
+                    <div class="p_mesMes" style="display: none">
+                        <div class="p_mesMe">
+                            <img src="images/p_03.png">
+                            <span class="p_mesFrom">
+                                <p>来自</p>
+                                <p class="p_mesFromN" >蓝莓派</p>
+                                <p>的私信</p>
+                            </span>
+                            <p class="p_mesFromT">2016-06-23</p>
+                            <p class="p_mesContain">恭喜您获得优惠券一张，快去领取吧！</p>
+                        </div>
+                        <div class="p_mesMe">
+                            <img src="images/p_03.png">
+                            <span class="p_mesFrom">
+                                <p>来自</p>
+                                <p class="p_mesFromN" >蓝莓派</p>
+                                <p>的私信</p>
+                            </span>
+                            <p class="p_mesFromTa">2016-06-23</p>
+                            <p class="p_mesContain">恭喜您获得优惠券一张，快去领取吧！</p>
+                        </div>
+                        <div class="p_mesMe">
+                            <img src="images/p_03.png">
+                            <span class="p_mesFrom">
+                                <p>来自</p>
+                                <p class="p_mesFromN" >蓝莓派</p>
+                                <p>的私信</p>
+                            </span>
+                            <p class="p_mesFromTa">2016-06-23</p>
+                            <p class="p_mesContain">恭喜您获得优惠券一张，快去领取吧！</p>
+                        </div>
+                        <div class="p_mesMe">
+                            <img src="images/p_03.png">
+                            <span class="p_mesFrom">
+                                <p>来自</p>
+                                <p class="p_mesFromN" >蓝莓派</p>
+                                <p>的私信</p>
+                            </span>
+                            <p class="p_mesFromTa">2016-06-23</p>
+                            <p class="p_mesContain">恭喜您获得优惠券一张，快去领取吧！</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-
-
-        </div>
-             <!--data index 表示对应第三个页面-->
-            <div class="p_rset" data-index="3" style="display: none">
+            <!--data index 表示对应第三个页面-->
+            <div class="p_rset" data-index="3" style="display: block">
                 <div class="p_rseta">
                     <i></i>
 
@@ -446,6 +567,168 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 我的收藏-->
+            <div class="p_myCollect" style="display: none">
+                <div class="p_collTop">
+                    <div class="p_collTopL">
+                        <span></span>
+                        <p>我的收藏</p>
+                    </div>
+                </div>
+                <div class="p_collDown">
+                    <div class="p_collContain">
+                        <div class="p_collC">
+                            <input type="checkbox" checked="checked">
+                            <span class="p_coType">聊聊</span>
+                            <span>|</span>
+                            <span>臭氧也算污染吗？</span>
+                            <p class="p_coTime">50分钟前</p>
+                            <a class="p_coDel" href="javascript:void(0)">删除</a>
+                        </div>
+                        <div class="p_collC">
+                            <input type="checkbox" checked="checked">
+                            <span class="p_coType">聊聊</span>
+                            <span>|</span>
+                            <span>臭氧也算污染吗？</span>
+                            <p class="p_coTime">50分钟前</p>
+                            <a class="p_coDel" href="javascript:void(0)">删除</a>
+                        </div>
+                        <div class="p_collC">
+                            <input type="checkbox" checked="checked">
+                            <span class="p_coType">聊聊</span>
+                            <span>|</span>
+                            <span>臭氧也算污染吗？</span>
+                            <p class="p_coTime">50分钟前</p>
+                            <a class="p_coDel" href="javascript:void(0)">删除</a>
+                        </div>
+                        <input  class="p_coCho" type="checkbox" checked="checked">
+                        <span class="p_cooAll">全选</span>
+                        <div class="p_coAdel">
+                            <p>删除全部收藏</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 我的评论-->
+            <div class="p_myComment" style="display: none">
+                <div class="p_comTop">
+                    <div class="p_comTopL">
+                        <span></span>
+                        <p>我的评论</p>
+                    </div>
+                </div>
+                <div class="p_comDown">
+                    <div class="p_comContain">
+                        <div class="p_pcomc">
+                            <div class="p_comcTop">
+                                <b class="p_comImg"></b>
+                                <span class="p_coType">聊聊</span>
+                                <span>|</span>
+                                <span>臭氧也算污染吗？</span>
+                                <b class="p_comTime">50分钟前</b>
+                            </div>
+                            <div class="p_comcDown">
+                                <p> 我觉得应该不算吧！是属于一种自然现象。</p>
+                            </div>
+                            </div>
+                        <div class="p_pcomc">
+                            <div class="p_comcTop">
+                                <b class="p_comImg"></b>
+                                <span class="p_coType">聊聊</span>
+                                <span>|</span>
+                                <span>臭氧也算污染吗？</span>
+                                <b class="p_comTime">50分钟前</b>
+                            </div>
+                            <div class="p_comcDown">
+                                <p> 我觉得应该不算吧！是属于一种自然现象。</p>
+                            </div>
+                        </div>
+                        <div class="p_pcomc">
+                            <div class="p_comcTop">
+                                <b class="p_comImg"></b>
+                                <span class="p_coType">聊聊</span>
+                                <span>|</span>
+                                <span>臭氧也算污染吗？</span>
+                                <b class="p_comTime">50分钟前</b>
+                            </div>
+                            <div class="p_comcDown">
+                                <p> 我觉得应该不算吧！是属于一种自然现象。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 我的小组-->
+            <div class="p_myTeam" style="display: none">
+                <div class="p_myteTop">
+                    <div class="p_myteTopL">
+                        <span></span>
+                        <p>我的小组</p>
+                    </div>
+                </div>
+                <div class="p_myteDown">
+                    <div class="p_myteContain">
+                        <div class="p_myteamC">
+                            <div class="p_mtcL">
+                                <img src="images/myteam_07.png">
+                            </div>
+                            <div class="p_mtcR">
+                                <p class="p_mtName">夏天</p>
+                                <div class="p_myExit">
+                                <p>退出小组</p>
+                                </div>
+                                <p class="p_mtBody">又到了热死人不要命的季节了，说一说你记忆中的夏天吧~</p>
+                                <div class="p_mtcrDown">
+                                    <b class="p_mtlable"></b>
+                                    <span><p class="p_mtinfo">旅游</p></span>
+                                    <span><p class="p_mtinfo">旅游</p></span>
+                                    <span><p class="p_mtinfo"> 旅游</p></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="p_myteamC">
+                            <div class="p_mtcL">
+                                <img src="images/myteam_07.png">
+                            </div>
+                            <div class="p_mtcR">
+                                <p class="p_mtName">夏天</p>
+                                <div class="p_myExit">
+                                    <p>退出小组</p>
+                                </div>
+                                <p class="p_mtBody">又到了热死人不要命的季节了，说一说你记忆中的夏天吧~</p>
+                                <div class="p_mtcrDown">
+                                    <b class="p_mtlable"></b>
+                                    <span><p class="p_mtinfo">旅游</p></span>
+                                    <span><p class="p_mtinfo">旅游</p></span>
+                                    <span><p class="p_mtinfo"> 旅游</p></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="p_myteamC">
+                            <div class="p_mtcL">
+                                <img src="images/myteam_07.png">
+                            </div>
+                            <div class="p_mtcR">
+                                <p class="p_mtName">夏天</p>
+                                <div class="p_myExit">
+                                    <p>退出小组</p>
+                                </div>
+                                <p class="p_mtBody">又到了热死人不要命的季节了，说一说你记忆中的夏天吧~</p>
+                                <div class="p_mtcrDown">
+                                    <b class="p_mtlable"></b>
+                                    <span><p class="p_mtinfo">旅游</p></span>
+                                    <span><p class="p_mtinfo">旅游</p></span>
+                                    <span><p class="p_mtinfo"> 旅游</p></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 </div>
 
@@ -528,33 +811,8 @@
 </div>
 </body>
 <script>
-//    $.getJSON("json/bbsdata.json",function(data){
-//        var div2="<div class='p_bbsDc'><div class='p_bbsDimg'><div class='p_bbsDi'><span class='p_bbsDview'></span></div></div> <div class='p_bbsDtext'><div class='p_bbsDtitle'><p class='p_bbsDp'></p><p class='p_bbsDtd'></p><p class='p_bbsDtt'></p><span class='p_bbsDt'></span></div><p class='p_bbsDca'></p><div class='p_bbsfoot'><p class='p_bbsfootb'></p><span class='p_bbsfoota'></span><p class='p_bbsfootd'></p><span class='p_bbsfootc'></span></div></div></div>";
-//        if(data.normal){
-//            $(data.normal).each(function(ele,index){
-//                var imgUrl=index.img;
-//                var view=index.view;
-//                var title=index.title;
-//                var context=index.context;
-//                var date=index.date;
-//                var time=index.time;
-//                var like=index.like;
-//                var comment=index.comment;
-//
-//                $(div2).appendTo(".p_bbsD");
-//                    $(".p_bbsDi").eq(ele).css("background-image",imgUrl);
-//                    $(".p_bbsDview").eq(ele).html(view);
-//                    $(".p_bbsDp").eq(ele).html(title);
-//                    $(".p_bbsDca").eq(ele).html(context);
-//                    $(".p_bbsDtt").eq(ele).html(date);
-//                    $(".p_bbsDtd").eq(ele).html(time);
-//                    $(".p_bbsfootb").eq(ele).html(like);
-//                    $(".p_bbsfootd").eq(ele).html(comment);
-//            })
-//
-//        }
-//
-//    })
+
+
 
 </script>
 

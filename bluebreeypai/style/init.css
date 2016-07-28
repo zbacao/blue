@@ -2,7 +2,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     margin: 0;
     padding: 0;
     border: 0;
-    font: inherit;
+    /*font: inherit;*/
     vertical-align: baseline;
     /*word-break:break-all;*/
     word-wrap: break-word;
@@ -63,3 +63,16 @@ input, button {
     visibility: hidden;
     clear:both;
 }
+
+/*Ñ©±ÌÍ¼Ä£°å
+
+content:"";
+display:block;
+width:23px;
+height:14px;
+position:absolute;
+top:19px;
+left:0;
+background:url(../indexImg/eye_03.png) no-repeat center center;
+
+*/

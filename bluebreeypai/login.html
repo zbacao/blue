@@ -13,12 +13,23 @@
         .login-mengban{
             background:url(indexImg/login-back_02.png) no-repeat center center;
             width:100%;
+            overflow:hidden;
             position:relative;
             display:block;
         }
+        .login-box{
+            width:300px;
+            height:364px;
+            background:#666;
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            padding:18px 20px;
+            z-index:20000;
+            display:block;
+        }
     </style>
-    <script src="script/jquery-2.1.1.min.js"></script>
-    <script src="script/login.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -35,13 +46,13 @@
             <div class="main-nav clearFix">
                 <ul class="clearFix">
                     <li><a href="index.html" class="navs" id="n_index">首页</a></li>
-                    <li><a href="#" class="navs" id="n_yz">乐章</a></li>
+                    <li><a href="movement.html" class="navs" id="n_yz">乐章</a></li>
                     <li><span id="ts-num">12</span><a href="listenSpeak.html" class="navs" id="n_ts">听说</a></li>
                     <li><a href="#" class="navs" id="n_yq">乐趣</a></li>
                     <li><a href="#" class="navs" id="n_ll">聊聊</a></li>
                     <li><a href="#" class="navs" id="n_yj">游记</a></li>
                     <li><a href="#" class="navs" id="n_sy">摄影</a></li>
-                    <li><a href="#" class="navs" id="n_cp">诚品</a></li>
+                    <li><a href="item.html" class="navs" id="n_cp">诚品</a></li>
                     <li><a href="#" class="navs" id="n_lmj">蓝莓酱</a></li>
                     <li><a href="personalCenter.html" class="navs" id="n_sq">社区</a></li>
                 </ul>
@@ -199,6 +210,18 @@
     </div>
 </div>
 </body>
+<script src="script/jquery-2.1.1.min.js"></script>
+<script>
+    var login= $(" .login-mengban");
+    $(login).height($(window).height()-90);
+    $(".login-reg-select>a").each(function(index,ele){
+        $(ele).on("click",function(){
+            $(".account-box").eq(index).css("display","block").siblings(".account-box").css("display","none");
+            $(this).addClass("a1").siblings().removeClass("a1");
+        });
+    });
+
+</script>
 </html>
 
 

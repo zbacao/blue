@@ -1,0 +1,38 @@
+.repeat-nav{
+    float: left;
+    height: 70px;
+    font-size: 0px;
+    text-align: left;
+}
+.repeat-nav a{
+    display: inline-block;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    height: 62px;
+    padding: 0 16px;
+    margin: 0 14px;
+    line-height: 62px;
+    font-size: 16px;
+    color: #333333;
+}
+.repeat-nav a.on{
+    border-top: 4px solid #109d59;
+    color: #109d59;
+}
+.repeat-nav a:first-child{
+    margin-left: 0;
+}
+/*可重用的导航栏样式结束*/
+/*卡片的图片换成文字后的样式*/
+.llcard-text{
+    height: auto;
+    padding:0 10px;
+    font-size: 14px;
+    color: #666;
+    line-height: 30px; 
+}
+/*聊聊页面的卡片tag样式*/
+.ts-card-head .chat-tag{
+    border:1px solid #4c72f1;
+    color: #4c72f1;
+}

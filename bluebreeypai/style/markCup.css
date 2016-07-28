@@ -1,0 +1,244 @@
+.i_markCup{
+    width: 1200px;
+    height: 7200px;
+    min-width: 1200px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+.i_cbody{
+    width: 100%;
+    height: 6700px;
+    background: #f2f2f2;
+}
+.i_cupTitle{
+    width: 750px;
+    height: 180px;
+    margin: 0 auto;
+    text-align: center ;
+}
+
+.i_cupTitle p{
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #109d59;
+}
+
+.i_cta{
+    display: block;
+    padding-top: 40px;
+}
+.i_ctb{
+    padding-top: 10px;
+}
+.i_ctc{
+    display: inline-block;
+    padding-top: 10px;
+    margin-left: 100px;
+}
+.i_cbuy{
+    display: inline-block;
+    width: 115px;
+    height: 30px;
+    background-color: #ff4400;
+    float: right;
+    margin-top: 15px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+.i_cbuy a{
+    font-family:"Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    letter-spacing:4px;
+    padding-left: 2px;
+}
+.i_cupImg{
+    width: 750px;
+    height: 100%;
+    margin: 0 auto;
+}
+.i_text{
+    width: 800px;
+    height: 120px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+}
+.i_setText{
+    width:100px;
+    height: 40px;
+    background-color: #f68344;
+    float: right;
+    margin-right: -50px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.i_setText a{
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    color: #fdede6;
+    padding-left: 5px;
+
+}
+/*ÆÀÂÛ¿´*/
+.ts-popcomment{
+    width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+}
+.ts-popcomment .ts-popcomicon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.ts-popcomment .ts-popcomicon img{
+    width: 50px;
+    margin: 0;
+}
+.ts-popcomment .ts-comcont{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 25px;
+    margin-bottom: 40px;
+
+}
+.ts-popcomment .ts-cardfoot-icon{
+    top: 20px;
+    right: 10px;
+}
+.ts-popcomment .ts-comcont>b{
+    font-size:14px;
+    padding:0 10px;
+    color: #333333;
+}
+.ts-popcomment .ts-comcont>i{
+    font-size: 12px;
+    color: #999999;
+}
+.ts-popcomment .ts-comcont p{
+    font-size: 14px;
+    color: #0b0b0b;
+    margin: 5px 0 0 10px;
+    line-height: 22px;
+}
+.ts-popreplay{
+    background-color: #fafafa;
+    border: 1px solid #e4e4e4;
+    padding-bottom: 40px;
+    border-top: none;
+    position: relative;
+    height: 68px;
+}
+.ts-popreplay::before{
+    content: "";
+    display: block;
+    border-width: 14px 9px;
+    border-style: solid;
+    position: absolute;
+    border-color: transparent transparent #e8e8e8 transparent;
+    right: 85px;
+    top:-28px;
+}
+.ts-popreplay .tspop-tri{
+    content: "";
+    display: block;
+    border-width: 12px 6px;
+    border-style: solid;
+    position: absolute;
+    border-color: transparent transparent #fafafa transparent;
+    right: 88px;
+    top:-24px;
+}
+.ts-popreplay .ts-replaycont{
+    margin-top: 15px;
+    width: 670px;
+    text-align: center;
+    float: right;
+}
+.ts-popreplay .ts-replaycont input{
+    display: inline-block;
+    width: 550px;
+    line-height: 34px;
+    border: 1px solid #e6e6e6;
+}
+.ts-popreplay .ts-replaycont a{
+    display: inline-block;
+    width: 80px;
+    height: 36px;
+    background-color: #f68344;
+    font-size: 16px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 8px;
+    vertical-align:middle;
+}
+.ts-popreplay i{
+    position: absolute;
+    bottom: 15px;
+    right: 50px;
+    width: 10px;
+    height: 6px;
+    background: url(../image/listenSpeak/dropup.png) no-repeat center;
+    cursor:pointer;
+}
+.ts-cardfoot-icon{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.ts-cardfoot-icon i {
+    padding: 5px;
+    color: #ccc;
+    margin-left: 15px;
+}
+.i_comment{
+    margin-top: 100px;
+}
+.ts-cardfoot-icon{
+    position:relative;
+    float: right;
+    margin-right: -100px;
+}
+.ts-cardicon1{
+    display: inline-block;
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    top: 2px;
+    left: 41px;
+    background:url(../indexImg/gray-wechat.png) no-repeat center;
+    cursor:pointer;
+}
+.ts-cardicon2 {
+    display: inline-block;
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    background: url(../image/listenSpeak/spriteicon.png) 0 -73px no-repeat;
+    cursor: pointer;
+}
+.ts-cardicon3{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    background: url(../images/fenxiang_03.png) center no-repeat;
+    cursor: pointer;
+    margin-left: 85px;
+    margin-top: 2px;
+}

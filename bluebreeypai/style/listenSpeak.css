@@ -212,26 +212,16 @@
 .ts-leftnav .ts-leftnav-tab6{
 	background-position: 3px -102px;
 }
-/*.arrowL{height:11px;width:6px;background-position:0 0;}
-.arrowR{height:11px;width:6px;background-position:-14px 0;}
-.lnav-3{height:15px;width:11px;background-position:0 -22px;}
-.arrow1{height:6px;width:12px;background-position:0 -37px;}
-.lnav-4{height:14px;width:14px;background-position:0 -43px;}
-.lnav-1{height:16px;width:14px;background-position:0 -57px;}
-.gray-appl{height:14px;width:14px;background-position:0 -73px;}
-.lnav-5{height:15px;width:15px;background-position:0 -87px;}
-.lnav-6{height:15px;width:16px;background-position:0 -102px;}
-.pencil{height:16px;width:16px;background-position:0 -117px;}
-.lnav-2{height:14px;width:20px;background-position:0 -135px;}
-.gray-wechat{height:14px;width:20px;background-position:0 -151px;}*/
+
 
 /* 内容区样式 */
 .ts-container{
-	width: 1220px;
+	width: 1224px;
 	height: 1600px;
 	margin: 0 auto;
 	margin-top: 20px;
-
+	position: relative;
+	text-align: center;
 }
 /*凡是带ts-card的都是卡片的样式*/
 .ts-container .ts-card{
@@ -244,6 +234,7 @@
 	font-size: 0;
 	vertical-align: top;
 	cursor: pointer;
+	text-align: left;
 }
 .ts-card .ts-card-head{
 	height: 80px;
@@ -275,7 +266,7 @@
 	font-size: 12px;
 	color: #999999;
 }
-.ts-card .ts-card-head i{
+.ts-card-head i{
 	display: inline-block;
 	font-size: 14px;
 	width: 48px;
@@ -291,7 +282,8 @@
 	width: 100%;
 }
 .ts-card .ts-card-foot{
-	height: 80px;
+	margin-top: 15px;
+	height: auto;
 	width: 100%;
 }
 .ts-card .ts-card-foot p{
@@ -329,9 +321,11 @@
 /*卡片样式完成*/
 /*底部导航样式*/
 .ts-page{
+	position: absolute;
+	bottom: 0;
 	width: 100%;
 	text-align: center;
-	margin-top: 30px;
+	margin-bottom: 100px;
 }
 .ts-page span{
 	display: inline-block;
@@ -344,6 +338,10 @@
 	cursor: pointer;
 	margin:0 4px;
 	box-shadow: 0px 2px 3px gray;
+}
+.ts-page span.on{
+	background-color: #109d59;
+	color: #fff;
 }
 
 /*点击卡片的弹出框样式  底层要有蒙版*/

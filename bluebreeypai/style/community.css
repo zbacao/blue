@@ -1,0 +1,102 @@
+.ts-nav .sq-drag{
+    float: left;
+    width: 90px;
+    margin-right: 45px;
+    background-color: #fff;
+    height: 62px;
+    color: #4c4c4c;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    position: relative;
+}
+.ts-nav .sq-drag.on{
+    border-top: 4px solid #119c58;
+}
+.sq-drag .sq-title{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+    height: 62px;
+    line-height: 62px;
+    display: block;
+    cursor: pointer;
+}
+.sq-drag.on .sq-title{
+    color: #109d59;
+}
+.ts-nav .sq-drag .sq-title i{
+    display: inline-block;
+    background: url(../image/listenSpeak/spriteicon.png) 0 -37px;
+    width: 12px;
+    height: 6px;
+    margin-left: 10px;
+}
+.sq-drag .sq-list{
+    width: 90px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 999;
+    top: 66px;
+    display: none;
+}
+.sq-drag .sq-list.on{
+    display: block;
+}
+.ts-nav .sq-drag em{
+    line-height: 40px;
+    text-indent: 10px;
+    display: block;
+    height: 40px;
+    color: #383838;
+    cursor: pointer;
+}
+.ts-nav .sq-drag em:hover{
+    background-color: #f6faf8;
+    color: #109d59;
+}
+
+/*左侧绿色的导航栏样式*/
+.sq-leftnav{
+    position: fixed;
+    left: 0;
+    top:260px;
+    height: 200px;
+    background-color: #109d59;
+    z-index: 999;
+}
+.sq-leftnav .ts-leftnav-cont{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.sq-leftnav .ts-leftnav-cont a{
+    display: block;
+    color: #fff;
+    margin:15px 6px;
+    height: 15px;
+    line-height: 15px;
+    background-image: url(../image/listenSpeak/spriteicon.png);
+    text-align: left;
+    text-indent: 22px;
+    padding-right: 3px;
+}
+.sq-leftnav .ts-leftnav-tab1{
+    background-position: 3px -57px;
+}
+.sq-leftnav .ts-leftnav-cont .ts-leftnav-tab2{
+    
+    background-position: 0 -135px;
+}
+.sq-leftnav .ts-leftnav-tab3{
+    background-position: 4px -22px;
+}
+.sq-leftnav .ts-leftnav-tab4{
+    background-position: 3px -42px;
+}
+.sq-leftnav .ts-leftnav-tab5{
+    background-position: 3px -87px;
+}
+.sq-leftnav .ts-leftnav-tab6{
+    background-position: 3px -102px;
+}

@@ -52,9 +52,16 @@ $(function(){
         //console.log(data);
         //banner数据适配  start
         $("#swiper-container1 .swiper-slide").each(function(index,ele){
-            $("#swiper-container1 .swper1img").eq(index).attr("src",data.banner[index].bannerimg);
-            $("#swiper-container1 .ban-title").eq(index).text(data.banner[index].banTitle);
-            $("#swiper-container1 .ban-cont").eq(index).text(data.banner[index].banCont);
+            if(data){
+                $("#swiper-container1 .swper1img").eq(index).attr("src",data.banner[index].bannerimg);
+                $("#swiper-container1 .ban-title").eq(index).text(data.banner[index].banTitle);
+                $("#swiper-container1 .ban-cont").eq(index).text(data.banner[index].banCont);
+            }else{
+                $("#swiper-container1 .swper1img").eq(index).attr("src","indexImg/banner2.jpg");
+                $("#swiper-container1 .ban-title").eq(index).text("普罗旺斯的梦");
+                $("#swiper-container1 .ban-cont").eq(index).text("普罗旺斯(Provence)位于法国东南部，" +
+                "毗邻地中海和意大利，从地中海沿岸延伸到内陆的丘陵地区，中间有大河“Rhone”流过。自古就以靓丽的阳光和蔚蓝的天空，迷人的地中海和心醉");
+            }
         });
         //banner数据适配  start
 

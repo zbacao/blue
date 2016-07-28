@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/init.css">
+    <link rel="stylesheet" href="style/commonFooter.css">
+    <link rel="stylesheet" href="style/commonHeader.css">
+    <link rel="stylesheet" href="style/singer.css">
+    <link rel="stylesheet" href="style/login-tanchuceng.css">
+    <link rel="stylesheet" href="style/songDetails.css">
+    <title>歌曲详情</title>
+    <script src="script/jquery-2.1.1.min.js"></script>
+    <script src="script/songDetails.js"></script>
+    <script src="script/login-tanchuceng.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- 公共的登陆框开始 -->
+    <div class="login-mengban"></div>
+    <div class="login-box">
+        <form action="">
+            <div class="login-reg-select clearFix">
+                <a href="#" class="login-select-btn a1 "><i class="login-on"></i>登录</a>
+                <a href="#" class="reg-select-btn"><i class="reg-on"></i>注册</a>
+            </div>
+            <div class="login-details account-box"  style="display:block">
+                <label for="login_account"></label>
+                <input type="text" id="login_account" placeholder="用户账号"/>
+                <label for="login_pwd"></label>
+                <input type="password" id="login_pwd" placeholder="用户密码"/>
+                <div class="check_code clearFix">
+                    <div class="check-input">
+                        <label for="check_code_input1"></label>
+                        <input type="text" id="check_code_input1" placeholder="验证码"/>
+                    </div>
+                    <div class="check-pic">
+                        <img src="indexImg/check-code_04.png" alt=""/>
+                    </div>
+                </div>
+                <label for="login-btn"></label>
+                <input type="submit" id="login-btn" value="登录"/>
+                <div class="other-login">
+                    <p>你还可以用第三方帐号登录</p>
+                    <a href="#"><img src="indexImg/qqIcon.png" alt=""/></a>
+                    <a href="#"><img src="indexImg/weixinIcon.png" alt=""/></a>
+                    <a href="#"><img src="indexImg/weiboIcon.png" alt=""/></a>
+                </div>
+            </div>
+            <div class="reg-details account-box"  style="display:none" >
+                <label for="reg_account"></label>
+                <input type="text" id="reg_account" placeholder="取个名字吧"/>
+                <label for="reg_pwd"></label>
+                <input type="password" id="reg_pwd" placeholder="设一个密码吧"/>
+                <label for="reg_pwd_confirm"></label>
+                <input type="password" id="reg_pwd_confirm" placeholder="再输一遍密码吧"/>
+                <div class="check_code clearFix">
+                    <div class="check-input">
+                        <label for="check_code_input2"></label>
+                        <input type="text" id="check_code_input2" placeholder="验证码"/>
+                    </div>
+                    <div class="check-pic">
+                        <img src="indexImg/check-code_04.png" alt=""/>
+                    </div>
+                </div>
+                <label for="reg-btn"></label>
+                <input type="submit" id="reg-btn" value="注册"/>
+            </div>
+        </form>
+        <a class="findback-pwd" href="#">忘记密码?</a>
+    </div>
+    <!-- 公共的登陆框结束 -->
+    <div class="header">
+        <div class="header-in clearFix">
+            <div class="logo clearFix">
+                <img src="indexImg/logo_03.png" alt="logo"/>
+                <div class="flag-word">
+                    <strong>蓝莓派</strong>
+                    <h3>和音乐一起分享时光</h3>
+                </div>
+            </div>
+            <div class="main-nav clearFix">
+                <ul class="clearFix">
+                    <li><a href="index.html" class="navs" id="n_index">首页</a></li>
+                    <li><a href="#" class="navs" id="n_yz">乐章</a></li>
+                    <li><span id="ts-num">12</span><a href="listenSpeak.html" class="navs on" id="n_ts">听说</a></li>
+                    <li><a href="#" class="navs" id="n_yq">乐趣</a></li>
+                    <li><a href="chat.html" class="navs" id="n_ll">聊聊</a></li>
+                    <li><a href="#" class="navs" id="n_yj">游记</a></li>
+                    <li><a href="#" class="navs" id="n_sy">摄影</a></li>
+                    <li><a href="item.html" class="navs" id="n_cp">诚品</a></li>
+                    <li><a href="#" class="navs" id="n_lmj">蓝莓酱</a></li>
+                    <li><a href="community.html" class="navs" id="n_sq">社区</a></li>
+                </ul>
+            </div>
+            <div class="login clearFix">
+                <div class="search">
+                    <form action="">
+                        <input type="search" id="infinitySearch"/>
+                        <label for="infinitySearch" id="search-button"></label>
+                    </form>
+                </div>
+                <div class="login-register">
+                    <a href="#" class="log" id="log">登录</a>
+                    <a href="#" class="reg" id="reg">注册</a>
+                    <i class="triangle"></i>
+                    <div class="account-info">
+                        <ul class="clearFix">
+                            <li><a href="#" class="a-info-details" id="a_tz">我的帖子</a></li>
+                            <li><a href="#" class="a-info-details" id="a_pl">我的评论</a></li>
+                            <li><a href="#" class="a-info-details" id="a_sc">我的收藏</a></li>
+                            <li><a href="#" class="a-info-details" id="a_sz">设置</a></li>
+                            <li><a href="#" class="a-info-details" id="a_tc">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 内容区start-->
+    <div class="gs-wrap">
+        <div class="gs-cont">
+            <div class="xq-conthead">
+                <div class="xq-singer">
+                    <img src="image/singer/detail-banner.jpg" alt="singer">
+                    <div class="gs-score">
+                        <i></i><i></i><i></i><i></i>
+                        <em class="gs-realscore">8.2</em>
+                        <span class='gs-scorer'>（80人评分）</span>
+                    </div>
+                    <div class="xq-info">
+                        <p class="name">歌手：<span>薛之谦</span></p>
+                        <p class="ci">词：<span>张楚翘</span></p>
+                        <p class="qv">曲：<span>伍乐城</span></p>
+                        <p class="lang">语言：<span>国语</span></p>
+                        <p class="company">唱片公司：<span>环球音乐</span></p>
+                        <p class="belong">所属专辑：<span>刚刚好</span></p>
+                    </div>
+                    <i class="xq-control"></i>
+                <audio id="audio" src="res/刚刚好.mp3"></audio>
+                </div>
+                <div class="xq-geci">
+                    <h2 class="xq-gctitle">刚刚好</h2>
+                    <div id="lyc" class="lyc">
+                        <p class="lyc-text on"> 如果有人在灯塔</p>
+                        <p class="lyc-text"> 拨弄她的头发</p>
+                        <p class="lyc-text"> 思念刻在墙和瓦</p>
+                        <p class="lyc-text"> 如果感情会挣扎</p>
+                        <p class="lyc-text"> 没有说的儒雅</p>
+                        <p class="lyc-text">把挽回的手放下</p>
+                        <p class="lyc-text">镜子里的人说假话</p>
+                        <p class="lyc-text">违心的样子你决定了吗</p>
+                        <p class="lyc-text">装聋或者作哑 要不我先说话</p>
+                        <p class="lyc-text">我们的爱情 到这刚刚好</p>
+                        <p class="lyc-text">剩不多也不少 还能忘掉</p>
+                        <p class="lyc-text">我应该可以 把自己照顾好</p>
+                        <p class="lyc-text">我们的距离 到这刚刚好</p>
+                    </div>
+                </div>
+                <a href="#">举报</a>
+                <a href="#">纠错</a>
+            </div>
+            <div class="xq-albumjj">
+                <h2>专辑简介：</h2>
+                <div class="xq-albumtext">
+                   <p>"我们的爱情到这刚刚好 剩不多也不少 还能忘掉” 卸下“段子手”的华丽戏服 薛之谦诚恳唱出分手恋人的勇敢与不舍 《刚刚好》这首歌同样由薛之谦亲自词曲操刀，是他最擅长地以深情慢歌便能“杀人不见血”的抒情之作。薛之谦诠释的经典情歌诸如《丑八怪》、《绅士》、《演员》等歌曲至今仍萦绕在耳，传唱度持续延烧。这次推出新专辑，除了极力创作全新音乐品种之外，薛之谦仍不忘回馈一路支持他的乐迷最熟悉的“薛式情歌”。近年薛之谦以诙谐搞笑形象红遍综艺圈，但一直有死忠歌迷翘首期盼，并不停询问薛之谦什么时候要再唱情歌，《刚刚好》这首歌便顺应而生。《刚刚好》这首歌的旋律层次分明，尤其副歌部分记忆点颇高，只听过一次便能让你跟着哼唱。编排细腻的和弦走法加上薛之谦的诚恳音色彷佛他此刻已卸下“段子手”的华丽戏服，还原成一个男人面临分手时候的勇敢与不舍，让人听了心生感动。薛之谦的写词功力经由这些年的创作焠炼更是一举升华，字字要命，句句正中要害！“如果分手太复杂，流浪的歌手会放下吉他”、“我们的流浪到这刚刚好，趁我们还没到天涯海角，我也不是非要去那座城堡”、“是否要逼人弃了甲，亮出一条伤疤，不堪的根源在哪”每句歌词都直指恋人的内心世界，说出了一个男人为了让深爱的人宽心，宁愿自己开口提分手，把爱情亲手结束在“刚刚好”的时机，却背对着恋人强忍泪水。有类似分手经验的人想必会对《刚刚好》这首歌产生共鸣，重新披上“情歌手”外衣的薛之谦，这次会让你对他的内敛伤情深深触动!&nbsp;&nbsp;</p>
+                   <i class="text-down">【展 开】</i>
+                   <i class="text-up">【收 起】</i>
+                </div>
+                <img src="image/singer/detail-singer.jpg" alt="">
+                <video class="xq-mv" poster="image/singer/video-cover.jpg" src="" controls="controls"></video>
+            </div>
+            <div class="gs-contchoice">
+                <div class="gs-comment">
+                    <p class="xq-comtitle">
+                        <span>同专辑歌曲</span>
+                    </p>
+                </div>
+                <div class="gs-songs xq">
+                    <ul>
+                        <li class="song-cont">
+                            <b>1.</b><i class="play-sml"></i>
+                            <a href="#">这样你还要爱我吗</a>
+                            <span class="song-rd"></span>
+                            <!-- 根据传来的参数来指定span的宽度 -->
+                        </li>
+                        <li class="song-cont">
+                            <b>2.</b><i class="play-sml"></i>
+                            <a href="#">这样你还要爱我吗</a>
+                            <span class="song-rd"></span>
+                            <!-- 根据传来的参数来指定span的宽度 -->
+                        </li>
+                        <li class="song-cont">
+                            <b>3.</b><i class="play-sml"></i>
+                            <a href="#">这样你还要爱我吗</a>
+                            <span class="song-rd"></span>
+                            <!-- 根据传来的参数来指定span的宽度 -->
+                        </li>
+                        <li class="song-cont">
+                            <b>4.</b><i class="play-sml"></i>
+                            <a href="#">这样你还要爱我吗</a>
+                            <span class="song-rd"></span>
+                            <!-- 根据传来的参数来指定span的宽度 -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="xq-share">
+                    <div class="xq-sharebtn">
+                        <a class="pyq" href="#"></a>
+                        <a class="qq" href="#"></a>
+                        <a class="qqzone" href="#"></a>
+                        <a class="sina" href="#"></a>
+                        <a class="douban" href="#"></a>
+                        <p>喜欢的话就分享出去吧！</p>
+                    </div>
+                    <div class="xq-sharepf">
+                        <p>我要评分：<i></i></p>
+                        <a href="#">好听</a>
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                        <span>分项</span>
+                    </div>
+                </div>
+                <div class="xq-addcomment">
+                    <textarea name="" class="xq-textarea" placeholder="在这里发表您的看法吧~"></textarea>
+                    <a class="submit-btn" href="javascript:;">评 论</a>
+                </div>
+                <div class="gs-comment" id="comment">
+                    <p class="xq-comtitle">
+                        <span>精彩乐评</span><i>（89）</i>
+                    </p>
+                    <div class="gs-comwhole">
+                        <span class="gs-comicon">
+                            <img src="image/singer/touxiang.png" alt="userhead">
+                        </span>
+                        <div class="gs-comcont">
+                            <b>小夏同学</b><i>5/23</i><i>16:15</i>
+                            <em class="xqjb">举报</em>
+                            <p class="gs-comtext">内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房,在这里跟大家分享这座大房子背后一对年轻夫妇的故事</p>
+                            <span class="gs-foot-icon">
+                                <b class="gs-icon0"></b><i>分享</i>
+                                <b class="gs-icon1"></b><i>22</i>
+                                <b class="gs-icon2"></b><i>22</i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 插入回复框的地方 -->
+                    <div class="gs-comwhole">
+                        <span class="gs-comicon">
+                            <img src="image/singer/touxiang.png" alt="userhead">
+                        </span>
+                        <div class="gs-comcont">
+                            <b>小夏同学</b><i>5/23</i><i>16:15</i>
+                            <em class="xqjb">举报</em>
+                            <p class="gs-comtext">内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房,在这里跟大家分享这座大房子背后一对年轻夫妇的故事</p>
+                            <span class="gs-foot-icon">
+                                <b class="gs-icon0"></b><i>分享</i>
+                                <b class="gs-icon1"></b><i>22</i>
+                                <b class="gs-icon2"></b><i>22</i>
+                            </span>
+                        </div>
+                    </div>
+                    <p class="xq-comtitle">
+                        <span>最新乐评</span><i>（89）</i>
+                    </p>
+                    <div class="gs-comwhole">
+                        <span class="gs-comicon">
+                            <img src="image/singer/touxiang.png" alt="userhead">
+                        </span>
+                        <div class="gs-comcont">
+                            <b>小夏同学</b><i>5/23</i><i>16:15</i>
+                            <em class="xqjb">举报</em>
+                            <p class="gs-comtext">内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房,在这里跟大家分享这座大房子背后一对年轻夫妇的故事</p>
+                            <span class="gs-foot-icon">
+                                <b class="gs-icon0"></b><i>分享</i>
+                                <b class="gs-icon1"></b><i>22</i>
+                                <b class="gs-icon2"></b><i>22</i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-page">
+                    <span class="gs-page">&lt;&lt;</span>
+                    <span class="gs-pageadv">&lt;</span>
+                    <span class="gs-pages on">1</span>
+                    <span class="gs-pages">2</span>
+                    <span class="gs-pages">3</span>
+                    <span class="gs-pages">4</span>
+                    <span class="gs-pages">5</span>
+                    <span class="gs-pages">6</span>
+                    <span class="gs-pages">7</span>
+                    <span class="gs-pages">8</span>
+                    <span class="gs-pagenext">&gt;</span>
+                    <span class="gs-page">&gt;&gt;</span>
+                </div>
+            </div>
+        </div>
+        <div class="pub-lanmeipai">
+            <div class="lm-top">
+                <div class="lm-title">
+                    <img src="image/singer/logopie.jpg" alt="">
+                    <span>蓝莓派</span>
+                </div>
+                <div class="lm-cont">
+                    <span><b>22</b><p>帖子</p></span>
+                    <span><b>22</b><p>评论</p></span>
+                    <span><b>22</b><p>关注</p></span>
+                </div>
+            </div>
+            <div class="lm-btn">
+               <a class="gzbtn"><span>关注</span></a> 
+               <a class="sxbtn"><span>私信</span></a> 
+            </div>
+        </div>
+        <div class="xq-other">
+            <div class="xq-otherhead">
+                <span>作者的其他发布</span>
+                <i>全部</i>
+            </div>
+            <ul class="other-songs">
+                <li><span>我从崖边跌落</span><i class="add"></i><i class="play"></i></li>
+                <li><span>我从崖边跌落</span><i class="add"></i><i class="play"></i></li>
+                <li><span>我从崖边跌落</span><i class="add"></i><i class="play"></i></li>
+                <li><span>我从崖边跌落</span><i class="add"></i><i class="play"></i></li>
+            </ul>
+        </div>
+        <div class="gs-hotcomment xq-hot">
+            <div class="gs-commenth">
+                <span>最热乐评</span>
+                <a href="#">更多</a>
+            </div>
+            <div class="gs-commentb">
+                <a href="#comment">
+                    <img class="gs-hot-tx" src="image/singer/touxiang.png" alt="">
+                    <div class="gs-hottext">
+                        <p class="gs-hot-t">小夏同学</p>
+                        <p class="gs-hot-c">内地流行组合牛奶咖啡地流行内地流行内地流行</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gs-commentb">
+                <a href="#comment">
+                    <img class="gs-hot-tx" src="image/singer/touxiang.png" alt="">
+                    <div class="gs-hottext">
+                        <p class="gs-hot-t">小夏同学</p>
+                        <p class="gs-hot-c">内地流行组合牛奶咖啡地流行内地流行内地流行</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gs-commentb">
+                <a href="#comment">
+                    <img class="gs-hot-tx" src="image/singer/touxiang.png" alt="">
+                    <div class="gs-hottext">
+                        <p class="gs-hot-t">小夏同学</p>
+                        <p class="gs-hot-c">内地流行组合牛奶咖啡地流行内地流行内地流行</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gs-commentb">
+                <a href="#comment">
+                    <img class="gs-hot-tx" src="image/singer/touxiang.png" alt="">
+                    <div class="gs-hottext">
+                        <p class="gs-hot-t">小夏同学</p>
+                        <p class="gs-hot-c">内地流行组合牛奶咖啡地流行内地流行内地流行</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gs-commentb">
+                <a href="#comment">
+                    <img class="gs-hot-tx" src="image/singer/touxiang.png" alt="">
+                    <div class="gs-hottext">
+                        <p class="gs-hot-t">小夏同学</p>
+                        <p class="gs-hot-c">内地流行组合牛奶咖啡地流行内地流行内地流行</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gs-commentb">
+                <a href="#comment">
+                    <img class="gs-hot-tx" src="image/singer/touxiang.png" alt="">
+                    <div class="gs-hottext">
+                        <p class="gs-hot-t">小夏同学</p>
+                        <p class="gs-hot-c">内地流行组合牛奶咖啡地流行内地流行内地流行</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gs-commentb">
+                <a href="#comment">
+                    <img class="gs-hot-tx" src="image/singer/touxiang.png" alt="">
+                    <div class="gs-hottext">
+                        <p class="gs-hot-t">小夏同学</p>
+                        <p class="gs-hot-c">内地流行组合牛奶咖啡地流行内地流行内地流行</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+<!-- 内容区end -->
+    <div class="footer">
+        <div class="blink-con">
+            <div class="btn-l">
+                <span>友情链接</span>
+                <p class="link-cont">
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                </p>
+            </div>
+            <div class="btn-r">
+                <div class="weibo">
+                    <img src="image/footer-ewm1.jpg" alt="twitter">
+                    <span>微博二维码</span>
+                </div>
+                <div class="weixin">
+                    <img src="image/footer-ewm2.jpg" alt="weichat">
+                    <span>微信二维码</span>
+                </div>
+                <div class="connect" style="display:none;">
+                    <p>电话:51336808</p>
+                    <p><i>邮编:100062</i>&nbsp;&nbsp;<i>传真:51337666</i></p>
+                    <p>邮箱:info@newworldtours.cn</p>
+                    <p>地址:北京市东城区广渠门内大街安化北里1号长保大厦13层</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bot-con">
+            <span><a href="#">关于我们</a></span>
+            <span><a href="#">联系我们</a></span>
+            <span><a href="#">加入我们</a></span>
+            <span><a href="#">团队成员</a></span>
+            <span><a href="#">商务合作</a></span>
+            <p class="bot-foot">
+                <em>蓝莓派版权所有</em><em>京ICP备12346335号</em>  
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

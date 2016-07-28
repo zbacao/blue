@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="style/init.css"/>
     <link rel="stylesheet" href="style/commonHeader.css"/>
     <link rel="stylesheet" href="style/commonFooter.css">
-    <link rel="stylesheet" href="style/responsive-nav.css">
-    <script src="script/responsive-nav.min.js"></script>
 
 
 </head>
@@ -29,13 +27,13 @@
             <div class="main-nav clearFix">
                 <ul class="clearFix" id="nav">
                     <li><a href="index.html" class="navs on" id="n_index">首页</a></li>
-                    <li><a href="#" class="navs" id="n_yz">乐章</a></li>
+                    <li><a href="movement.html" class="navs" id="n_yz">乐章</a></li>
                     <li><span id="ts-num">12</span><a href="listenSpeak.html" class="navs" id="n_ts">听说</a></li>
                     <li><a href="#" class="navs" id="n_yq">乐趣</a></li>
                     <li><a href="#" class="navs" id="n_ll">聊聊</a></li>
                     <li><a href="#" class="navs" id="n_yj">游记</a></li>
                     <li><a href="#" class="navs" id="n_sy">摄影</a></li>
-                    <li><a href="#" class="navs" id="n_cp">诚品</a></li>
+                    <li><a href="item.html" class="navs" id="n_cp">诚品</a></li>
                     <li><a href="#" class="navs" id="n_lmj">蓝莓酱</a></li>
                     <li><a href="personalCenter.html" class="navs" id="n_sq">社区</a></li>
 
@@ -1153,23 +1151,6 @@
     </div>
     <!-- --------------------------------公共底部 end----------------------------------->
 
-
-    <script>
-        var navigation = responsiveNav("#nav",{ // Selector: The ID of the wrapper
-                    animate: true, // Boolean: 是否启动CSS过渡效果（transitions）， true 或 false
-                    transition: 400, // Integer: 过渡效果的执行速度，以毫秒（millisecond）为单位
-                    label: "Menu", // String: Label for the navigation toggle
-                    insert: "after", // String: Insert the toggle before or after the navigation
-                    customToggle: "", // Selector: Specify the ID of a custom toggle
-                    openPos: "relative", // String: Position of the opened nav, relative or static
-                    jsClass: "js", // String: 'JS enabled' class which is added to <html> el
-                    debug: false, // Boolean: Log debug messages to console, true 或 false
-                    init: function(){}, // Function: Init callback
-                    open: function(){}, // Function: Open callback
-                    close: function(){} // Function: Close callback
-                }
-        );
-    </script>
 </body>
 <script src="script/jquery-2.1.1.min.js"></script>
 <script src="script/swiper-3.3.1.jquery.min.js"></script>

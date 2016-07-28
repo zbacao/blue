@@ -1,19 +1,26 @@
         .login-mengban{
             position:fixed;
-            top:20%;
+            top:0;
             left:0;
-            background:rgba(0,0,0,0) no-repeat center center;
+            right:0;
+            bottom:0;
             width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.5) no-repeat center center;
             display: none;
+            z-index:19999;
         }
-        .login-mengban .login-box{
+         .login-box{
             width:300px;
             height:364px;
-            background:rgba(0,0,0,0.4);
-            position:absolute;
-            left:39.375%;
-            top:8.3333%;
+            background:#666;
+            position:fixed;
+             left:50%;
+             top:50%;
+             transform:translate(-50%,-50%);
             padding:18px 20px;
+             z-index:20000;
+             display:none;
         }
         .login-reg-select a{
             display:block;
@@ -60,10 +67,10 @@
             background:#e65e42;
             color:#fff;
         }
-        .login-mengban .login-box{
-            position:relative;
-        }
-        .login-mengban .login-box .account-box{
+         /*.login-box{*/
+            /*position:relative;*/
+        /*}*/
+         .login-box .account-box{
             position: absolute;
             top: 70px;
             left: 20px;
