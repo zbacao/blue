@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/init.css">
+    <link rel="stylesheet" href="style/commonFooter.css">
+    <link rel="stylesheet" href="style/commonHeader.css">
+    <link rel="stylesheet" href="style/listenSpeak.css">
+    <link rel="stylesheet" href="style/login-tanchuceng.css">
+    <link rel="stylesheet" href="style/community.css">
+    <title>蓝莓派</title>
+    <script src="script/jquery-2.1.1.min.js"></script>
+    <script src="script/listenSpeak.js"></script>
+    <script src="script/login-tanchuceng.js"></script>
+    <script src="script/community.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- 公共的登陆框开始 -->
+    <div class="login-mengban"></div>
+    <div class="login-box">
+        <form action="">
+            <div class="login-reg-select clearFix">
+                <a href="#" class="login-select-btn a1 "><i class="login-on"></i>登录</a>
+                <a href="#" class="reg-select-btn"><i class="reg-on"></i>注册</a>
+            </div>
+            <div class="login-details account-box"  style="display:block">
+                <label for="login_account"></label>
+                <input type="text" id="login_account" placeholder="用户账号"/>
+                <label for="login_pwd"></label>
+                <input type="password" id="login_pwd" placeholder="用户密码"/>
+                <div class="check_code clearFix">
+                    <div class="check-input">
+                        <label for="check_code_input1"></label>
+                        <input type="text" id="check_code_input1" placeholder="验证码"/>
+                    </div>
+                    <div class="check-pic">
+                        <img src="indexImg/check-code_04.png" alt=""/>
+                    </div>
+                </div>
+                <label for="login-btn"></label>
+                <input type="submit" id="login-btn" value="登录"/>
+                <div class="other-login">
+                    <p>你还可以用第三方帐号登录</p>
+                    <a href="#"><img src="indexImg/qqIcon.png" alt=""/></a>
+                    <a href="#"><img src="indexImg/weixinIcon.png" alt=""/></a>
+                    <a href="#"><img src="indexImg/weiboIcon.png" alt=""/></a>
+                </div>
+            </div>
+            <div class="reg-details account-box"  style="display:none" >
+                <label for="reg_account"></label>
+                <input type="text" id="reg_account" placeholder="取个名字吧"/>
+                <label for="reg_pwd"></label>
+                <input type="password" id="reg_pwd" placeholder="设一个密码吧"/>
+                <label for="reg_pwd_confirm"></label>
+                <input type="password" id="reg_pwd_confirm" placeholder="再输一遍密码吧"/>
+                <div class="check_code clearFix">
+                    <div class="check-input">
+                        <label for="check_code_input2"></label>
+                        <input type="text" id="check_code_input2" placeholder="验证码"/>
+                    </div>
+                    <div class="check-pic">
+                        <img src="indexImg/check-code_04.png" alt=""/>
+                    </div>
+                </div>
+                <label for="reg-btn"></label>
+                <input type="submit" id="reg-btn" value="注册"/>
+            </div>
+        </form>
+        <a class="findback-pwd" href="#">忘记密码?</a>
+    </div>
+    <!-- 公共的登陆框结束 -->
+    <div class="header">
+        <div class="header-in clearFix">
+            <div class="logo clearFix">
+                <img src="indexImg/logo_03.png" alt="logo"/>
+                <div class="flag-word">
+                    <strong>蓝莓派</strong>
+                    <h3>和音乐一起分享时光</h3>
+                </div>
+            </div>
+            <div class="main-nav clearFix">
+                <ul class="clearFix">
+                    <li><a href="index.html" class="navs" id="n-index">首页</a></li>
+                    <li><a href="movement.html" class="navs" id="n-yz">乐章</a></li>
+                    <li><a href="listenSpeak.html" class="navs" id="n-ts">听说</a></li>
+                    <li><a href="#" class="navs" id="n-yq">乐趣</a></li>
+                    <li><a href="chat.html" class="navs" id="n-ll">聊聊</a></li>
+                    <li><a href="#" class="navs" id="n-yj">游记</a></li>
+                    <li><a href="#" class="navs" id="n-sy">摄影</a></li>
+                    <li><a href="item.html" class="navs" id="n-cp">诚品</a></li>
+                    <li><a href="#" class="navs" id="n-lmj">蓝莓酱</a></li>
+                    <li><a href="#" class="navs on" id="n-sq">社区</a></li>
+                </ul>
+            </div>
+            <div class="login clearFix">
+                <div class="search">
+                    <form action="">
+                        <input type="search" id="infinitySearch"/>
+                        <label for="infinitySearch" id="search-button"></label>
+                    </form>
+                </div>
+                <div class="login-register">
+                    <a href="#" class="log" id="log">登录</a>
+                    <a href="#" class="reg" id="reg">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 左侧fixed的绿色的导航栏 -->
+    <div class="sq-leftnav">
+        <div class="ts-leftnav-cont">
+            <a href="#" class="ts-leftnav-tab1">有声读物</a>
+            <a href="#" class="ts-leftnav-tab2">评论最多</a>
+            <a href="#" class="ts-leftnav-tab3">收藏排名</a>
+            <a href="#" class="ts-leftnav-tab4">点赞排名</a>
+            <a href="#" class="ts-leftnav-tab5">人气排行</a>
+            <a href="#" class="ts-leftnav-tab6">热门推荐</a>
+        </div>
+    </div>
+<!-- 内容区start -->
+    <div class="ts-header">
+        <div class="ts-nav">
+            <div class="sq-drag on clearfix">
+                <span class="sq-title">乐章<i></i></span>
+                <div class="sq-list">
+                    <em>粤语</em>
+                    <em>港台</em>
+                    <em>流行</em>
+                    <em>影视</em>
+                    <em>其他</em>
+                </div>
+            </div>
+            <div class="sq-drag clearfix">
+                <span class="sq-title">听说<i></i></span>
+                <div class="sq-list">
+                    <em>粤语</em>
+                    <em>港台</em>
+                    <em>流行</em>
+                    <em>影视</em>
+                    <em>其他</em>
+                </div>
+            </div>
+            <div class="sq-drag clearfix">
+                <span class="sq-title">聊聊<i></i></span>
+                <div class="sq-list">
+                    <em>粤语</em>
+                    <em>港台</em>
+                    <em>流行</em>
+                    <em>影视</em>
+                    <em>其他</em>
+                </div>
+            </div>
+            <div class="sq-drag clearfix">
+                <span class="sq-title">乐趣<i></i></span>
+                <div class="sq-list">
+                    <em>粤语</em>
+                    <em>港台</em>
+                    <em>流行</em>
+                    <em>影视</em>
+                    <em>其他</em>
+                </div>
+            </div>
+            <div class="sq-drag clearfix">
+                <span class="sq-title">游记<i></i></span>
+                <div class="sq-list">
+                    <em>粤语</em>
+                    <em>港台</em>
+                    <em>流行</em>
+                    <em>影视</em>
+                    <em>其他</em>
+                </div>
+            </div>
+            <div class="ts-push clearfix">
+                <span class="tsfb-btn">
+                    <i></i>发布
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ts-container">
+        <div class="ts-card">
+            <div class="ts-card-head">
+                <span class="ts-cardicon"></span>
+                <span class="ts-cardname">
+                    <p>不如我们从头开始</p>
+                    <em>碧池大大</em>
+                </span>
+                <i>校园</i>
+            </div>
+            <img src="image/listenSpeak/zhanshi.jpg" alt="">
+            <div class="ts-card-foot">
+                <p>欢乐童年系列之一</p>
+                <span class="ts-cardfoot-icon">
+                    <b class="ts-cardicon1"></b><i>22</i>
+                    <b class="ts-cardicon2"></b><i>22</i>
+                </span>
+            </div>
+        </div>
+        <div class="ts-card">
+            <div class="ts-card-head">
+                <span class="ts-cardicon"></span>
+                <span class="ts-cardname">
+                    <p>不如我们从头开始</p>
+                    <em>碧池大大</em>
+                </span>
+                <i>故事</i>
+            </div>
+            <img src="image/listenSpeak/zhanshi2.jpg" alt="">
+            <div class="ts-card-foot">
+                <p>欢乐童年系列之一</p>
+                <span class="ts-cardfoot-icon">
+                    <b class="ts-cardicon1"></b><i>22</i>
+                    <b class="ts-cardicon2"></b><i>22</i>
+                </span>
+            </div>
+        </div>
+        <div class="ts-card">
+            <div class="ts-card-head">
+                <span class="ts-cardicon"></span>
+                <span class="ts-cardname">
+                    <p>不如我们从头开始</p>
+                    <em>碧池大大</em>
+                </span>
+                <i>校园</i>
+            </div>
+            <img src="image/listenSpeak/zhanshi.jpg" alt="">
+            <div class="ts-card-foot">
+                <p>欢乐童年系列之一</p>
+                <span class="ts-cardfoot-icon">
+                    <b class="ts-cardicon1"></b><i>22</i>
+                    <b class="ts-cardicon2"></b><i>22</i>
+                </span>
+            </div>
+        </div>
+        <div class="ts-card">
+            <div class="ts-card-head">
+                <span class="ts-cardicon"></span>
+                <span class="ts-cardname">
+                    <p>不如我们从头开始</p>
+                    <em>碧池大大</em>
+                </span>
+                <i>故事</i>
+            </div>
+            <img src="image/listenSpeak/zhanshi2.jpg" alt="">
+            <div class="ts-card-foot">
+                <p>欢乐童年系列之一</p>
+                <span class="ts-cardfoot-icon">
+                    <b class="ts-cardicon1"></b><i>22</i>
+                    <b class="ts-cardicon2"></b><i>22</i>
+                </span>
+            </div>
+        </div>
+        <!-- 写点击卡片的弹窗效果div 点击相应的卡片 弹出对应的图片和评论-->
+        <div class="ts-popcard">
+            <img src="image/listenSpeak/pupimg.jpg" alt="">
+            <div class="ts-poptitle">
+                <span class="ts-cardicon"></span>
+                <span class="ts-cardname">
+                    <p>不如我们从头开始</p>
+                    <em>碧池大大</em>
+                </span>
+                <i>小时光</i>
+                <span class="ts-cardfoot-icon">
+                    <b class="ts-cardicon1"></b><i>22</i>
+                    <b class="ts-cardicon2"></b><i>22</i>
+                </span>
+            </div>
+            <div class="ts-comtit">
+                <span>评论<i>（89）</i></span>
+            </div>
+            <div class="ts-popcomment">
+                <span class="ts-popcomicon">
+                    <img src="image/listenSpeak/touxiang.png" alt="userhead">
+                </span>
+                <div class="ts-comcont">
+                    <b>小夏同学</b><i>2014-12-01 16:16:20说</i>
+                    <p>内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房</p>
+                    <span class="ts-cardfoot-icon">
+                        <b class="ts-cardicon1"></b><i>22</i>
+                        <b class="ts-cardicon2"></b><i>22</i>
+                    </span>
+                </div>
+            </div>
+            <!-- 点击回复弹出的回复框 -->
+
+            <!-- 点击回复弹出的回复框结束 -->
+            <div class="ts-popcomment">
+                <span class="ts-popcomicon">
+                    <img src="image/listenSpeak/touxiang.png" alt="userhead">
+                </span>
+                <div class="ts-comcont">
+                    <b>小夏同学</b><i>2014-12-01 16:16:20说</i>
+                    <p>内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房</p>
+                    <span class="ts-cardfoot-icon">
+                        <b class="ts-cardicon1"></b><i>22</i>
+                        <b class="ts-cardicon2"></b><i>22</i>
+                    </span>
+                </div>
+            </div>
+            <div class="ts-popcomment">
+                <span class="ts-popcomicon">
+                    <img src="image/listenSpeak/touxiang.png" alt="userhead">
+                </span>
+                <div class="ts-comcont">
+                    <b>小夏同学</b><i>2014-12-01 16:16:20说</i>
+                    <p>内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房</p>
+                    <span class="ts-cardfoot-icon">
+                        <b class="ts-cardicon1"></b><i>22</i>
+                        <b class="ts-cardicon2"></b><i>22</i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- 底部的分页导航按钮 未完成js的逻辑-->
+        <div class="ts-page">
+            <span class="tspage-start">首页</span>
+            <span class="tspage-before">上一页</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span class="tspage-ell">...</span>
+            <span class="tspage-after">下一页</span>
+            <span class="tspage-end">尾页</span>
+        </div>
+    </div>
+    <div class="mengban"></div><!-- 这个是弹出框的蒙版  需要蒙版的都可以这么设置 -->
+<!-- 内容区end -->
+    <div class="footer">
+        <div class="blink-con">
+            <div class="btn-l">
+                <span>友情链接</span>
+                <p class="link-cont">
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                </p>
+            </div>
+            <div class="btn-r">
+                <div class="weibo">
+                    <img src="image/footer-ewm1.jpg" alt="twitter">
+                    <span>微博二维码</span>
+                </div>
+                <div class="weixin">
+                    <img src="image/footer-ewm2.jpg" alt="weichat">
+                    <span>微信二维码</span>
+                </div>
+                <div class="connect">
+                    <p>电话:51336808</p>
+                    <p><i>邮编:100062</i>&nbsp;&nbsp;<i>传真:51337666</i></p>
+                    <p>邮箱:info@newworldtours.cn</p>
+                    <p>地址:北京市东城区广渠门内大街安化北里1号长保大厦13层</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bot-con">
+            <span><a href="#">关于我们</a></span>
+            <span><a href="#">联系我们</a></span>
+            <span><a href="#">加入我们</a></span>
+            <span><a href="#">团队成员</a></span>
+            <span><a href="#">商务合作</a></span>
+            <p class="bot-foot">
+                <em>蓝莓派版权所有</em><em>京ICP备12346335号</em>  
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

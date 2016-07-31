@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width"
+          name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="style/init.css">
+    <link rel="stylesheet" href="style/commonFooter.css">
+    <link rel="stylesheet" href="style/commonHeader.css">
+    <link rel="stylesheet" href="style/personalCenter.css">
+    <title>蓝莓派</title>
+    <script src="script/jquery-2.1.1.min.js"></script>
+    <script src="script/birthday.js"></script>
+    <script src="script/jquery.provincesCity.js"></script>
+    <script src="script/provincesdata.js"></script>
+    <script src="script/personalCenter.js"></script>
+</head>
+<style>
+
+
+</style>
+<body>
+<div class="wrap">
+    <!-- --------------------------------------公共主导航栏  start----------------------------------------->
+    <div class="header">
+        <div class="header-in clearFix">
+            <div class="logo clearFix">
+                <img src="indexImg/logo_03.png" alt="logo"/>
+
+                <div class="flag-word">
+                    <strong>蓝莓派</strong>
+
+                    <h3>和音乐一起分享时光</h3>
+                </div>
+            </div>
+            <div class="main-nav clearFix">
+                <ul class="clearFix">
+                    <li><a href="index.html" class="navs" id="n_index">首页</a></li>
+                    <li><a href="#" class="navs" id="n_yz">乐章</a></li>
+                    <li><span id="ts-num">12</span><a href="listenSpeak.html" class="navs" id="n_ts">听说</a></li>
+                    <li><a href="#" class="navs" id="n_yq">乐趣</a></li>
+                    <li><a href="#" class="navs" id="n_ll">聊聊</a></li>
+                    <li><a href="#" class="navs" id="n_yj">游记</a></li>
+                    <li><a href="#" class="navs" id="n_sy">摄影</a></li>
+                    <li><a href="#" class="navs" id="n_cp">诚品</a></li>
+                    <li><a href="#" class="navs" id="n_lmj">蓝莓酱</a></li>
+                    <li><a href="personalCenter.html" class="navs on" id="n_sq">社区</a></li>
+                </ul>
+            </div>
+            <div class="login clearFix">
+                <div class="search">
+                    <form action="">
+                        <input type="search" id="infinitySearch"/>
+                        <label for="infinitySearch" id="search-button"></label>
+                    </form>
+                </div>
+                <div class="login-register">
+                    <a href="login.html" class="log" id="log">登录</a>
+                    <a href="#" class="reg" id="reg">注册</a>
+                    <i class="triangle"></i>
+
+                    <div class="account-info">
+                        <ul class="clearFix">
+                            <li><a href="#" class="a-info-details" id="a_tz">我的帖子</a></li>
+                            <li><a href="#" class="a-info-details" id="a_pl">我的评论</a></li>
+                            <li><a href="#" class="a-info-details" id="a_sc">我的收藏</a></li>
+                            <li><a href="#" class="a-info-details" id="a_sz">设置</a></li>
+                            <li><a href="#" class="a-info-details" id="a_tc">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------公共主导航栏  end----------------------------------------->
+
+    <!-- 内容区start -->
+    <!-- 个人中心-->
+    <div class="p_contain">
+        <!-- 左边栏-->
+        <div class="p_lc">
+            <div class="p_ltop">
+                <div class="p_head"></div>
+                <div class="p_headR">
+                    <!-- 超出部分隐藏-->
+                    <p class="p_name">蓝莓派蓝莓派1111 </p>
+                    <span class="p_sex"></span>
+
+                    <p class="p_email">415941111119247@qq.com</p>
+                </div>
+            </div>
+            <!-- 个性签名-->
+            <div class="p_sign">
+                <p id="psign">他的签名还在环游世界~</p>
+
+                <div class="p_csign">
+                    <img src="images/p_11.png">
+                    <a href="">编辑</a>
+                </div>
+            </div>
+            <!-- 个人数据-->
+            <div class="p_pdata">
+                <div class="p_data">
+                    <div class="p_pdataa">
+                        <p id="p_tz">22</p>
+
+                        <p>帖子</p>
+                    </div>
+                    <div class="p_pdatab">
+                        <p id="p_gz">22</p>
+
+                        <p>关注</p>
+                    </div>
+                    <div class="p_pdatac">
+                        <p id="p_bgz">22</p>
+
+                        <p>被关注</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 左边菜单-->
+            <ul class="p_me">
+                <li class="p_sdata p_scolor">
+                    <span class="p_sdatas"></span>
+
+                    <p>编辑个人资料</p>
+                </li>
+                <li class="p_sdatb">
+                    <span class="p_sdataa"></span>
+
+                    <p>消息中心</p>
+                </li>
+                <li class="p_sdatc">
+                    <span class="p_sdatab"></span>
+
+                    <p>我的收藏</p>
+                </li>
+                <li class="p_sdatd">
+                    <span class="p_sdatac"></span>
+
+                    <p>我的评论</p>
+                </li>
+                <li class="p_sdate">
+                    <span class="p_sdatad"></span>
+
+                    <p>我的小组</p>
+                </li>
+            </ul>
+        </div>
+
+        <!--右边栏-->
+        <div class="p_rc">
+            <!--右边第一个页面-->
+            <div class="p_bbs" style="display:none">
+                <div class="p_bbsTop">
+                    <div class="p_pbbsTopL">
+                        <span></span>
+                            <p>我的帖子</p>
+                    </div>
+                    <div class="p_pbbsTopR">
+                        <span></span>
+                        <p>分类</p>
+                    </div>
+                </div>
+
+                <!-- 右边下方内容-->
+                <div class="p_bbsD">
+
+                </div>
+            </div>
+            <!-- 右边第二个页面,关注的人-->
+            <div class="p_Follow" style="display: none;">
+                <!-- 右边第二个页面上-->
+                <div class="p_FollowTop">
+                    <div class="p_FollowTopL">
+                        <span></span>
+                        <p>我关注的人</p>
+                        <b class="p_followNun">(4)</b>
+                    </div>
+                </div>
+                <!-- 第二个页面下-->
+                <div class="p_FollowDown">
+                    <div class="p_FollowDownR">
+                        <div class="p_Fcontain" >
+                            <img src="images/follow2.png">
+                            <div class="p_FcontainR">
+                            <p class="p_FollowTitle">蓝莓派</p>
+                            <p class="p_FollowTime">1小时前更新</p>
+                            </div>
+                        </div>
+                        <div class="p_Fcontain" >
+                            <img src="images/follow2.png">
+                            <div class="p_FcontainR">
+                                <p class="p_FollowTitle">蓝莓派</p>
+                                <p class="p_FollowTime">1小时前更新</p>
+                            </div>
+                        </div>
+                        <div class="p_Fcontain" >
+                            <img src="images/follow2.png">
+                            <div class="p_FcontainR">
+                                <p class="p_FollowTitle">蓝莓派</p>
+                                <p class="p_FollowTime">1小时前更新</p>
+                            </div>
+                        </div>
+                        <div class="p_Fcontain" >
+                            <img src="images/follow2.png">
+                            <div class="p_FcontainR">
+                                <p class="p_FollowTitle">蓝莓派</p>
+                                <p class="p_FollowTime">1小时前更新</p>
+                            </div>
+                        </div>
+                        <div class="p_Fcontain" >
+                            <img src="images/follow2.png">
+                            <div class="p_FcontainR">
+                                <p class="p_FollowTitle">蓝莓派</p>
+                                <p class="p_FollowTime">1小时前更新</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 消息中心-->
+            <div class="p_message" style="display: none">
+                <div class="p_messageTop">
+                    <!-- 消息中心左边-->
+                    <div class="p_messageTl">
+                        <span></span>
+                        <p>消息中心</p>
+                    </div>
+                    <div class="p_messageTr">
+                        <span class="p_mesTa p_mesClick" ><p>通知</p></span>
+                        <span class="p_mesTb"><p>私信</p></span>
+                    </div>
+                </div>
+                <div class="p_mesDown">
+                    <!-- 通知-->
+                    <div class="p_mesNot">
+                        <div class="p_mesNcon">
+                            <div class="p_mesNtop">
+                                <p class="p_mesNtime">2015年7月25号</p>
+                            </div>
+                            <div class="p_mesNdown">
+                                <img src="images/mes2.png">
+                                <p class="p_mesName">蓝莓派</p>
+                                <p class="p_mesNa">关注了您</p>
+                            </div>
+                        </div>
+                        <div class="p_mesNcon">
+                            <div class="p_mesNtop">
+                                <p class="p_mesNtime">2015年7月25号</p>
+                            </div>
+                            <div class="p_mesNdown">
+                                <img src="images/mes2.png">
+                                <p class="p_mesName">蓝莓派</p>
+                                <p class="p_mesNa">关注了您</p>
+                            </div>
+                        </div>
+                        <div class="p_mesNcon">
+                            <div class="p_mesNtop">
+                                <p class="p_mesNtime">2015年7月25号</p>
+                            </div>
+                            <div class="p_mesNdown">
+                                <img src="images/mes2.png">
+                                <p class="p_mesName">蓝莓派</p>
+                                <p class="p_mesNa">关注了您</p>
+                            </div>
+                        </div>
+                        <div class="p_mesNcon">
+                            <div class="p_mesNtop">
+                                <p class="p_mesNtime">2015年7月25号</p>
+                            </div>
+                            <div class="p_mesNdown">
+                                <img src="images/mes2.png">
+                                <p class="p_mesName">蓝莓派</p>
+                                <p class="p_mesNa">关注了您</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 私信-->
+                    <div class="p_mesMes" style="display: none">
+                        <div class="p_mesMe">
+                            <img src="images/p_03.png">
+                            <span class="p_mesFrom">
+                                <p>来自</p>
+                                <p class="p_mesFromN" >蓝莓派</p>
+                                <p>的私信</p>
+                            </span>
+                            <p class="p_mesFromT">2016-06-23</p>
+                            <p class="p_mesContain">恭喜您获得优惠券一张，快去领取吧！</p>
+                        </div>
+                        <div class="p_mesMe">
+                            <img src="images/p_03.png">
+                            <span class="p_mesFrom">
+                                <p>来自</p>
+                                <p class="p_mesFromN" >蓝莓派</p>
+                                <p>的私信</p>
+                            </span>
+                            <p class="p_mesFromTa">2016-06-23</p>
+                            <p class="p_mesContain">恭喜您获得优惠券一张，快去领取吧！</p>
+                        </div>
+                        <div class="p_mesMe">
+                            <img src="images/p_03.png">
+                            <span class="p_mesFrom">
+                                <p>来自</p>
+                                <p class="p_mesFromN" >蓝莓派</p>
+                                <p>的私信</p>
+                            </span>
+                            <p class="p_mesFromTa">2016-06-23</p>
+                            <p class="p_mesContain">恭喜您获得优惠券一张，快去领取吧！</p>
+                        </div>
+                        <div class="p_mesMe">
+                            <img src="images/p_03.png">
+                            <span class="p_mesFrom">
+                                <p>来自</p>
+                                <p class="p_mesFromN" >蓝莓派</p>
+                                <p>的私信</p>
+                            </span>
+                            <p class="p_mesFromTa">2016-06-23</p>
+                            <p class="p_mesContain">恭喜您获得优惠券一张，快去领取吧！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--data index 表示对应第三个页面-->
+            <div class="p_rset" data-index="3" style="display: block">
+                <div class="p_rseta">
+                    <i></i>
+
+                    <p>个人设置</p>
+                </div>
+                <ul class="p_rsetb">
+                    <li class="p_rs" id="p_ra"><b>个人资料</b></li>
+                    <span>|</span>
+                    <li id="p_rb"><b>修改头像</b></li>
+                    <span>|</span>
+                    <li id="p_rc"><b>密码安全</b></li>
+                </ul>
+
+                <div>
+                    <!-- 个人设置之个人资料-->
+                    <div class="p_rsetper" >
+                        <div class="p_rsetperL">
+                            <div class="p_rsetnam"><p>用户名</p>
+
+                                <div><input class="p_rsettx" type="text"></div>
+                            </div>
+                            <div class="p_rsetname"><p>真实姓名</p>
+
+                                <div><input class="p_rsettx" type="text"></div>
+                            </div>
+                            <div class="p_rsetsex"><p>性别</p>
+                                <dl class="p_rsex">
+                                    <dt></dt>
+                                    <dd>
+                                        <ul>
+                                            <li><a href="javascript:void(0)">男</a></li>
+                                            <li><a href="javascript:void(0)">女</a></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <!-- 生日-->
+                            <div class="p_rebir">
+                                <p>生日</p>
+
+                                <div>
+                                   <span class="p_rsetbira">
+                                        <select class="sel_year" rel=""></select>
+                                   </span>
+                                    <span class="p_rsetbira">
+                                        <select class="sel_month" rel=""></select>
+                                   </span>
+                                    <span class="p_rsetbira">
+                                        <select class="sel_day" rel=""></select>
+                                   </span>
+                                </div>
+                            </div>
+
+                            <!-- 出生地址-->
+                            <div class="p_resetpl">
+                                <p>居住地</p>
+
+                                <div class="p_place">
+                                </div>
+                            </div>
+                            <!-- email-->
+                            <div class="p_rsetem"><p>Email</p>
+
+                                <div><input class="p_rsettx" type="text"></div>
+                            </div>
+
+                            <!-- 个人主页-->
+                            <div class="p_rsethp"><p>个人主页</p>
+
+                                <div><input class="p_rsettx" type="text"></div>
+                            </div>
+
+                            <!-- 个性签名-->
+                            <div class="p_rsetsg"><p>个性签名</p>
+
+                                <div><input class="p_rsettx" type="text" placeholder="他的签名还在环游世界"></div>
+                            </div>
+
+                            <!-- 确认按钮-->
+                            <div class="p_rsetbt">
+                                <div>
+                                    <button class="p_rsetbtn" type="submit">确认修改</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p_rsetperR">
+                            <!-- 可共用的下拉框-->
+                            <dl class="p_select " style="margin-top: 68px">
+                                <dt>公开</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">公开</a></li>
+                                        <li><a href="javascript:void(0)">不公开</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl class="p_select" style="margin-top: 28px">
+                                <dt>公开</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">公开</a></li>
+                                        <li><a href="javascript:void(0)">不公开</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl class="p_select" style="margin-top: 30px">
+                                <dt>公开</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">公开</a></li>
+                                        <li><a href="javascript:void(0)">不公开</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl class="p_select" style="margin-top: 38px">
+                                <dt>公开</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">公开</a></li>
+                                        <li><a href="javascript:void(0)">不公开</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl class="p_select" style="margin-top: 110px">
+                                <dt>公开</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">公开</a></li>
+                                        <li><a href="javascript:void(0)">不公开</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl class="p_select" style="margin-top: 35px">
+                                <dt>公开</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">公开</a></li>
+                                        <li><a href="javascript:void(0)">不公开</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div st>
+                    <!-- 个人设置之修改头像-->
+                    <div class="p_container" style="display: none">
+                        <div class="imageBox">
+                            <div class="thumbBox"></div>
+                            <div class="spinner" style="display: none">Loading...</div>
+                        </div>
+                        <div class="p_action">
+                            <!-- <input type="file" id="file" style=" width: 200px">-->
+                            <div class="new-contentarea tc"><a href="javascript:void(0)" class="upload-img">
+                                <label for="upload-file">上传图像</label>
+                            </a>
+                                <input type="file" class="" name="upload-file" id="upload-file"/>
+                            </div>
+                            <input type="button" id="btnCrop" class="Btnsty_peyton" value="裁切">
+                            <input type="button" id="btnZoomIn" class="Btnsty_peyton" value="+">
+                            <input type="button" id="btnZoomOut" class="Btnsty_peyton" value="-">
+                        </div>
+                        <div class="p_cropped"></div>
+                    </div>
+                    <!--个人设置之修改密码 -->
+                    <div class="p_rpsd" style="display: none">
+                        <div class="p_rsetnam"><p>当前密码</p>
+
+                            <div><input class="p_rsettx" type="password"></div>
+                        </div>
+                        <div class="p_rsetname"><p>新密码</p>
+
+                            <div><input class="p_rsettx" type="password"></div>
+                        </div>
+                        <div class="p_rsetname"><p>确认新密码</p>
+
+                            <div><input class="p_rsettx" type="password"></div>
+                        </div>
+                        <div class="p_rsetbt">
+                            <div>
+                                <button class="p_rsetbtn" type="submit">确认修改</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 我的收藏-->
+            <div class="p_myCollect">
+                
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- 内容区end -->
+<div class="footer">
+    <div class="blink-con">
+        <div class="btn-l">
+            <span>友情链接</span>
+
+            <p class="link-cont">
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+            </p>
+        </div>
+        <div class="btn-r">
+            <div class="weibo">
+                <img src="image/footer-ewm1.jpg" alt="twitter">
+                <span>微博二维码</span>
+            </div>
+            <div class="weixin">
+                <img src="image/footer-ewm2.jpg" alt="weichat">
+                <span>微信二维码</span>
+            </div>
+            <div class="connect">
+                <p>电话:51336808</p>
+
+                <p><i>邮编:100062</i>&nbsp;&nbsp;<i>传真:51337666</i></p>
+
+                <p>邮箱:info@newworldtours.cn</p>
+
+                <p>地址:北京市东城区广渠门内大街安化北里1号长保大厦13层</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <div class="bot-con">
+        <span><a href="#">关于我们</a></span>
+        <span><a href="#">联系我们</a></span>
+        <span><a href="#">加入我们</a></span>
+        <span><a href="#">团队成员</a></span>
+        <span><a href="#">商务合作</a></span>
+
+        <p class="bot-foot">
+            <em>蓝莓派版权所有</em><em>京ICP备12346335号</em>
+        </p>
+    </div>
+</div>
+</div>
+</body>
+<script>
+
+
+
+</script>
+
+</html>

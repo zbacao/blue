@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*商品汇总页*/
+.i_body{
+	width: 100%;
+	height: 1850px;
+	background: #f2f2f2;
+}
+.i_btop{
+	width: 100%;
+	height: 70px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #f2f2f2;
+}
+.i_nav{
+	display: block;
+	width: 1200px;
+	height:100%;
+	margin:0 auto;
+}
+
+.i_nav li {
+	display: inline-block;
+	width: 90px;
+	height: 100%;
+	line-height: 4;
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	vertical-align: top;
+}
+.i_nav li  a{
+	display: inline-block;
+	width: 90px;
+	height: 100%;
+	line-height: 4;
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.i_bdowm{
+	display: block;
+	width: 1200px;
+	height:1700px;
+	margin:0 auto;
+	background-color: #ffffff;
+	margin-top: 50px;
+}
+
+.i_itema{
+	width: 100%;
+	height: 310px;
+	max-height: 310px;
+}
+.i_itimga img{
+	display: inline-block;
+	width: 600px;
+	height: 310px;
+	border: 0px;
+
+}
+.i_itcona{
+	display: inline-block;
+	width: 600px;
+	height: 310px;
+	float: right;
+}
+.i_itcona div{
+	width: 490px;
+	height: 100%;
+	margin-left: 50px;
+}
+
+.i_itcona p{
+	margin-top: 45px;
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 900;
+}
+.i_itcona h2{
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #aeaeae;
+	margin-top: 20px;
+	line-height: 2;
+	overflow: hidden;
+	max-height: 160px;
+}
+.i_details{
+	display: block;
+	width: 145px;
+	height: 40px;
+	background-color: #e32929;
+	text-align: center;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+.i_details a{
+	vertical-align: top;
+	margin-top: 5px;
+	color: #fcf4f4;
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 40px;
+}
+.i_itemb{
+	width: 100%;
+	height: 528px;
+}
+
+.i_itimgb img{
+	width: 600px;
+	height: 528px;
+	float: left;
+	display: inline-block;
+}
+
+.i_itconb{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.i_itimgb{
+	display: inline-block;
+	float: right;
+}
+.i_itb{
+	width: 490px;
+	height: 100%;
+	margin-left: 50px;
+	display: inline-block;
+}
+.i_itb p{
+	margin-top: 150px;
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.i_itb h2{
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #aeaeae;
+	margin-top: 30px;
+	line-height: 2;
+	overflow: hidden;
+	max-height: 160px;
+}
+
+/*商品明细页*/
+

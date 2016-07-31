@@ -1,0 +1,462 @@
+.xq-hot{
+    margin-top: 20px;
+}
+
+/*右侧蓝莓派样式  可复用*/
+.pub-lanmeipai{
+    float: right;
+    width: 300px;
+    height: 360px;
+    margin-top: 54px;
+    box-shadow: 0 2px 2px #aaa;
+    border-radius: 5px;
+}
+.pub-lanmeipai .lm-top{
+    height: 240px;
+    background-color: #fff;
+    width: 100%;
+    display: inline-block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.lm-top .lm-title{
+    height: 80px;
+    width: 260px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+}
+.lm-top .lm-title span{
+    display: inline-block;
+    padding-left: 20px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    vertical-align: top;
+}
+.lm-top .lm-cont{
+    width: 268px;
+    margin:0 auto;
+}
+.lm-top .lm-cont span{
+    display: inline-block;
+    font-size: 14px;
+    height: 60px;
+    width: 80px;
+    background-color: #f7f7f7;
+    margin:3px;
+    text-align: center;
+    color: #666666;
+}
+.lm-cont span b{
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.lm-btn{
+    margin:0 auto;
+    margin-top: 20px;
+    width: 200px;
+    font-size: 14px;
+    color: #999999;
+}
+.lm-btn a{
+    display: inline-block;
+    width: 60px;
+    height: 86px;
+    text-align: center;
+    cursor: pointer;
+}
+.lm-btn .gzbtn{
+    background: url(../image/singer/guanzhu.png) center top no-repeat;
+}
+.lm-btn .sxbtn{
+    background: url(../image/singer/sixin.png) center top no-repeat;
+    margin-left: 65px;
+}
+
+.lm-btn a span{
+    display: inline-block;
+    margin-top: 65px;
+    vertical-align: top;
+}
+/*作者其他发布选项卡样式*/
+.xq-other{
+    float: right;
+    width: 300px;
+    height: 210px;
+    margin-top: 20px;
+    box-shadow: 0 2px 2px #aaa;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.xq-other .xq-otherhead{
+    height: 49px;
+    width: 260px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 8px;
+}
+.xq-otherhead span{
+    font-size: 18px;
+    color:#333333;
+    display: inline-block;
+    height: 49px;
+    line-height: 49px;
+}
+.xq-otherhead i{
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    color: #999999;
+    margin-top: 18px; 
+}
+.other-songs li{
+    height: 35px;
+    padding-right:20px;
+    overflow: hidden;
+    line-height: 35px;
+}
+.other-songs li:hover{
+    background-color: #e8f2f5;
+}
+.other-songs li span{
+    float: left;
+    display: block;
+    text-indent: 20px;
+    color: #109d59;
+    font-size: 14px;
+}
+.other-songs li i{
+    display: inline-block;
+    float: right;
+    width: 12px;
+    height: 12px;
+    margin-top: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.other-songs .add{
+    background:url(../image/singer/add.png) no-repeat;
+}
+.other-songs .play{
+    background:url(../image/singer/play.png) no-repeat;
+}
+/*作者其他发布选项卡样式结束*/
+/*修改选项框title的样式*/
+.gs-comment .xq-comtitle{
+    width: 100%;
+    background-color: #fafafa;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.gs-comment .xq-comtitle span{
+    display: inline-block;
+    margin-left:40px;
+    font-size: 16px;
+    color: #333333;
+    position: relative;
+}
+.gs-comment .xq-comtitle span::before{
+    display: block;
+    position: absolute;
+    content: "";
+    background-color: #f68344;
+    width: 3px;
+    height: 16px;
+    left: -10px;
+    top: 10px;
+}
+.gs-comment .xq-comtitle i{
+    font-size: 14px;
+    color: #666666;
+}
+.gs-comwhole .gs-comcont .xqjb{
+    font-size: 14px;
+    color: #cccccc;
+    cursor: pointer;
+}
+/*详情页的顶部歌手+歌词区域的样式*/
+.xq-conthead{
+    width: 795px;
+    height: 560px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-bottom: 1px solid #e6e6e6;
+    overflow: hidden;
+}
+.xq-singer{
+    display: inline-block;
+    width: 300px;
+    position: relative;
+}
+.xq-singer .gs-score{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #e6e6e6;
+    width: 300px;
+}
+.xq-singer .gs-score .gs-scorer{
+    line-height: 25px;
+}
+.xq-singer .xq-info{
+    width: 100%;
+}
+.xq-info p{
+    color: #666666;
+    font-size:14px;
+    margin:4px 0; 
+}
+.xq-info p span{
+    color: #333333;
+}
+.xq-conthead .xq-geci{
+    width: 495px;
+    display: inline-block;
+    float: right;
+}
+.xq-geci .xq-gctitle{
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.xq-geci .lyc{
+    display: block;
+    margin: 0 auto;
+    width: 440px;
+    height: 440px;
+    text-align: center;
+    overflow: hidden;
+}
+.xq-geci .lyc p{
+    text-align: center;
+    color: #888888;
+    font-size: 14px;
+    padding:8px 0;
+}
+.xq-conthead a{
+    float: right;
+    font-size:14px;
+    color: #999999;
+    margin-top:30px;
+    margin-left: 20px;
+}
+.xq-singer .xq-control{
+    position: absolute;
+    bottom: 55px;
+    right: 0px;
+    background:url(../image/singer/play-big.png) center no-repeat;
+    width: 62px;
+    height: 59px;
+}
+.xq-albumjj{
+    width: 795px;
+    margin:0 auto;
+}
+.xq-albumjj h2{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #333333;
+}
+.xq-albumjj .xq-albumtext{
+    width: 100%;
+    font-size: 14px;
+    color: #4c4c4c;
+    line-height: 25px;
+    height:100px;
+    overflow: hidden;
+    position: relative;
+}
+.xq-albumjj .xq-albumtext.on{
+    height: auto;
+}
+.xq-albumtext i{
+    position: absolute;
+    height: 25px;
+    right: 0px;
+    bottom: 0px;
+    color: #109d59;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.xq-albumtext .text-down{
+    display: block;
+}
+.xq-albumtext .text-up{
+    display: none;
+}
+.xq-albumjj .xq-albumtext.on{
+    height: auto;
+}
+.xq-albumjj img{
+    margin:15px 0;
+}
+.xq-albumjj .xq-mv{
+    margin:15px 0 20px 0;
+}
+.gs-songs.xq{
+    display: block;
+}
+/*同专辑歌曲的样式补充*/
+.gs-songs.xq .song-cont{
+    height: 40px;
+    line-height: 40px;
+}
+.gs-songs .song-cont b{
+    font-size: 16px;
+    color: #666666;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+.gs-songs .song-cont .play-sml{
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../image/singer/play-small.png) center no-repeat;
+    width: 18px;
+    height: 18px;
+    margin:0 5px;
+    cursor: pointer;
+}
+.song-cont .play-sml+a{
+    margin-left: 0px;
+    font-weight: bold;
+}
+.xq .song-rd{
+    width: 120px;
+    margin-top: 13px;
+}
+/*同专辑歌曲的样式补充结束*/
+/*分享区域的样式*/
+.xq-share{
+    width: 870px;
+    height: 140px;
+    overflow: hidden;
+}
+.xq-share .xq-sharebtn{
+    display: inline-block;
+    float: left;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+.xq-sharebtn a{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin-right: 5px;
+}
+.xq-sharebtn .pyq{
+    background: url(../image/singer/spriteshare.png) 0 -166px no-repeat;
+}
+.xq-sharebtn .qq{
+    background: url(../image/singer/spriteshare.png) 0 -83px no-repeat;
+    height: 41px;
+}
+.xq-sharebtn .qqzone{
+    background: url(../image/singer/spriteshare.png) 0 0 no-repeat;
+    height: 41px;
+}
+.xq-sharebtn .sina{
+    background: url(../image/singer/spriteshare.png) 0 -41px no-repeat;
+}
+.xq-sharebtn .douban{
+    background: url(../image/singer/spriteshare.png) 0 -124px no-repeat;
+}
+.xq-share .xq-sharebtn p{
+    font-size: 14px;
+    color: #999999;
+    margin-top: 10px;
+}
+/*分享按钮样式结束*/
+
+/*评分的几个元素的样式*/
+.xq-share .xq-sharepf{
+    float: right;
+    margin-right: 28px;
+    margin-top: 60px;
+    width: 220px;
+}
+.xq-sharepf p{
+    text-align: left;
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.xq-sharepf p i{
+    color:#109d59;
+    font-weight: normal;
+}
+.xq-sharepf a{
+    display: inline-block;
+    width: 36px;
+    height: 18px;
+    margin-right: 5px;
+    color: #b2b2b2;
+    text-align: center;
+    line-height: 18px;
+    border:1px solid #b2b2b2;
+    border-radius: 3px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.xq-sharepf b{
+    background-color: #fafafa;
+    height: 18px;
+    width: 7px;
+    display: inline-block;
+    border:1px solid #e0e0e0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.xq-sharepf b.on{
+    background-color: #109d59;
+    border:1px solid #109d59;
+}
+.xq-sharepf span{
+    font-size: 14px;
+    color: #cccccc;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+/*添加评论框的样式*/
+.xq-addcomment{
+    width: 812px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.xq-addcomment textarea{
+    width: 806px;
+    height: 112px;
+    background-color: #fafafa;
+    border:1px solid #f0f0f0;
+    text-indent: 15px;
+    resize: none;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.xq-addcomment a{
+    float: right;
+    display: inline-block;
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+    background-color: #f68344;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+}

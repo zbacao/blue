@@ -1,0 +1,23 @@
+/**
+ * Created by Administrator on 2016-07-18.
+ */
+$(function(){
+    var loginMengban=$(".login-mengban").get(0);
+    var flag=false;
+    $("#log").on("click",function(){
+        if(flag===false){
+            $(loginMengban).css({display:'block'});
+            flag=true;
+        }else if(flag===true){
+            $(loginMengban).css({display:'none'});
+            flag=false;
+        }
+    });
+
+    $(".login-reg-select>a").each(function(index,ele){
+        $(ele).on("click",function(){
+            $(".account-box").eq(index).css("display","block").siblings(".account-box").css("display","none");
+            $(this).addClass("a1").siblings().removeClass("a1");
+        });
+    })
+});

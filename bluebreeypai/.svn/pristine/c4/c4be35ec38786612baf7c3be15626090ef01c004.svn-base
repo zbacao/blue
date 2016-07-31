@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="style/init.css">
+    <link rel="stylesheet" href="style/commonFooter.css">
+    <link rel="stylesheet" href="style/commonHeader.css">
+    <link rel="stylesheet" href="style/login-tanchuceng.css"/>
+    <title>登录和注册</title>
+    <style>
+        .login-mengban{
+            background:url(indexImg/login-back_02.png) no-repeat center center;
+            width:100%;
+            overflow:hidden;
+            position:relative;
+            display:block;
+        }
+        .login-box{
+            width:300px;
+            height:364px;
+            background:#666;
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            padding:18px 20px;
+            z-index:20000;
+            display:block;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <!-- --------------------------------------公共主导航栏  start----------------------------------------->
+    <div class="header">
+        <div class="header-in clearFix">
+            <div class="logo clearFix">
+                <img src="indexImg/logo_03.png" alt="logo"/>
+                <div class="flag-word">
+                    <strong>蓝莓派</strong>
+                    <h3>和音乐一起分享时光</h3>
+                </div>
+            </div>
+            <div class="main-nav clearFix">
+                <ul class="clearFix">
+                    <li><a href="index.html" class="navs" id="n_index">首页</a></li>
+                    <li><a href="movement.html" class="navs" id="n_yz">乐章</a></li>
+                    <li><span id="ts-num">12</span><a href="listenSpeak.html" class="navs" id="n_ts">听说</a></li>
+                    <li><a href="#" class="navs" id="n_yq">乐趣</a></li>
+                    <li><a href="#" class="navs" id="n_ll">聊聊</a></li>
+                    <li><a href="#" class="navs" id="n_yj">游记</a></li>
+                    <li><a href="#" class="navs" id="n_sy">摄影</a></li>
+                    <li><a href="item.html" class="navs" id="n_cp">诚品</a></li>
+                    <li><a href="#" class="navs" id="n_lmj">蓝莓酱</a></li>
+                    <li><a href="personalCenter.html" class="navs" id="n_sq">社区</a></li>
+                </ul>
+            </div>
+            <div class="login clearFix">
+                <div class="search">
+                    <form action="">
+                        <input type="search" id="infinitySearch"/>
+                        <label for="infinitySearch" id="search-button"></label>
+                    </form>
+                </div>
+                <div class="login-register">
+                    <a href="login.html" class="log" id="log">登录</a>
+                    <a href="#" class="reg" id="reg">注册</a>
+                    <i class="triangle"></i>
+                    <div class="account-info">
+                        <ul class="clearFix">
+                            <li><a href="#" class="a-info-details" id="a_tz">我的帖子</a></li>
+                            <li><a href="#" class="a-info-details" id="a_pl">我的评论</a></li>
+                            <li><a href="#" class="a-info-details" id="a_sc">我的收藏</a></li>
+                            <li><a href="#" class="a-info-details" id="a_sz">设置</a></li>
+                            <li><a href="#" class="a-info-details" id="a_tc">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------公共主导航栏  end----------------------------------------->
+
+    <!-- 内容区start -->
+    <div class="login-mengban">
+        <div class="login-box">
+            <form action="">
+               <div class="login-reg-select clearFix">
+                   <a href="#" class="login-select-btn a1 "><i class="login-on"></i>登录</a>
+                   <a href="#" class="reg-select-btn"><i class="reg-on"></i>注册</a>
+               </div>
+                <div class="login-details account-box"  style="display:block">
+                    <label for="login_account"></label>
+                    <input type="text" id="login_account" placeholder="用户账号"/>
+                    <label for="login_pwd"></label>
+                    <input type="password" id="login_pwd" placeholder="用户密码"/>
+                    <div class="check_code clearFix">
+                        <div class="check-input">
+                            <label for="check_code_input1"></label>
+                            <input type="text" id="check_code_input1" placeholder="验证码"/>
+                        </div>
+                        <div class="check-pic">
+                            <img src="indexImg/check-code_04.png" alt=""/>
+                        </div>
+                    </div>
+                    <label for="login-btn"></label>
+                    <input type="submit" id="login-btn" value="登录"/>
+                    <div class="other-login">
+                        <p>你还可以用第三方帐号登录</p>
+                        <a href="#"><img src="indexImg/qqIcon.png" alt=""/></a>
+                        <a href="#"><img src="indexImg/weixinIcon.png" alt=""/></a>
+                        <a href="#"><img src="indexImg/weiboIcon.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="reg-details account-box"  style="display:none" >
+                    <label for="reg_account"></label>
+                    <input type="text" id="reg_account" placeholder="取个名字吧"/>
+                    <label for="reg_pwd"></label>
+                    <input type="password" id="reg_pwd" placeholder="设一个密码吧"/>
+                    <label for="reg_pwd_confirm"></label>
+                    <input type="password" id="reg_pwd_confirm" placeholder="再输一遍密码吧"/>
+                    <div class="check_code clearFix">
+                        <div class="check-input">
+                            <label for="check_code_input2"></label>
+                            <input type="text" id="check_code_input2" placeholder="验证码"/>
+                        </div>
+                        <div class="check-pic">
+                            <img src="indexImg/check-code_04.png" alt=""/>
+                        </div>
+                    </div>
+                    <label for="reg-btn"></label>
+                    <input type="submit" id="reg-btn" value="注册"/>
+                </div>
+            </form>
+            <a class="findback-pwd" href="#">忘记密码?</a>
+        </div>
+    </div>
+    <!-- 内容区end -->
+    <div class="footer">
+        <div class="blink-con">
+            <div class="btn-l">
+                <span>友情链接</span>
+                <p class="link-cont">
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅行</a>
+                </p>
+            </div>
+            <div class="btn-r">
+                <div class="weibo">
+                    <img src="image/footer-ewm1.jpg" alt="twitter">
+                    <span>微博二维码</span>
+                </div>
+                <div class="weixin">
+                    <img src="image/footer-ewm2.jpg" alt="weichat">
+                    <span>微信二维码</span>
+                </div>
+                <div class="connect">
+                    <p>电话:51336808</p>
+                    <p><i>邮编:100062</i>&nbsp;&nbsp;<i>传真:51337666</i></p>
+                    <p>邮箱:info@newworldtours.cn</p>
+                    <p>地址:北京市东城区广渠门内大街安化北里1号长保大厦13层</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bot-con">
+            <span><a href="#">关于我们</a></span>
+            <span><a href="#">联系我们</a></span>
+            <span><a href="#">加入我们</a></span>
+            <span><a href="#">团队成员</a></span>
+            <span><a href="#">商务合作</a></span>
+            <p class="bot-foot">
+                <em>蓝莓派版权所有</em><em>京ICP备12346335号</em>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="script/jquery-2.1.1.min.js"></script>
+<script>
+    var login= $(" .login-mengban");
+    $(login).height($(window).height()-90);
+    $(".login-reg-select>a").each(function(index,ele){
+        $(ele).on("click",function(){
+            $(".account-box").eq(index).css("display","block").siblings(".account-box").css("display","none");
+            $(this).addClass("a1").siblings().removeClass("a1");
+        });
+    });
+
+</script>
+</html>
+
+

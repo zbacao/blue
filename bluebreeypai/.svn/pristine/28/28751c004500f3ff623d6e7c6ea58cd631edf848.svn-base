@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" href="style/init.css"/>
+    <link rel="stylesheet" href="style/commonHeader.css"/>
+    <link rel="stylesheet" href="style/commonFooter.css">
+    <link rel="stylesheet" href="style/movement.css"/>
+    <link rel="stylesheet" href="style/login-tanchuceng.css"/>
+</head>
+<body>
+
+<!-- --------------------------------------公共主导航栏  start----------------------------------------->
+<div class="header">
+    <div class="header-in clearFix">
+        <div class="logo clearFix">
+            <img src="indexImg/logo_03.png" alt="logo"/>
+            <div class="flag-word">
+                <strong>蓝莓派</strong>
+                <h3>和音乐一起分享时光</h3>
+            </div>
+        </div>
+        <div class="main-nav clearFix">
+            <ul class="clearFix" id="nav">
+                <li><a href="index.html" class="navs" id="n_index">首页</a></li>
+                <li><a href="movement.html" class="navs on" id="n_yz">乐章</a></li>
+                <li><span id="ts-num">12</span><a href="listenSpeak.html" class="navs" id="n_ts">听说</a></li>
+                <li><a href="#" class="navs" id="n_yq">乐趣</a></li>
+                <li><a href="#" class="navs" id="n_ll">聊聊</a></li>
+                <li><a href="#" class="navs" id="n_yj">游记</a></li>
+                <li><a href="#" class="navs" id="n_sy">摄影</a></li>
+                <li><a href="#" class="navs" id="n_cp">诚品</a></li>
+                <li><a href="#" class="navs" id="n_lmj">蓝莓酱</a></li>
+                <li><a href="personalCenter.html" class="navs" id="n_sq">社区</a></li>
+
+            </ul>
+        </div>
+        <div class="login clearFix">
+            <div class="search">
+                <form action="">
+                    <input type="search" id="infinitySearch"/>
+                    <label for="infinitySearch" id="search-button"></label>
+                </form>
+            </div>
+            <div class="login-register">
+                <a href="javascript:;" class="log" id="log">登录</a>
+                <a href="javascript:;" class="reg" id="reg">注册</a>
+                <i class="triangle"></i>
+                <div class="account-info">
+                    <ul class="clearFix">
+                        <li><a href="#" class="a-info-details" id="a_tz">我的帖子</a></li>
+                        <li><a href="#" class="a-info-details" id="a_pl">我的评论</a></li>
+                        <li><a href="#" class="a-info-details" id="a_sc">我的收藏</a></li>
+                        <li><a href="#" class="a-info-details" id="a_sz">设置</a></li>
+                        <li><a href="#" class="a-info-details" id="a_tc">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------------公共主导航栏  end----------------------------------------->
+
+<!-- ----------------------------------公共登录弹窗模块  start----------------------------------->
+<div class="login-mengban"></div>
+<div class="login-box">
+    <form action="">
+        <div class="login-reg-select clearFix">
+            <a href="#" class="login-select-btn a1 "><i class="login-on"></i>登录</a>
+            <a href="#" class="reg-select-btn"><i class="reg-on"></i>注册</a>
+        </div>
+        <div class="login-details account-box"  style="display:block">
+            <label for="login_account"></label>
+            <input type="text" id="login_account" placeholder="用户账号"/>
+            <label for="login_pwd"></label>
+            <input type="password" id="login_pwd" placeholder="用户密码"/>
+            <div class="check_code clearFix">
+                <div class="check-input">
+                    <label for="check_code_input1"></label>
+                    <input type="text" id="check_code_input1" placeholder="验证码"/>
+                </div>
+                <div class="check-pic">
+                    <img src="indexImg/check-code_04.png" alt=""/>
+                </div>
+            </div>
+            <label for="login-btn"></label>
+            <input type="submit" id="login-btn" value="登录"/>
+            <div class="other-login">
+                <p>你还可以用第三方帐号登录</p>
+                <a href="#"><img src="indexImg/qqIcon.png" alt=""/></a>
+                <a href="#"><img src="indexImg/weixinIcon.png" alt=""/></a>
+                <a href="#"><img src="indexImg/weiboIcon.png" alt=""/></a>
+            </div>
+        </div>
+        <div class="reg-details account-box"  style="display:none" >
+            <label for="reg_account"></label>
+            <input type="text" id="reg_account" placeholder="取个名字吧"/>
+            <label for="reg_pwd"></label>
+            <input type="password" id="reg_pwd" placeholder="设一个密码吧"/>
+            <label for="reg_pwd_confirm"></label>
+            <input type="password" id="reg_pwd_confirm" placeholder="再输一遍密码吧"/>
+            <div class="check_code clearFix">
+                <div class="check-input">
+                    <label for="check_code_input2"></label>
+                    <input type="text" id="check_code_input2" placeholder="验证码"/>
+                </div>
+                <div class="check-pic">
+                    <img src="indexImg/check-code_04.png" alt=""/>
+                </div>
+            </div>
+            <label for="reg-btn"></label>
+            <input type="submit" id="reg-btn" value="注册"/>
+        </div>
+    </form>
+    <a class="findback-pwd" href="#">忘记密码?</a>
+</div>
+<!-- ----------------------------------公共登录弹窗模块  end----------------------------------->
+
+
+<div class="container">
+    <div class="song-introduce">
+        <div class="song-info clearFix">
+            <div class="song-title"><a href="#">默-那英[《何以笙箫默》电影插曲]</a></div>
+            <div class="play-num"><span id="play_num">43万</span>播放</div>
+        </div>
+        <div class="song-details clearFix">
+            <div class="song-pic"><img src="indexImg/song-pic_03.png" alt=""/></div>
+            <div class="song-pic"><img src="indexImg/naying.png" alt=""/></div>
+            <!--<ul style="visibility: inherit;margin-left:300px;color:#fff">-->
+                <!--<li>1</li>-->
+                <!--<li>2</li>-->
+            <!--</ul>-->
+            <div class="song-intro-cont">介绍： “终于毕业啦”，带着留恋，或带着探索的兴奋，大家要踏入下一站旅程。人生其实就是不断的选择，
+                今天要离开学习的大站，但是下一站“社会大学”充满了各种可能性。。。我们祝福大家，下一站风景会更美丽!!
+            </div>
+        </div>
+        <div class="song-control">
+            <!--开始设置播放器-->
+            <div class="playutil">
+                <audio id="aud">
+                    <source  src="json/那英%20-%20默%20(我是歌手4第5期黄致列参赛曲目_《何以笙箫默》电影插曲).mp3"/>您的浏览器不支持 audio 元素。
+                </audio>
+                <!--播放按钮-->
+                <div class="control clearFix">
+                    <div class="buttons">
+                         <!--预留上一曲按钮-->
+                        <!--<a id="nextleftbtn" onMou seOver="overchangleft()" onMo useOut="outchangleft()" onclick="nextleft()">-->
+                            <!--<img id="leftbutton" src="indexImg/play-btn_03.png"/>-->
+                        <!--</a>-->
+                        <a id="playbtn" onMo useOver="overchangplay()" onMouse Out="outchangplay()">
+                            <img id="playbutton" src=""/>
+                        </a>
+                         <!--预留下一曲按钮-->
+                        <!--<a id="nextrightbtn" onMou seOver="overchangright()" onMous eOut="outchangright()" onclick="nextright()">-->
+                            <!--<img id="rightbutton" src="indexImg/play-btn_03.png"/>-->
+                        <!--</a>-->
+                    </div>
+                    <p id="passTime">00:00</p>
+                    <div class="progressBar clearFix">
+                        <div class="progressBar-passed"></div>
+                        <div class="progressBar-remain"></div>
+                    </div>
+                    <p id="totalTime">00:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="common-deatails clearFix">
+        <div class="artical-cont">
+            <div class="yj-artical">
+                <h3>[游记]洱海仍有一片静谧，让你以梦为桨</h3>
+                <div class="yj-artical-info">
+                    <div class="eye-wechat">
+                        <span id="eye_num" class="eye-wechat-num">56</span>
+                        <span id="wei_chat-num" class="eye-wechat-num">22</span>
+                    </div>
+                    <div class="create-time">
+                        创建时间 : <span class="currentDate">2016/03/26</span>
+                    </div>
+                </div>
+            </div>
+            <div class="artical-cont-details">
+                <div class="blog-details" id="blog_details">
+                    <p>
+                        不知道多少人来到大理不想离开，也不知道多少人走了之后又想着回来。<br/>
+                        这就是大理，庸懒散拖，但又不失韵味。<br/>
+                        你可以窝在人民路晒太阳发呆，也可以骑着单车，沿着黄海西路，穿过一个个小村落，在洱海边听风观渔。<br/>
+                        大理有很多玩法，好像都和待着有关。但你可曾想过如此近距离的接近洱海？<br/>
+                        当你泛舟洱海的时候，你会发现云离你好近，苍山也近在咫尺，此时，眼前的一切都是属于你的，就像一个梦，<br/>
+                        我们划着桨，不愿离开，也不想醒来。<br/><br/>
+
+                        阿男给了我们一个亲近洱海的机会，也给了我们待着一个特惠的价格。<br/>
+                        这里你不必担心大理旺季烦扰的人声鼎沸，更不用顾虑人山人海的景区客流，这里有一片美丽的海，有一艘简<br/>
+                        单的皮划艇，你可以在这里待着，什么都不想，也无人来打扰。<br/><br/>
+
+                        我们可以在洱海上随波逐流，不用跟着人潮，拥挤在古城的洋人街与复兴路。<br/>
+                        希望这片海能给你夏日一份安宁，希望这次体验可以给你带来意外的收获。<br/>
+
+                        其实大理很美，只是我们忘了发现。<br/>
+
+                        <img class="blog-pic" src="indexImg/haotu.jpg" alt="j"/>
+                        <img class="blog-pic" src="indexImg/haotu.jpg" alt="j"/>
+                        <img class="blog-pic" src="indexImg/haotu.jpg" alt="j"/>
+                    </p>
+                    <div class="blog-labels">
+                        <span id="label_travel">旅游</span> <span id="label_msg">资讯</span>  <span class="label_nomoney_travel">穷游</span>
+                    </div>
+                    <div class="endIcon">
+                        <img src="indexImg/endIcon_03.png" alt="endIcon" />
+                    </div>
+                </div>
+                <div class="related-read">
+                    <div class="related-read-title"><a href="#">相关阅读</a></div>
+                    <div class="related-read-cont clearFix">
+                        <div class="related-read-cont-show">
+                            <a href="#">
+                                <img class="related-read-pic" src="indexImg/related-read_03.png" alt=""/>
+                                <p class="related-read-summary">人散后一勾新月天如水，庆州的来去游记</p>
+                            </a>
+                        </div>
+                        <div class="related-read-cont-show">
+                            <a href="#">
+                                <img class="related-read-pic" src="indexImg/related-read_03.png" alt=""/>
+                                <p class="related-read-summary">人散后一勾新月天如水，庆州的来去游记</p>
+                            </a>
+                        </div>
+                        <div class="related-read-cont-show">
+                            <a href="#">
+                                <img class="related-read-pic" src="indexImg/related-read_03.png" alt=""/>
+                                <p class="related-read-summary">人散后一勾新月天如水，庆州的来去游记</p>
+                            </a>
+                        </div>
+                        <div class="related-read-cont-show">
+                            <a href="#">
+                                <img class="related-read-pic" src="indexImg/related-read_03.png" alt=""/>
+                                <p class="related-read-summary">人散后一勾新月天如水，庆州的来去游记</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="related-read-share clearFix">
+                        <div class="share-left">
+                            <div class="share-left-icons">
+                                <a href="#"><img src="indexImg/shareIcon_03.png" alt=""/></a>
+                                <a href="#"><img src="indexImg/shareIcon_05.png" alt=""/></a>
+                                <a href="#"><img src="indexImg/shareIcon_07.png" alt=""/></a>
+                                <a href="#"><img src="indexImg/shareIcon_09.png" alt=""/></a>
+                            </div>
+                            <span>喜欢的话就分享出去吧!</span>
+                        </div>
+                        <div class="share-right">
+                            <a href="#">分享长微博</a>
+                            <a href="#"><img src="indexImg/zan-big_03.png" alt=""/> 赞 <span id="blog_zan_num">22</span></a>
+                            <a href="#"><img src="indexImg/favorites_03.png" alt=""/> 收藏</a>
+                            <a class="report" href="#">举报</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-comment">
+                    <div class="who-zan">
+                        <h4>赞过的人</h4>
+                        <div class="who-zan-list clearFix">
+                            <div class="who-zan-people">
+                                <img class="who-zan-people-head" src="indexImg/tupian_07.png" alt=""/>
+                                <span class="who-zan-people-name">许西</span>
+                            </div>
+                            <div class="who-zan-people">
+                                <img class="who-zan-people-head" src="indexImg/tupian_07.png" alt=""/>
+                                <span class="who-zan-people-name">许西</span>
+                            </div>
+                            <div class="who-zan-people">
+                                <img class="who-zan-people-head" src="indexImg/tupian_07.png" alt=""/>
+                                <span class="who-zan-people-name">许西</span>
+                            </div>
+                            <div class="who-zan-people">
+                                <img class="who-zan-people-head" src="indexImg/tupian_07.png" alt=""/>
+                                <span class="who-zan-people-name">许西</span>
+                            </div>
+                            <div class="who-zan-people">
+                                <img class="who-zan-people-head" src="indexImg/tupian_07.png" alt=""/>
+                                <span class="who-zan-people-name">许西</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-pic">
+                        <a href="#"><img src="indexImg/comment-pic_03.png" alt=""/></a>
+                    </div>
+                    <div>评论框</div>
+                    <div class="ts-popcomment">
+                        <span class="ts-popcomicon">
+                            <img src="image/listenSpeak/touxiang.png" alt="userhead">
+                        </span>
+                        <div class="ts-comcont">
+                            <b>小夏同学</b><i>2014-12-01 16:16:20说</i>
+                            <p>内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房</p>
+					        <span class="ts-cardfoot-icon">
+                                <b class="ts-cardicon1"></b><i>22</i>
+                                <b class="ts-cardicon2"></b><i>22</i>
+					        </span>
+                        </div>
+                    </div>
+                    <div class="ts-popcomment">
+                        <span class="ts-popcomicon">
+                            <img src="image/listenSpeak/touxiang.png" alt="userhead">
+                        </span>
+                        <div class="ts-comcont">
+                            <b>小夏同学</b><i>2014-12-01 16:16:20说</i>
+                            <p>内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房</p>
+					        <span class="ts-cardfoot-icon">
+                                <b class="ts-cardicon1"></b><i>22</i>
+                                <b class="ts-cardicon2"></b><i>22</i>
+					        </span>
+                        </div>
+                    </div>
+                    <div class="ts-popcomment">
+                        <span class="ts-popcomicon">
+                            <img src="image/listenSpeak/touxiang.png" alt="userhead">
+                        </span>
+                        <div class="ts-comcont">
+                            <b>小夏同学</b><i>2014-12-01 16:16:20说</i>
+                            <p>内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房</p>
+					        <span class="ts-cardfoot-icon">
+                                <b class="ts-cardicon1"></b><i>22</i>
+                                <b class="ts-cardicon2"></b><i>22</i>
+					        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 右边侧栏 start-->
+        <div class="artical-other">
+            <div class="msg-center aside-box">
+                <div class="msg-center-up clearFix">
+                    <div class="blueberrypaiIcon clearFix">
+                        <img src="indexImg/aside-logo_03.png" alt=""/>
+                        <h1 class="gray">蓝莓派</h1>
+                    </div>
+                    <div class="square-btn gray">
+                        <p class="tiezi-num">22</p>
+                        <p class="tiezi-name">帖子</p>
+                    </div>
+                    <div class="square-btn gray">
+                        <p class="tiezi-num">56</p>
+                        <p class="tiezi-name">评论</p>
+                    </div>
+                    <div class="square-btn gray">
+                        <p class="tiezi-num">102</p>
+                        <p class="tiezi-name">关注</p>
+                    </div>
+                </div>
+
+                <div class="msg-center-down gray clearFix">
+                    <div class="circle-btn concern"><a href="#"></a></div>
+                    <div class="circle-btn private-msg"><a href="#"></a></div>
+                </div>
+            </div>
+            <div class="other-blog aside-box">
+                <h3 class="other-blog-title">作者的其他文章</h3>
+                <ul>
+                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                </ul>
+            </div>
+            <div class="hot-recomment aside-box">
+                <h3 class="other-blog-title ">热门推荐</h3>
+                <ul>
+                    <li><a class="other-blog-lists" href="#">端午徒步武功山，看山看草看云海。</a></li>
+                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------------公共尾部  start----------------------------------------->
+<div class="footer">
+    <div class="blink-con">
+        <div class="btn-l">
+            <span>友情链接</span>
+            <p class="link-cont">
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+            </p>
+        </div>
+        <div class="btn-r">
+            <div class="weibo">
+                <img src="image/footer-ewm1.jpg" alt="twitter">
+                <span>微博二维码</span>
+            </div>
+            <div class="weixin">
+                <img src="image/footer-ewm2.jpg" alt="weichat">
+                <span>微信二维码</span>
+            </div>
+            <div class="connect">
+                <p>电话:51336808</p>
+                <p><i>邮编:100062</i>&nbsp;&nbsp;<i>传真:51337666</i></p>
+                <p>邮箱:info@newworldtours.cn</p>
+                <p>地址:北京市东城区广渠门内大街安化北里1号长保大厦13层</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <div class="bot-con">
+        <span><a href="#">关于我们</a></span>
+        <span><a href="#">联系我们</a></span>
+        <span><a href="#">加入我们</a></span>
+        <span><a href="#">团队成员</a></span>
+        <span><a href="#">商务合作</a></span>
+        <p class="bot-foot">
+            <em>蓝莓派版权所有</em><em>京ICP备12346335号</em>
+        </p>
+    </div>
+</div>
+
+<!-- --------------------------------------公共尾部  end----------------------------------------->
+
+</body>
+
+<script src="script/jquery-2.1.1.min.js"></script>
+<script src="script/login-tanchuceng.js"></script>
+<script src="script/movement.js"></script>
+</html>
+
+

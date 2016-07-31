@@ -1,0 +1,64 @@
+<!--第一步
+     引入login-tanchuceng.css文件
+-->
+
+<!--第二步
+     引入login-tanchuceng.js文件
+-->
+
+<!--第三步
+     引入下面的标签结构
+-->
+
+<div class="login-mengban"></div>
+<div class="login-box">
+    <form action="">
+        <div class="login-reg-select clearFix">
+            <a href="#" class="login-select-btn a1 "><i class="login-on"></i>登录</a>
+            <a href="#" class="reg-select-btn"><i class="reg-on"></i>注册</a>
+        </div>
+        <div class="login-details account-box"  style="display:block">
+            <label for="login_account"></label>
+            <input type="text" id="login_account" placeholder="用户账号"/>
+            <label for="login_pwd"></label>
+            <input type="password" id="login_pwd" placeholder="用户密码"/>
+            <div class="check_code clearFix">
+                <div class="check-input">
+                    <label for="check_code_input1"></label>
+                    <input type="text" id="check_code_input1" placeholder="验证码"/>
+                </div>
+                <div class="check-pic">
+                    <img src="indexImg/check-code_04.png" alt=""/>
+                </div>
+            </div>
+            <label for="login-btn"></label>
+            <input type="submit" id="login-btn" value="登录"/>
+            <div class="other-login">
+                <p>你还可以用第三方帐号登录</p>
+                <a href="#"><img src="indexImg/qqIcon.png" alt=""/></a>
+                <a href="#"><img src="indexImg/weixinIcon.png" alt=""/></a>
+                <a href="#"><img src="indexImg/weiboIcon.png" alt=""/></a>
+            </div>
+        </div>
+        <div class="reg-details account-box"  style="display:none" >
+            <label for="reg_account"></label>
+            <input type="text" id="reg_account" placeholder="取个名字吧"/>
+            <label for="reg_pwd"></label>
+            <input type="password" id="reg_pwd" placeholder="设一个密码吧"/>
+            <label for="reg_pwd_confirm"></label>
+            <input type="password" id="reg_pwd_confirm" placeholder="再输一遍密码吧"/>
+            <div class="check_code clearFix">
+                <div class="check-input">
+                    <label for="check_code_input2"></label>
+                    <input type="text" id="check_code_input2" placeholder="验证码"/>
+                </div>
+                <div class="check-pic">
+                    <img src="indexImg/check-code_04.png" alt=""/>
+                </div>
+            </div>
+            <label for="reg-btn"></label>
+            <input type="submit" id="reg-btn" value="注册"/>
+        </div>
+    </form>
+    <a class="findback-pwd" href="#">忘记密码?</a>
+</div>

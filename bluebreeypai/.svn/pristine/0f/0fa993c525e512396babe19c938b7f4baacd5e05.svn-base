@@ -1,0 +1,709 @@
+body{
+    background:#f5f5f5;
+}
+.container{
+    width:1200px;
+    min-width:1200px;
+    margin:70px auto 126px;
+}
+.container .song-introduce{
+    width:100%;
+    height:466px;
+    background:#fff;
+    margin-bottom:20px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+    border-radius:5px;
+}
+.container .song-introduce .song-info{
+    width:100%;
+    height:70px;
+}
+.container .song-introduce .song-info .song-title{
+    float:left;
+    position:relative;
+    text-indent:2em;
+}
+.container .song-introduce .song-info .song-title a{
+    line-height:70px;
+    font-size:18px;
+    font-weight:700;
+}
+.container .song-introduce .song-info .song-title::after{
+    content:"";
+    display:block;
+    width:16px;
+    height:16px;
+    position:absolute;
+    right: -25px;
+    top: 28px;
+    background: url(../indexImg/musicIcon_03.png) no-repeat center center;
+}
+.container .song-introduce .song-info .play-num{
+    float:right;
+    line-height:70px;
+    font-size:14px;
+    margin-right:40px;
+    color:#a1a1a1;
+}
+.container .song-introduce .song-info .play-num #play_num{
+    margin-right:5px;
+    color:#109d59;
+}
+.container .song-introduce .song-details{
+    width:93.333333333%;
+    height:260px;
+    background:url(../indexImg/song-background_03.png) no-repeat center center;
+    background-size:cover;
+    padding:40px;
+    position:relative;
+}
+.container .song-introduce .song-details .song-pic{
+    position: absolute;
+    top: 41px;
+    left: 38px;
+    float: left;
+    width: 260px;
+    height: 260px;
+    opacity:0;
+    transition:all 0.5s;
+}
+.container .song-introduce .song-details .song-pic img{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+.container .song-introduce .song-details .song-intro-cont{
+    float:right;
+    width:830px;
+    height:250px;
+    color:#fff;
+    font-size:16px;
+}
+.container .song-introduce .song-control{
+    width:100%;
+    height:56px;
+    /*background:darkgreen;*/
+}
+
+/*播放器控制 start */
+.playutil {
+    height: 100%;
+    width:100%;
+    position:relative;
+}
+.control {
+    /*width: 330px;*/
+}
+.control>p {
+    width: 50px;
+    height:56px;
+    text-align: center;
+    float:left;
+    line-height:56px;
+}
+.buttons {
+    text-align: center;
+    float:left;
+}
+.buttons a {
+    margin: 8px 20px 0px 40px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #e5e5e5;
+    display: block;
+    line-height: 38px;
+    text-align: center;
+    background: #fff;
+    float: left;
+}
+.buttons a img{
+    width:16px;
+    height:16px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    margin-left: 1px;
+}
+.progressBar{
+    float: left;
+    margin-left: 42px;
+    margin-top: 23px;
+    width: 940px;
+    height: 8px;
+    background: #d3ede0;
+    border-radius:20px;
+
+}
+.progressBar .progressBar-passed{
+    float:left;
+    width: 0;
+    height: 8px;
+    background: #109d59;
+    border-radius: 20px 0 0 20px;
+}
+.progressBar .progressBar-remain{
+    float:right;
+    width: 100%;
+    height: 8px;
+    background: #d3ede0;
+    border-radius:20px;
+}
+/*播放器控制 end */
+
+/*正文内容 start*/
+.container .common-deatails{
+    width:100%;
+    /*height:900px;*/
+    background:#f5f5f5;
+}
+.container .common-deatails .artical-cont{
+    float:left;
+    width:810px;
+    background:#fff;
+    padding:30px;
+    border-radius:5px;
+}
+.container .common-deatails .artical-cont .yj-artical{
+    border-bottom:1px solid #e0e0e0;
+    height:100px;
+    margin-bottom:30px;
+}
+.container .common-deatails .artical-cont .yj-artical h3{
+    text-align: center;
+    font-size:22px;
+}
+.container .common-deatails .artical-cont .yj-artical .yj-artical-info{
+    line-height:54px;
+}
+.container .common-deatails .artical-cont .yj-artical .yj-artical-info .eye-wechat{
+    float:left;
+}
+.container .common-deatails .artical-cont .yj-artical .yj-artical-info .eye-wechat span{
+    float:left;
+    margin-right:43px;
+    text-indent:23px;
+    color:#999;
+    position:relative;
+}
+.container .common-deatails .artical-cont .yj-artical .yj-artical-info .eye-wechat span#eye_num::before{
+    content:"";
+    display:block;
+    width:23px;
+    height:14px;
+    position:absolute;
+    top:19px;
+    left:0;
+    background:url(../indexImg/eye_03.png) no-repeat center center;
+}
+.container .common-deatails .artical-cont .yj-artical .yj-artical-info .eye-wechat span#wei_chat-num::before{
+    content:"";
+    display:block;
+    width:23px;
+    height:14px;
+    position:absolute;
+    top:19px;
+    left:0;
+    background:url(../indexImg/gray-wechat.png) no-repeat center center;
+}
+.container .common-deatails .artical-cont .yj-artical .yj-artical-info .create-time{
+    float:right;
+    color:#999;
+}
+
+
+/*文章具体内容*/
+.artical-cont{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.artical-cont-details .blog-details{
+    width:100%;
+}
+.artical-cont-details .blog-details p{
+    font-size:14px;
+    line-height:25px;
+    letter-spacing:2px;
+    color:#666;
+}
+.artical-cont-details .blog-details p img.blog-pic{
+    display:block;
+    max-width:100%;
+    margin-top:20px;
+}
+.artical-cont-details .blog-details .blog-labels{
+    margin-top:20px;
+    position:relative;
+}
+.artical-cont-details .blog-details .blog-labels::before{
+    content:"";
+    display:block;
+    width:23px;
+    height:14px;
+    position:absolute;
+    top: 4px;
+    left: -4px;
+    background:url(../indexImg/labelIcon_03.png) no-repeat center center;
+}
+.artical-cont-details .blog-details  .blog-labels span{
+    color:#fff;
+    display:inline-block;
+    background:#999;
+    text-align:center;
+    padding:0 10px;
+    border-radius:20px;
+    margin-left:10px;
+    font-size:12px;
+}
+.artical-cont-details .blog-details .endIcon{
+    width:810px;
+    height:172px;
+    text-align:center;
+}
+.artical-cont-details .blog-details .endIcon img{
+    width:56px;
+    height:84px;
+    margin-top: 42px;
+}
+.artical-cont-details .blog-details span#label_travel{
+    margin-left:22px;
+}
+
+/*正文内容 end*/
+
+/*相关阅读 start*/
+.artical-cont-details .related-read{
+    width:100%;
+}
+.artical-cont-details .related-read .related-read-title{
+    border-bottom:1px solid #e0e0e0;
+    padding:10px 0;
+}
+.artical-cont-details .related-read .related-read-title a{
+    color:#4d4d4d;
+    font-size:16px;
+    line-height:16px;
+}
+.artical-cont-details .related-read .related-read-cont{
+    width:100%;
+    padding:10px 0;
+}
+.artical-cont-details .related-read .related-read-cont .related-read-cont-show{
+    width: 389px;
+    height: 170px;
+    float: left;
+    margin-bottom:20px;
+}
+.artical-cont-details .related-read .related-read-cont .related-read-cont-show a{
+    display:block;
+}
+.artical-cont-details .related-read .related-read-cont .related-read-cont-show:nth-child(1){
+    margin-right:30px;
+}
+.artical-cont-details .related-read .related-read-cont .related-read-cont-show:nth-child(3){
+    margin-right:30px;
+}
+.artical-cont-details .related-read .related-read-cont .related-read-cont-show img.related-read-pic{
+    width:100%;
+    height:130px;
+    display:block;
+}
+.artical-cont-details .related-read .related-read-cont .related-read-cont-show p.related-read-summary{
+    line-height:40px;
+}
+
+.artical-cont-details .related-read .related-read-share{
+    border-bottom:1px solid #e0e0e0;
+    padding:20px 5px;
+}
+.artical-cont-details .related-read .related-read-share .share-left{
+    float:left;
+}
+.artical-cont-details .related-read .related-read-share .share-left a{
+    display:inline-block;
+    margin-right:5px;
+}
+.artical-cont-details .related-read .related-read-share .share-left span{
+    line-height:30px;
+    color:#999;
+    text-indent:2px;
+}
+.artical-cont-details .related-read .related-read-share .share-right{
+    float:right;
+    position:relative;
+}
+.artical-cont-details .related-read .related-read-share .share-right a{
+    display:inline-block;
+    padding:7px 12px;
+    text-align:center;
+    border:1px solid #9da09e;
+    border-radius:20px;
+    background:#fff;
+    margin-right:10px;
+    color:#999;
+}
+.artical-cont-details .related-read .related-read-share .share-right a:nth-child(1){
+    background:#e5f2f5;
+    border:1px solid #e5f2f5;
+    color:#14abd1;
+    /*padding:5px 8px;*/
+}
+.artical-cont-details .related-read .related-read-share .share-right .report{
+    position:absolute;
+    bottom:-30px;
+    right:11px;
+    display:inline-block;
+    padding:0;
+    text-align:center;
+    border:none;
+    border-radius:0;
+    background:#fff;
+    margin:0;
+}
+.artical-cont-details .related-read .related-read-share .share-right img{
+    vertical-align: -3px;
+}
+/*相关阅读 end*/
+
+/*互动评论区 start*/
+.artical-cont-details  .blog-comment .who-zan{
+    width:100%;
+    line-height:50px;
+    /*background:darkcyan;*/
+    overflow:hidden;
+}
+.artical-cont-details  .blog-comment .who-zan h4{
+    text-indent:10px;
+    margin-bottom:10px;
+    position:relative;
+}
+.artical-cont-details  .blog-comment .who-zan h4::before{
+    content: "";
+    width: 4px;
+    height: 35%;
+    background: #f68344;
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+.artical-cont-details  .blog-comment .who-zan .who-zan-people{
+    width:50px;
+    float:left;
+    margin-right:20px;
+}
+.artical-cont-details  .blog-comment .who-zan .who-zan-people img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:block;
+}
+.artical-cont-details  .blog-comment .who-zan .who-zan-people span{
+    line-height:30px;
+    text-align:center;
+    display:block;
+    color:#747474;
+}
+.artical-cont-details  .blog-comment .theme-pic{
+    width:100%;
+    margin:40px 0;
+}
+
+/*评论和回复模块 start*/
+.ts-cardfoot-icon{
+    position:relative;
+}
+.ts-cardicon1{
+    display: block;
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    top: 2px;
+    left: 41px;
+    background:url(../indexImg/gray-wechat.png) no-repeat center center;
+    cursor:pointer;
+}
+.ts-cardicon2{
+    display: block;
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    background:url(../image/listenSpeak/spriteicon.png) 0 -73px no-repeat;
+    cursor:pointer;
+}
+.ts-popcomment{
+    width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+}
+.ts-popcomment .ts-popcomicon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.ts-popcomment .ts-popcomicon img{
+    width: 50px;
+    margin: 0;
+}
+.ts-popcomment .ts-comcont{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 25px;
+    margin-bottom: 40px;
+
+}
+.ts-popcomment .ts-cardfoot-icon{
+    top: 20px;
+    right: 10px;
+}
+.ts-popcomment .ts-comcont>b{
+    font-size:14px;
+    padding:0 10px;
+    color: #333333;
+}
+.ts-popcomment .ts-comcont>i{
+    font-size: 12px;
+    color: #999999;
+}
+.ts-popcomment .ts-comcont p{
+    font-size: 14px;
+    color: #0b0b0b;
+    margin: 5px 0 0 10px;
+    line-height: 22px;
+}
+.ts-popreplay{
+    background-color: #fafafa;
+    border: 1px solid #e4e4e4;
+    padding-bottom: 40px;
+    border-top: none;
+    position: relative;
+    height: 68px;
+}
+.ts-popreplay::before{
+    content: "";
+    display: block;
+    border-width: 14px 9px;
+    border-style: solid;
+    position: absolute;
+    border-color: transparent transparent #e8e8e8 transparent;
+    right: 85px;
+    top:-28px;
+}
+.ts-popreplay .tspop-tri{
+    content: "";
+    display: block;
+    border-width: 12px 6px;
+    border-style: solid;
+    position: absolute;
+    border-color: transparent transparent #fafafa transparent;
+    right: 88px;
+    top:-24px;
+}
+.ts-popreplay .ts-replaycont{
+    margin-top: 15px;
+    width: 670px;
+    text-align: center;
+    float: right;
+}
+.ts-popreplay .ts-replaycont input{
+    display: inline-block;
+    width: 550px;
+    line-height: 34px;
+    border: 1px solid #e6e6e6;
+}
+.ts-popreplay .ts-replaycont a{
+    display: inline-block;
+    width: 80px;
+    height: 36px;
+    background-color: #f68344;
+    font-size: 16px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 8px;
+    vertical-align:middle;
+}
+.ts-popreplay i{
+    position: absolute;
+    bottom: 15px;
+    right: 50px;
+    width: 10px;
+    height: 6px;
+    background: url(../image/listenSpeak/dropup.png) no-repeat center;
+    cursor:pointer;
+}
+.ts-cardfoot-icon{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.ts-cardfoot-icon i{
+    padding: 5px;
+    color: #ccc;
+    margin-left:15px;
+}
+/*评论和回复模块 end*/
+/*互动评论区 end*/
+
+
+/*右侧栏部分 start*/
+.container .common-deatails .artical-other{
+    float:right;
+    width:301px;
+    /*background:darkgreen;*/
+    border-radius:3px;
+}
+.aside-box{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+    background:#fff;
+    border-radius:5px;
+}
+/*信息中心 start*/
+.msg-center-up{
+    padding:20px;
+}
+.blueberrypaiIcon{
+    margin-bottom:20px;
+}
+.blueberrypaiIcon img{
+    float:left;
+    width:80px;
+    height:80px;
+    display:block;
+}
+.blueberrypaiIcon h1{
+    float:left;
+    display:block;
+    width:180px;
+    height:80px;
+    line-height:80px;
+    font-size:16px;
+    font-weight:700;
+    text-indent:20px;
+}
+.gray{
+    background:#fafafa;
+}
+.square-btn{
+    float:left;
+    width:82px;
+    height:55px;
+    text-align: center;
+    margin-right:7px;
+    line-height:25px;
+    padding-top:5px;
+    margin-bottom:20px;
+}
+.square-btn:last-child{
+    margin-right:0;
+}
+.msg-center-down{
+    height:82px;
+    padding:20px 55px;
+}
+.concern{
+    border:1px solid  transparent;
+    border-radius:50%;
+    width:60px;
+    height:60px;
+    background:#14abd1;
+    float:left;
+    margin-right:60px;
+    position:relative;
+    background:url(../image/singer/guanzhu.png) center top no-repeat;
+    cursor:pointer;
+}
+.concern::after{
+    content:"关注";
+    display:block;
+    position:absolute;
+    top: 65px;
+    left: 17px;
+    color:#999;
+}
+.private-msg{
+    border:1px solid  transparent;
+    border-radius:50%;
+    width:60px;
+    height:60px;
+    background:#40bc83;
+    float:left;
+    position:relative;
+    background:url(../image/singer/sixin.png) center top no-repeat;
+    cursor:pointer;
+}
+.private-msg::after{
+    content:"私信";
+    display:block;
+    position:absolute;
+    top: 65px;
+    left: 17px;
+    color:#999;
+}
+/*信息中心 end*/
+/*作者的其他文章/热门推荐公共样式 start*/
+.other-blog,.hot-recomment{
+    padding:20px;
+}
+h3.other-blog-title{
+    font-size:18px;
+    border-bottom:1px solid #e6e6e6;
+  padding-bottom:18px;
+    position:relative;
+    margin-bottom:8px;
+}
+h3.other-blog-title::after{
+    content: "全部";
+    display: block;
+    width: 40px;
+    height: 14px;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    font-size: 14px;
+    color:#a9a9a9 ;
+}
+a.other-blog-lists{
+    width:260px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    display:block;
+    line-height:36px;
+}
+a.other-blog-lists:hover{
+    color:#109d59;
+}
+/*作者的其他文章/热门推荐公共样式 end*/
+.hot-recomment h3.other-blog-title::after{
+    content:"更多";
+}
+.hot-recomment .other-blog-lists{
+    text-indent:1.5em;
+    position:relative;
+}
+.hot-recomment .other-blog-lists::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    left: 3px;
+    background: #109d59;
+}
+
+/*右侧栏部分 end*/
+/*导航下面的小三角颜色单独设置*/
+.header .header-in .main-nav   li a.navs.on::after{
+    border-bottom:11px solid #f5f5f5;
+}
+
+
+

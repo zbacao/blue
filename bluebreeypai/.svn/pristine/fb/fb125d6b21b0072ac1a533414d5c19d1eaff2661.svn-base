@@ -1,0 +1,32 @@
+/**
+ * @Author:      geekarl
+ * @DateTime:    2016-07-21 23:43:21
+ * @Description: 明天写关于专辑和歌曲列表切换的js事件
+ */
+
+ $(function(){
+    // 专辑和歌曲页的切换显示
+    $(".tab-zj a").on("click",function(){
+        console.log('123');
+        $(this).addClass('on');
+        $(".tab-gq a").removeClass('on');
+        $("div.gs-songs").css({display:"none"});
+        $(".gs-albums").stop().fadeIn(300);
+    });
+    $(".tab-gq a").on("click",function(){
+        $(this).addClass("on");
+        $(".tab-zj a").removeClass('on');
+        $(".gs-albums").css({display:"none"});
+        $("div.gs-songs").stop().fadeIn(300); 
+    });
+
+    //专辑的收起和展开
+    $(".gs-cover").on("click",function(){
+        $(this).find(".gs-songlist").toggle(400);
+        $(this).siblings("ul.gs-songs").stop().slideToggle(400);
+        $(this).siblings(".gs-albumtri").stop().toggleClass('on');
+    });
+    $(".gs-albumtri").on("click",function(){
+        $(this).siblings(".gs-cover").trigger('click');
+    })
+ })

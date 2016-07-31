@@ -1,0 +1,72 @@
+$(function(){
+    function musicplay() {
+        var timer=null;
+        var audio=$('#aud')[0];
+        if(audio.paused){
+            audio.play();
+            $("#playbutton").attr("src","pause.png");
+        }else{
+            audio.pause();
+            $("#playbutton").attr("src","indexImg/play-btn_03.png");
+        }
+
+        //播放时间显示
+        timer=setInterval(function(){
+            var playTime_s=audio.currentTime;
+            var mTime=parseInt(playTime_s/60);
+            var sTime=parseInt(playTime_s%60);
+
+            if(mTime<10){
+                mTime="0"+mTime;
+            }else{
+                mTime+="";
+            }
+
+            if(sTime<10){
+                sTime="0"+sTime;
+            }else{
+                sTime+="";
+            }
+
+            //显示到页面上
+            var displayTime=mTime+":"+sTime;
+            $("#musicinfo").html(displayTime);
+        },1);
+    }
+
+    //运行播放器
+    //musicplay();
+
+    //控制播放按钮
+    $("#playbtn").on("click",function(){
+        musicplay();
+    });
+
+//弹出框内的回复div事件
+    $(".ts-popcomment").on("click",function(){
+        if($(this).next('.ts-popreplay').length===0){
+            var n = $(this).index(".ts-popcomment");
+            // var cloneReply = $(".ts-popreplay").eq(0).clone(ture);
+            var cloneEle = $('<div class="ts-popreplay clearfix"><div class="tspop-tri"></div><div class="ts-replaycont"><input type="text"><a href="javascript:;">回复</a></div><i></i></div>')
+            cloneEle.insertAfter($(this));
+            $(this).next('.gs-popreplay').stop().slideDown(300);
+        }
+        $(".ts-popreplay i").on("click",function(){
+            $(this).parent().stop().slideUp(300,function(){
+                $(this).remove();
+            });
+        });
+        $(".ts-popreplay .ts-replaycont a").on("click",function(){
+            var n = $(this).index(".ts-popreplay a");
+            var str = $('.ts-popreplay input').val();
+            if(!(str)){
+                //这里提交回复触发ajax事件和添加回复事件。
+            }
+            $('.ts-popreplay').eq(n).on("click",function(){
+                $(this).stop().slideUp(300,function(){
+                    $(this).remove();
+                });
+            });
+        });
+    })
+});
