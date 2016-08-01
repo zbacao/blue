@@ -6,30 +6,16 @@
           name="viewport">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="style/init.css">
-    <link rel="stylesheet" href="style/item.css">
     <link rel="stylesheet" href="style/commonFooter.css">
     <link rel="stylesheet" href="style/commonHeader.css">
     <link rel="stylesheet" href="style/login-tanchuceng.css">
-    <link rel="stylesheet" href="style/markCup.css">
+    <link rel="stylesheet" href="style/joinUs.css">
+
     <title>蓝莓派</title>
     <script src="script/jquery-2.1.1.min.js"></script>
     <script src="script/jquery.provincesCity.js"></script>
     <script src="script/login-tanchuceng.js"></script>
-    <script src="script/item.js"></script>
-    <script src="script/markCup.js"></script>
 </head>
-<style>
-    /*.ts-cardicon3{*/
-        /*display: inline-block;*/
-        /*width: 14px;*/
-        /*height: 14px;*/
-        /*position: absolute;*/
-        /*top: 1px;*/
-        /*left: 3px;*/
-        /*background: url(images/fenxiang_03.png) center no-repeat;*/
-        /*cursor: pointer;*/
-    /*}*/
-</style>
 <body>
 
 <!--登陆页面-->
@@ -101,16 +87,16 @@
         </div>
         <div class="main-nav clearFix">
             <ul class="clearFix">
-                <li><a href="index.html" class="navs" id="n_index">首页</a></li>
+                <li><a href="index.html" class="navs on" id="n_index">首页</a></li>
                 <li><a href="movement.html" class="navs" id="n_yz">乐章</a></li>
                 <li><span id="ts-num">12</span><a href="listenSpeak.html" class="navs" id="n_ts">听说</a></li>
                 <li><a href="#" class="navs" id="n_yq">乐趣</a></li>
                 <li><a href="#" class="navs" id="n_ll">聊聊</a></li>
                 <li><a href="#" class="navs" id="n_yj">游记</a></li>
                 <li><a href="#" class="navs" id="n_sy">摄影</a></li>
-                <li><a href="item.html" class="navs on" id="n_cp">诚品</a></li>
+                <li><a href="item.html" class="navs" id="n_cp">诚品</a></li>
                 <li><a href="#" class="navs" id="n_lmj">蓝莓酱</a></li>
-                <li><a href="#" class="navs" id="n_sq">社区</a></li>
+                <li><a href="personalCenter.html" class="navs" id="n_sq">社区</a></li>
             </ul>
         </div>
         <div class="login clearFix">
@@ -139,87 +125,105 @@
 </div>
 
 <!--正文开始-->
-<div class="i_cbody">
-    <!-- 二层导航-->
-    <div class="i_btop">
-        <ul class="i_nav">
-            <li class="i_navAll"><a href="item.html">全部</a></li>
-            <li class="i_navMark"><a href="markCup.html">马克杯</a></li>
-            <li class="i_navHeadset"><a href="item.html">耳机</a></li>
-            <li class="i_navGoods"><a href="item.html">摆件</a></li>
-            <li class="i_navWallet"><a href="item.html">钱包</a></li>
-        </ul>
-    </div>
-    <div class="i_markCup">
-        <div class="i_cupTitle">
-            <p class="i_cta"> 蓝莓派lmpie.com</p>
-            <p class="i_ctb">早餐牛奶杯创意咖啡杯陶瓷马克杯</p>
-            <p class="i_ctc">蓝莓诚品</p>
-            <div class="i_cbuy">
-                <a>购买链接</a>
+<div class="j_body">
+
+    <div class="j_contain">
+        <!-- 左边导航-->
+        <div class="j_nav">
+            <div class="j_nava">
+                <p>关于我们</p>
+            </div>
+            <div class="j_navb">
+                <p>联系我们</p>
+            </div>
+            <div class="j_navc">
+                <p>加入我们</p>
+            </div>
+            <div class="j_navd">
+                <p>版权申明</p>
+            </div>
+            <div class="j_nave">
+                <p>商务合作</p>
             </div>
         </div>
-        <div class="i_cupImg">
-            <img src="images/markCup_03.png">
-            <img src="images/markCup_06.png">
-            <img src="images/markCup08.png">
-            <img src="images/markCup09.png">
-            <textarea class="i_text"  placeholder="在这里发表您的看法吧"></textarea>
-            <div class="i_setText">
-                <a>评论</a>
+        <!-- 右边正文-->
+        <div class="j_c">
+            <!-- 正文上部分-->
+            <div class="j_cTop">
+                <span class="j_img">
+                    <img src="images/joinUs_1_03.png">
+                </span>
+                <span class="j_title">
+                    <img src="images/JoinUs_03.png">
+                    <img src="images/JoinUs_07.png" class="j_t2">
+                </span>
             </div>
-            <div class="i_comment">
-                <p>评论</p>
-                <div class="ts-popcomment">
-                        <span class="ts-popcomicon">
-                            <img src="image/listenSpeak/touxiang.png" alt="userhead">
-                        </span>
-                    <div class="ts-comcont">
-                        <b>小夏同学</b><i>2014-12-01 16:16:20说</i>
-                        <p>内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房</p>
-					        <span class="ts-cardfoot-icon">
-                                <b class="ts-cardicon3"></b><i>22</i>
-                                <b class="ts-cardicon1"></b><i>22</i>
-                                <b class="ts-cardicon2"></b><i>22</i>
+            <!-- 正文下部分-->
+            <!-- 第一部分关于我们-->
+            <div>
+            <div class="j_abUs">
+            <div class="j_cDown">
+                <p class="j_Dtitle">hello !</p>
+            </div>
+            <div class="j_Dc">
+                <p >
+                    生活的节奏越来越快，习惯了奔跑，你是否想过，多彩的生活不应该如此匆匆而过？在人生的路上不懈奋斗，短短的故事尚且来不及倾听，就在人群的喧闹中躁动不已。你是否想过，忙碌的生活也需要一点闲暇时光。
+                </p>
+                <p>
+                    你朝着目标永不止步，像自转的陀螺，但累的时候，总该需要停一停、慢一些。走的太急错过的也就更多。在某个阳光温润的下午，听着街边偶尔行人的碎语。当阳光正好以45度角，洒在推开店门的指尖，伴随着几声清新的风铃声，独自喝下午茶听着歌，在文字中寻找曾经的自己，在茫茫人海中进行心与心的碰撞。
+                </p>
+                <p>
+                    在这里，我们分享每个人的故事与经历；你能看到跨越时空的旅行。在这里我们给您送上美妙动人的旋律；你能听到细微之处的声音。在这里，有充满智慧的问答；在这里，你能感受到一字一句的温馨。
+                </p>
+                <p>
+                    体会生活温润的热度，伴着慵懒的时光，安静的找个地方，在浪漫而动情的音乐中，遇见另一个自己；在这里体察百味人生，伴着朝阳醒来，在他人的真情诉说中，听见欢声笑语。
+                </p>
+                <p>
+                    或许我们是这庞大的网络体系中不起眼的那一个，但我们也是许多用心创业人群中的那一个。在互联网的创业浪潮中，好像不能解决什么“痛点”或是“刚需”就不能成为一个合格的创业者。而蓝莓派，只是为了让你的生活“锦上添花”，发现更多值得关注的事情。哪怕沦为小众网站，我们也愿尽心竭力。
+                </p>
+                <p>
+                    请相信，我们一定会用心创造给用心的你。给你不一样的短暂时光，开启不一样的多彩生活。Life 与music为伴，让生命更加完整，生活更加有趣。
+                </p>
+                <p>
+                    蓝莓派，遇见生活，遇见自己。
+                </p>
+            </div>
+            </div>
+                <!-- 联系我们-->
+                <div class="j_touUs" style="display: none">
+                    <div>
+                    <p>
+                        广告/商务合作：
+                        </p>
+                    <p>
+                        如果您有商务合作的需求，请 Email 至：lmpie@sina.com
 
-					        </span>
-                    </div>
-                </div>
-                <div class="ts-popcomment">
-                        <span class="ts-popcomicon">
-                            <img src="image/listenSpeak/touxiang.png" alt="userhead">
-                        </span>
-                    <div class="ts-comcont">
-                        <b>小夏同学</b><i>2014-12-01 16:16:20说</i>
-                        <p>内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房</p>
-					        <span class="ts-cardfoot-icon">
-                                <b class="ts-cardicon1"></b><i>22</i>
-                                <b class="ts-cardicon2"></b><i>22</i>
-                                <b class="ts-cardicon3"></b><i>22</i>
-					        </span>
-                    </div>
-                </div>
-                <div class="ts-popcomment">
-                        <span class="ts-popcomicon">
-                            <img src="image/listenSpeak/touxiang.png" alt="userhead">
-                        </span>
-                    <div class="ts-comcont">
-                        <b>小夏同学</b><i>2014-12-01 16:16:20说</i>
-                        <p>内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房</p>
-					        <span class="ts-cardfoot-icon">
-                                <b class="ts-cardicon1"></b><i>22</i>
-                                <b class="ts-cardicon2"></b><i>22</i>
-                                <b class="ts-cardicon3"></b><i>22</i>
-					        </span>
+                        请附上贵司介绍。
+                    </p>
+                        <p>
+                        内容/媒体合作：
+                        </p>
+                        <p>
+                        如果您希望和我们进行内容/媒体合作，请 Email 至：lmpie@sina.com
+                        </p>
+
+                        <p>
+                        新闻资料：
+                        </p>
+
+                        <p>
+                        我们欢迎厂商提供新闻稿等资料，请 Email 至：lmpie@sina.com
+
+                        蓝莓派不会直接发布官方新闻稿原文，而会进行再编辑和创作。
+                        </p>
+
                     </div>
                 </div>
             </div>
+
         </div>
-        <!-- 评论区-->
-
     </div>
 </div>
-
 <!--页脚区-->
 <div class="footer">
     <div class="blink-con">
@@ -297,4 +301,14 @@
     </div>
 </div>
 </body>
+    <script>
+        (function(){
+            $(".j_nava").on("click",function(){
+                $(".j_abUs").css("display","block").siblings().css("display","none")
+            })
+            $(".j_navb").on("click",function(){
+                $(".j_touUs").css("display","block").siblings().css("display","none")
+            })
+        }())
+    </script>
 </html>

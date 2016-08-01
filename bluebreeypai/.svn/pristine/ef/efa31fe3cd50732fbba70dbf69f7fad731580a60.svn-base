@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style/init.css"/>
+    <link rel="stylesheet" href="style/commonHeader.css"/>
+    <link rel="stylesheet" href="style/commonFooter.css">
+    <link rel="stylesheet" href="style/login-tanchuceng.css"/>
+    <link rel="stylesheet" href="style/create-group.css"/>
+
+</head>
+<body>
+<!-- --------------------------------------公共主导航栏  start----------------------------------------->
+<div class="header">
+    <div class="header-in clearFix">
+        <div class="logo clearFix">
+            <img src="indexImg/logo_03.png" alt="logo"/>
+            <div class="flag-word">
+                <strong>蓝莓派</strong>
+                <h3>和音乐一起分享时光</h3>
+            </div>
+        </div>
+        <div class="main-nav clearFix">
+            <ul class="clearFix" id="nav">
+                <li><a href="index.html" class="navs" id="n_index">首页</a></li>
+                <li><a href="movement.html" class="navs on" id="n_yz">乐章</a></li>
+                <li><span id="ts-num">12</span><a href="listenSpeak.html" class="navs" id="n_ts">听说</a></li>
+                <li><a href="#" class="navs" id="n_yq">乐趣</a></li>
+                <li><a href="#" class="navs" id="n_ll">聊聊</a></li>
+                <li><a href="#" class="navs" id="n_yj">游记</a></li>
+                <li><a href="#" class="navs" id="n_sy">摄影</a></li>
+                <li><a href="#" class="navs" id="n_cp">诚品</a></li>
+                <li><a href="#" class="navs" id="n_lmj">蓝莓酱</a></li>
+                <li><a href="personalCenter.html" class="navs" id="n_sq">社区</a></li>
+
+            </ul>
+        </div>
+        <div class="login clearFix">
+            <div class="search">
+                <form action="">
+                    <input type="search" id="infinitySearch"/>
+                    <label for="infinitySearch" id="search-button"></label>
+                </form>
+            </div>
+            <div class="login-register">
+                <a href="javascript:;" class="log" id="log">登录</a>
+                <a href="javascript:;" class="reg" id="reg">注册</a>
+                <i class="triangle"></i>
+                <div class="account-info">
+                    <ul class="clearFix">
+                        <li><a href="#" class="a-info-details" id="a_tz">我的帖子</a></li>
+                        <li><a href="#" class="a-info-details" id="a_pl">我的评论</a></li>
+                        <li><a href="#" class="a-info-details" id="a_sc">我的收藏</a></li>
+                        <li><a href="#" class="a-info-details" id="a_sz">设置</a></li>
+                        <li><a href="#" class="a-info-details" id="a_tc">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------------公共主导航栏  end----------------------------------------->
+
+<!-- ----------------------------------公共登录弹窗模块  start----------------------------------->
+<div class="login-mengban"></div>
+<div class="login-box">
+    <form action="">
+        <div class="login-reg-select clearFix">
+            <a href="#" class="login-select-btn a1 "><i class="login-on"></i>登录</a>
+            <a href="#" class="reg-select-btn"><i class="reg-on"></i>注册</a>
+        </div>
+        <div class="login-details account-box"  style="display:block">
+            <label for="login_account"></label>
+            <input type="text" id="login_account" placeholder="用户账号"/>
+            <label for="login_pwd"></label>
+            <input type="password" id="login_pwd" placeholder="用户密码"/>
+            <div class="check_code clearFix">
+                <div class="check-input">
+                    <label for="check_code_input1"></label>
+                    <input type="text" id="check_code_input1" placeholder="验证码"/>
+                </div>
+                <div class="check-pic">
+                    <img src="indexImg/check-code_04.png" alt=""/>
+                </div>
+            </div>
+            <label for="login-btn"></label>
+            <input type="submit" id="login-btn" value="登录"/>
+            <div class="other-login">
+                <p>你还可以用第三方帐号登录</p>
+                <a href="#"><img src="indexImg/qqIcon.png" alt=""/></a>
+                <a href="#"><img src="indexImg/weixinIcon.png" alt=""/></a>
+                <a href="#"><img src="indexImg/weiboIcon.png" alt=""/></a>
+            </div>
+        </div>
+        <div class="reg-details account-box"  style="display:none" >
+            <label for="reg_account"></label>
+            <input type="text" id="reg_account" placeholder="取个名字吧"/>
+            <label for="reg_pwd"></label>
+            <input type="password" id="reg_pwd" placeholder="设一个密码吧"/>
+            <label for="reg_pwd_confirm"></label>
+            <input type="password" id="reg_pwd_confirm" placeholder="再输一遍密码吧"/>
+            <div class="check_code clearFix">
+                <div class="check-input">
+                    <label for="check_code_input2"></label>
+                    <input type="text" id="check_code_input2" placeholder="验证码"/>
+                </div>
+                <div class="check-pic">
+                    <img src="indexImg/check-code_04.png" alt=""/>
+                </div>
+            </div>
+            <label for="reg-btn"></label>
+            <input type="submit" id="reg-btn" value="注册"/>
+        </div>
+    </form>
+    <a class="findback-pwd" href="#">忘记密码?</a>
+</div>
+<!-- ----------------------------------公共登录弹窗模块  end----------------------------------->
+
+<!-- ----------------------------------中间主体部分 start----------------------------------->
+
+<div class="cg-container">
+    <div class="cg-header clearFix">
+        <span id="backPrevPage">&lt;返回</span>
+        <h3>创建小组</h3>
+    </div>
+    <form action="">
+        <div class="create-box clearFix">
+                <div class="left-part" >
+                    <div class="create-group-name clearFix">
+                        <label for="groupName">小组名称:</label>
+                        <input id="groupName" class="group-name-input" type="text" placeholder="给您的小组取个名字吧"  />
+                    </div>
+                    <div class="group-introduce">
+                        <label for="groupIntroduce">小组介绍:</label>
+                        <textarea id="groupIntroduce"  class="group-introduce-input" placeholder="介绍一下您的小组吧"  ></textarea>
+                    </div>
+                    <div class="labelBox clearFixBlog">
+                        <label>小组标签:</label>
+                        <div class="i_inp"  id="paren"  style="  min-height:30px; cursor:pointer; height:auto;     ">
+                            <span    class="ui-sortable disp"  >
+                                <div id="dc" class="sort"  style="background:#CCC;   white-space:nowrap; float:left; display:block; width:0px; overflow:hidden;      height:22px; font-size:12px;  color:red;">
+                                     <div  id="dart"  style="  cursor:move; height:22px; display:block; float:left;   line-height:22px; "></div>
+                                </div>
+                            </span>
+                            <input class="ipva"   name=""    type="text"  />
+                        </div>
+                    </div>
+                    <div class="recommend-label clearFix">
+                        <a href="javascript:;">生活</a>
+                        <a href="javascript:;">健身</a>
+                        <a href="javascript:;">宠物</a>
+                        <a href="javascript:;">花艺</a>
+                        <a href="javascript:;">影视</a>
+                        <a href="javascript:;">摄影</a>
+                        <a href="javascript:;">媒体</a>
+                        <a href="javascript:;">生活</a>
+                        <a href="javascript:;">绘画</a>
+                        <a href="javascript:;">美容</a>
+                    </div>
+                    <div class="contact clearFix">
+                        <label>联系方式:</label>
+                        <input id="contact_email" class="contact-email" type="text" placeholder="请输入邮箱地址"  />
+                        <input id="contact_QQ" class="contact-QQ" type="text" placeholder="请输入QQ号码"  />
+                        <span class="contact-tips">请输入您的联系方式，以便我们和您取得联系</span>
+                    </div>
+                </div>
+                <div class="right-part" >
+                    <!-- 个人设置之修改头像-->
+                    <div class="p_container" style="display: block">
+                        <div class="imageBox">
+                            <div class="thumbBox"></div>
+                            <div class="spinner" style="display: none">Loading...</div>
+                        </div>
+                        <div class="p-mengban"><span class="p-mengban-word">点击上传小组头像</span></div>
+                        <div class="p_action">
+                            <!-- <input type="file" id="file" style=" width: 200px">-->
+                            <div class="new-contentarea tc"><a href="javascript:void(0)" class="upload-img">
+                                <label for="upload-file"></label>
+                            </a>
+                                <input type="file" class="" name="upload-file" id="upload-file"/>
+                            </div>
+                            <input type="button" id="btnCrop" class="Btnsty_peyton" value="">
+                            <input type="button" id="btnZoomIn" class="Btnsty_peyton" value="+">
+                            <input type="button" id="btnZoomOut" class="Btnsty_peyton" value="-">
+                        </div>
+                        <div class="p_cropped"></div>
+                    </div>
+                </div>
+        </div>
+        <input type="button" id="submitApply" value="提交申请"/>
+        <input type="checkbox" id="agreement" class="agreement" name="agreement"/>
+        <label for="agreement" class="agreement-label">我已阅读并同意<a href="#">蓝莓派小组服务协议</a></label>
+    </form>
+</div>
+<!-- ----------------------------------中间主体部分  end----------------------------------->
+
+<!-- --------------------------------------公共尾部  start----------------------------------------->
+<div class="footer">
+    <div class="blink-con">
+        <div class="btn-l">
+            <span>友情链接</span>
+            <p class="link-cont">
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+            </p>
+        </div>
+        <div class="btn-r">
+            <div class="weibo">
+                <img src="image/footer-ewm1.jpg" alt="twitter">
+                <span>微博二维码</span>
+            </div>
+            <div class="weixin">
+                <img src="image/footer-ewm2.jpg" alt="weichat">
+                <span>微信二维码</span>
+            </div>
+            <div class="connect">
+                <p>电话:51336808</p>
+                <p><i>邮编:100062</i>&nbsp;&nbsp;<i>传真:51337666</i></p>
+                <p>邮箱:info@newworldtours.cn</p>
+                <p>地址:北京市东城区广渠门内大街安化北里1号长保大厦13层</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <div class="bot-con">
+        <span><a href="joinUs.html">关于我们</a></span>
+        <span><a href="#">联系我们</a></span>
+        <span><a href="#">加入我们</a></span>
+        <span><a href="#">团队成员</a></span>
+        <span><a href="#">商务合作</a></span>
+        <p class="bot-foot">
+            <em>蓝莓派版权所有</em><em>京ICP备12346335号</em>
+        </p>
+    </div>
+</div>
+<!-- ----------------------------------公共登录弹窗模块  end----------------------------------->
+<div class="ceshi"></div>
+</body>
+<script src="script/jquery-2.1.1.min.js"></script>
+<script src="script/login-tanchuceng.js"></script>
+<script src="script/publishBlog.js"></script>
+<script>
+    $(".ceshi",{id:"ceshi1",class:"ceshi1",css:{width:"300px",height:"200px",background:"#eee"}});
+//    $(".ceshi").append(haha);
+</script>
+</html>
