@@ -1,0 +1,31 @@
+
+.lmj-content{
+    background-color: #fff;
+    height: auto;
+}
+.lmj-content .lmj-cards{
+    margin:10px;
+    padding: 25px 0;
+    overflow: hidden;
+    text-align: center;
+}
+.lmj-card{
+    display: inline-block;
+    margin:10px 10px;
+    width: 210px;
+    height: 210px;
+    position: relative;
+}
+.lmj-card i{
+    position: absolute;
+    bottom:15px;
+    right: 20px;
+    display: block;
+    width: 42px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.4);
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+}

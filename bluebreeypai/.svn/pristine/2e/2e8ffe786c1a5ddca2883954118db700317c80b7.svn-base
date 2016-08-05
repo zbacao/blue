@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>蓝莓酱</title>
+    <link rel="stylesheet" href="style/init.css">
+    <link rel="stylesheet" href="style/commonFooter.css">
+    <link rel="stylesheet" href="style/commonHeader.css">
+    <link rel="stylesheet" href="style/login-tanchuceng.css"/>
+    <link rel="stylesheet" href="style/blueberryjam-details.css"/>
+    <title>头部和尾部部分</title>
+</head>
+<body>
+        <div class="wrap">
+            <!-- --------------------------------------公共主导航栏  start----------------------------------------->
+                    <div class="header">
+                                 <div class="header-in clearFix">
+                            <div class="logo clearFix">
+                                <img src="indexImg/logo_03.png" alt="logo"/>
+                                <div class="flag-word">
+                                    <strong>蓝莓派</strong>
+                                    <h3>和音乐一起分享时光</h3>
+                                </div>
+                            </div>
+                            <div class="main-nav clearFix">
+                                <ul class="clearFix">
+                                    <li><a href="index.html" class="navs" id="n_index">首页</a></li>
+                                    <li><a href="movement.html" class="navs" id="n_yz">乐章</a></li>
+                                    <li><span id="ts-num">12</span><a href="listenSpeak.html" class="navs" id="n_ts">听说</a></li>
+                                    <li><a href="#" class="navs" id="n_yq">乐趣</a></li>
+                                    <li><a href="chat.html" class="navs" id="n_ll">聊聊</a></li>
+                                    <li><a href="#" class="navs" id="n_yj">游记</a></li>
+                                    <li><a href="#" class="navs" id="n_sy">摄影</a></li>
+                                    <li><a href="item.html" class="navs" id="n_cp">诚品</a></li>
+                                    <li><a href="blueberryjam.html" class="navs on" id="n_lmj">蓝莓酱</a></li>
+                                    <li><a href="community.html" class="navs" id="n_sq">社区</a></li>
+                                </ul>
+                            </div>
+                            <div class="login clearFix">
+                                <div class="search">
+                                    <form action="">
+                                        <input type="search" id="infinitySearch"/>
+                                        <label for="infinitySearch" id="search-button"></label>
+                                    </form>
+                                </div>
+                                <div class="login-register">
+                                    <a href="javascript:void (0)" class="log" id="log">登录</a>
+                                    <a href="javascript:void (0)" class="reg" id="reg">注册</a>
+                                    <i class="triangle"></i>
+                                    <div class="account-info">
+                                        <ul class="clearFix">
+                                            <li><a href="#" class="a-info-details" id="a_tz">我的帖子</a></li>
+                                            <li><a href="#" class="a-info-details" id="a_pl">我的评论</a></li>
+                                            <li><a href="#" class="a-info-details" id="a_sc">我的收藏</a></li>
+                                            <li><a href="#" class="a-info-details" id="a_sz">设置</a></li>
+                                            <li><a href="#" class="a-info-details" id="a_tc">退出</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --------------------------------------公共主导航栏  end----------------------------------------->
+
+                    <!-- 内容区start -->
+
+                    <div class="container">
+                                <div class="common-deatails clearFix">
+                        <div class="artical-module artical-cont">
+                            <div class="yj-artical">
+                                <h3>没钱也旅游 之 旅游资讯</h3>
+                                <div class="yj-artical-info">
+                                    <!--<div class="eye-wechat">-->
+                                    <!--<span id="eye_num" class="eye-wechat-num">56</span>-->
+                                    <!--<span id="wei_chat-num" class="eye-wechat-num">22</span>-->
+                                    <!--</div>-->
+                                    <div class="create-time">
+                                        创建时间 : <span class="currentDate">2016/03/26</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="artical-cont-details">
+                                <div class="blog-details" id="blog_details">
+                                    <p>
+                                        <img class="blog-pic" src="indexImg/blueberryjam_03.png" alt="j"/>
+                                    </p>
+                                    <div class="blog-labels">
+                                        <span id="label_travel">旅游</span> <span id="label_msg">资讯</span>  <span class="label_nomoney_travel">穷游</span>
+                                    </div>
+                                    <h4 class="group-summary">小组简介</h4>
+                                    <div class="group-summary-cont">
+                                        清贫和孤独让人敏锐，带上它们出发吧。<br/>
+                                        2015已经快过去了，回首这一年，你有没有最想对自己说的话呢？<br/>
+                                        ——你可以——<br/>
+                                        （1）回顾一下这一年里的“最“时刻（最开心，最逗比，最遗憾，最幸福……）<br/>
+                                        （2）或者写一些想对自己说的话，什么都可以。<br/>
+                                        <br/>
+                                        ——话题奖励——<br/>
+                                        （1）奖励：和社区有奖征稿帖奖励相同，包含手工皂、巧克力、物喜等待着优质实物奖品。<br/>
+                                        （2）如果你觉得一个状态没有办法写完自己的感受，可以去社区参与有奖征稿。（搜索“有<br/>
+                                        奖征稿”相关帖子，找到「辞旧迎新咯，敢不敢写下你的2015！」即可看到活动规则以及活动奖励详情）<br/>
+                                    </div>
+                                    <span class="report">举报</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artical-module joinin-group">
+                            <h4 class="join-group-title">加入小组</h4>
+                            <form id="joinin_group_form" action="">
+                                <input id="input_blog_title" type="text" placeholder="标题（必填）"  />
+                                <div id="blog-editer">
+                                    <textarea class="group-introduce-input" placeholder="在这里发布你想说的话" id="txtEditor"  ></textarea>
+                                    <div class="upload-music">
+                                        <!--<span class="upload-music-title">上传音乐</span>-->
+                                        <!--<span class="upload-music-tips">*上传文件格式仅限: mp3／m4a</span>-->
+                                        <i id="musicBtn">音乐</i>
+                                        <i id="picBtn">图片</i>
+                                        <em id="fileTypeTips">请上传正确的格式</em>
+                                        <!--<span class="music-name"></span>-->
+                                        <input class="input-of-btn" id="uploadMusic" type="file" value="上传音乐" />
+                                        <input class="input-of-btn" id="uploadPic" type="file" value="上传图片" />
+                                    </div>
+                                </div>
+                                <div class="labelBox clearFixBlog">
+                                    <div class="i_inp"  id="paren"  style="  min-height:30px; cursor:pointer; height:auto;     ">
+                                            <span    class="ui-sortable disp"  >
+                                                <div id="dc" class="sort"  style="background:#CCC;   white-space:nowrap; float:left; display:block; width:0px; overflow:hidden;      height:22px; font-size:12px;  color:red;">
+                                                    <div  id="dart"  style="  cursor:move; height:22px; display:block; float:left;   line-height:22px; "></div>
+                                                </div>
+                                            </span>
+                                        <input class="ipva"   name=""    type="text"   placeholder="多个标签用空格分隔，最多三个"/>
+                                    </div>
+                                </div>
+                                <div class="submitBtn">
+                                    <input type="button" id="publicBlog" value="立即参与"/>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="artical-module topics">
+                            <div class="blog-comment">
+                                <div>评论框</div>
+                                <div class="ts-popcomment">
+                                                        <span class="ts-popcomicon">
+                                                            <img src="image/listenSpeak/touxiang.png" alt="userhead">
+                                                        </span>
+                                    <div class="ts-comcont">
+                                        <b>小夏同学</b><i>2014-12-01 16:16:20说</i>
+                                        <p>内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房</p>
+                                                            <span class="ts-cardfoot-icon">
+                                                                <b class="ts-cardicon1"></b><i>22</i>
+                                                                <b class="ts-cardicon2"></b><i>22</i>
+                                                            </span>
+                                    </div>
+                                </div>
+                                <div class="ts-popcomment">
+                                                        <span class="ts-popcomicon">
+                                                            <img src="image/listenSpeak/touxiang.png" alt="userhead">
+                                                        </span>
+                                    <div class="ts-comcont">
+                                        <b>小夏同学</b><i>2014-12-01 16:16:20说</i>
+                                        <p>内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房</p>
+                                                            <span class="ts-cardfoot-icon">
+                                                                <b class="ts-cardicon1"></b><i>22</i>
+                                                                <b class="ts-cardicon2"></b><i>22</i>
+                                                            </span>
+                                    </div>
+                                </div>
+                                <div class="ts-popcomment">
+                                                        <span class="ts-popcomicon">
+                                                            <img src="image/listenSpeak/touxiang.png" alt="userhead">
+                                                        </span>
+                                    <div class="ts-comcont">
+                                        <b>小夏同学</b><i>2014-12-01 16:16:20说</i>
+                                        <p>内地流行双人组合[牛奶咖啡]，不久前为新专辑MV的拍摄，专程来到了龙井一所大房</p>
+                                                        <span class="ts-cardfoot-icon">
+                                                            <b class="ts-cardicon1"></b><i>22</i>
+                                                            <b class="ts-cardicon2"></b><i>22</i>
+                                                        </span>
+                                    </div>
+                                </div>
+                                <!-- 底部的分页导航按钮 未完成js的逻辑-->
+                                <div class="ts-page">
+                                    <span class="tspage-start">首页</span>
+                                    <span class="tspage-before">上一页</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>4</span>
+                                    <span class="tspage-ell">...</span>
+                                    <span class="tspage-after">下一页</span>
+                                    <span class="tspage-end">尾页</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- 右边侧栏 start-->
+                        <div class="artical-other">
+                            <div class="msg-center aside-box">
+                                <div class="msg-center-up clearFix">
+                                    <div class="blueberrypaiIcon clearFix">
+                                        <img src="indexImg/aside-logo_03.png" alt=""/>
+                                        <h1 class="gray">蓝莓派</h1>
+                                    </div>
+                                    <div class="square-btn gray">
+                                        <p class="tiezi-num">22</p>
+                                        <p class="tiezi-name">帖子</p>
+                                    </div>
+                                    <div class="square-btn gray">
+                                        <p class="tiezi-num">56</p>
+                                        <p class="tiezi-name">评论</p>
+                                    </div>
+                                    <div class="square-btn gray">
+                                        <p class="tiezi-num">102</p>
+                                        <p class="tiezi-name">关注</p>
+                                    </div>
+                                </div>
+
+                                <div class="msg-center-down gray clearFix">
+                                    <div class="circle-btn concern"><a href="#"></a></div>
+                                    <div class="circle-btn private-msg"><a href="#"></a></div>
+                                </div>
+                            </div>
+                            <div class="other-blog aside-box">
+                                <h3 class="other-blog-title">作者的其他文章</h3>
+                                <ul>
+                                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                                </ul>
+                            </div>
+                            <div class="hot-recomment aside-box">
+                                <h3 class="other-blog-title ">热门推荐</h3>
+                                <ul>
+                                    <li><a class="other-blog-lists" href="#">端午徒步武功山，看山看草看云海。</a></li>
+                                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                                    <li><a class="other-blog-lists" href="#">你适可而止 抽身而退的样子特别特别的帅,简直帅到没朋友!</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+
+                    <!-- 内容区end -->
+
+                    <!-- --------------------------------------公共尾部  start----------------------------------------->
+                    <div class="footer">
+                        <div class="blink-con">
+                            <div class="btn-l">
+                                <span>友情链接</span>
+                                <p class="link-cont">
+                                    <a href="#">乐乎</a>
+                                    <a href="#">数字尾巴</a>
+                                    <a href="#">豆瓣</a>
+                                    <a href="#">环球旅行</a>
+                                    <a href="#">乐乎</a>
+                                    <a href="#">数字尾巴</a>
+                                    <a href="#">豆瓣</a>
+                                    <a href="#">乐乎</a>
+                                    <a href="#">数字尾巴</a>
+                                    <a href="#">豆瓣</a>
+                                    <a href="#">环球旅行</a>
+                                    <a href="#">乐乎</a>
+                                    <a href="#">数字尾巴</a>
+                                    <a href="#">豆瓣</a>
+                                    <a href="#">环球旅行</a>
+                                    <a href="#">乐乎</a>
+                                    <a href="#">数字尾巴</a>
+                                    <a href="#">豆瓣</a>
+                                    <a href="#">乐乎</a>
+                                    <a href="#">数字尾巴</a>
+                                    <a href="#">豆瓣</a>
+                                    <a href="#">环球旅行</a>
+                                    <a href="#">乐乎</a>
+                                    <a href="#">数字尾巴</a>
+                                    <a href="#">豆瓣</a>
+                                    <a href="#">环球旅行</a>
+                                    <a href="#">乐乎</a>
+                                    <a href="#">数字尾巴</a>
+                                    <a href="#">豆瓣</a>
+                                    <a href="#">乐乎</a>
+                                    <a href="#">数字尾巴</a>
+                                    <a href="#">豆瓣</a>
+                                    <a href="#">环球旅行</a>
+                                </p>
+                            </div>
+                            <div class="btn-r">
+                                <div class="weibo">
+                                    <img src="image/footer-ewm1.jpg" alt="twitter">
+                                    <span>微博二维码</span>
+                                </div>
+                                <div class="weixin">
+                                    <img src="image/footer-ewm2.jpg" alt="weichat">
+                                    <span>微信二维码</span>
+                                </div>
+                                <div class="connect">
+                                    <p>电话:51336808</p>
+                                    <p><i>邮编:100062</i>&nbsp;&nbsp;<i>传真:51337666</i></p>
+                                    <p>邮箱:info@newworldtours.cn</p>
+                                    <p>地址:北京市东城区广渠门内大街安化北里1号长保大厦13层</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bot-con">
+                            <span><a href="JoinUs.html">关于我们</a></span>
+                            <span><a href="#">联系我们</a></span>
+                            <span><a href="#">加入我们</a></span>
+                            <span><a href="#">团队成员</a></span>
+                            <span><a href="#">商务合作</a></span>
+                            <p class="bot-foot">
+                                <em>蓝莓派版权所有</em><em>京ICP备12346335号</em>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- --------------------------------------公共尾部  end----------------------------------------->
+
+
+                    <!-- ----------------------------------公共登录弹窗模块  start----------------------------------->
+                    <div class="login-mengban"></div>
+                    <div class="login-box">
+                        <form action="">
+                            <div class="login-reg-select clearFix">
+                                <a href="#" class="login-select-btn a1 "><i class="login-on"></i>登录</a>
+                                <a href="#" class="reg-select-btn"><i class="reg-on"></i>注册</a>
+                            </div>
+                            <div class="login-details account-box"  style="display:block">
+                                <label for="login_account"></label>
+                                <input type="text" id="login_account" placeholder="用户账号"/>
+                                <label for="login_pwd"></label>
+                                <input type="password" id="login_pwd" placeholder="用户密码"/>
+                                <div class="check_code clearFix">
+                                    <div class="check-input">
+                                        <label for="check_code_input1"></label>
+                                        <input type="text" id="check_code_input1" placeholder="验证码"/>
+                                    </div>
+                                    <div class="check-pic">
+                                        <img src="indexImg/check-code_04.png" alt=""/>
+                                    </div>
+                                </div>
+                                <label for="login-btn"></label>
+                                <input type="submit" id="login-btn" value="登录"/>
+                                <div class="other-login">
+                                    <p>你还可以用第三方帐号登录</p>
+                                    <a href="#"><img src="indexImg/qqIcon.png" alt=""/></a>
+                                    <a href="#"><img src="indexImg/weixinIcon.png" alt=""/></a>
+                                    <a href="#"><img src="indexImg/weiboIcon.png" alt=""/></a>
+                                </div>
+                            </div>
+                            <div class="reg-details account-box"  style="display:none" >
+                                <label for="reg_account"></label>
+                                <input type="text" id="reg_account" placeholder="取个名字吧"/>
+                                <label for="reg_pwd"></label>
+                                <input type="password" id="reg_pwd" placeholder="设一个密码吧"/>
+                                <label for="reg_pwd_confirm"></label>
+                                <input type="password" id="reg_pwd_confirm" placeholder="再输一遍密码吧"/>
+                                <div class="check_code clearFix">
+                                    <div class="check-input">
+                                        <label for="check_code_input2"></label>
+                                        <input type="text" id="check_code_input2" placeholder="验证码"/>
+                                    </div>
+                                    <div class="check-pic">
+                                        <img src="indexImg/check-code_04.png" alt=""/>
+                                    </div>
+                                </div>
+                                <label for="reg-btn"></label>
+                                <input type="submit" id="reg-btn" value="注册"/>
+                            </div>
+                        </form>
+                        <a class="findback-pwd" href="#">忘记密码?</a>
+                    </div>
+                    <!-- ----------------------------------公共登录弹窗模块  start----------------------------------->
+
+
+        </div>
+</body>
+<script src="script/jquery-2.1.1.min.js"></script>
+<script src="script/onloadFile.js"></script>
+<script src="script/login-tanchuceng.js"></script>
+<script src="script/blueberryjam-details.js"></script>
+<script src="script/pagination.js"></script>
+</html>

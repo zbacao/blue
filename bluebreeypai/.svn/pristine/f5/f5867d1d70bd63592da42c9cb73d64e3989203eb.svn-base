@@ -1,0 +1,233 @@
+body{
+    background:#f5f5f5;
+}
+.pb-container{
+    width:1140px;
+    background:#fff;
+    border-radius:5px;
+    box-shadow:0 0 5px #eee;
+    margin:70px auto 137px;
+    padding:30px;
+}
+.pb-header{
+    width:100%;
+    height:30px;
+    margin-bottom:30px;
+    position:relative;
+}
+.pb-header span{
+    display:block;
+    float:left;
+    width:510px;
+    line-height:30px;
+}
+.pb-header h3{
+    display:block;
+    float:left;
+    width:110px;
+    font-size:24px;
+    color:#4eb17d;
+}
+.pb-header .cate{
+    display:block;
+    float:right;
+    width:90px;
+    text-align:right;
+    line-height:30px;
+    position:relative;
+}
+.pb-header .cate:hover{
+    cursor:pointer;
+}
+.pb-header .cate i{
+    content: "";
+    display: block;
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    left: 33px;
+    background:url(../indexImg/cateIcon_03.png) no-repeat center center;
+}
+.cate-nav{
+    border-radius: 10px;
+    background: #fff;
+    padding: 15px 25px;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    box-shadow:0 0 5px #eee ;
+    display:none;
+    z-index:10000;
+}
+.cate-nav ul li a{
+    line-height:30px;
+    color:#666;
+}
+.cate-nav ul li a:hover{
+    text-decoration: none;
+    color:#109d59;
+}
+#input_blog_title{
+    width:1080px;
+    height:40px;
+    border:1px solid #e6e6e6;
+    background:#f8f8f8;
+    text-indent:1.5em;
+    margin-bottom:30px;
+    font-size:14px;
+}
+#blog-editer{
+    width: 100%;
+    background: #eee;
+    overflow: hidden;
+}
+.Editor-editor{
+    outline:0;
+}
+.group-introduce-input{
+    outline: 0;
+}
+.labelBox{
+    width:100%;
+    height:40px;
+    background:#fff;
+    border:1px solid #dbdbdb;
+    margin-top:30px;
+    line-height:40px;
+    color:#b9b9b9;
+    position:relative;
+}
+.labelBox::after{
+    content: "";
+    display: block;
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    background:url(../indexImg/labelIcon_03.png) no-repeat center center;
+}
+.clearFixBlog::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.ipva{
+    margin-left:8px;
+    margin-bottom:0;
+    border: none;
+    float: left;
+    display: block;
+    outline: none;
+   width:300px;
+    background: none;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color:#000;
+    font-family: 微软雅黑;
+}
+
+.i_inp{
+    min-height:30px;
+    margin-left:50px;
+}
+.recommend-label{
+    margin-top:15px;
+}
+.recommend-label a{
+    color:#747474;
+    display:inline-block;
+    margin-right:15px;
+}
+
+.upload-music{
+    position:relative;
+    margin:30px 0;
+}
+.upload-music .upload-music-title{
+    font-size:16px;
+    color:#333;
+    margin-right:20px;
+}
+.upload-music .upload-music-tips{
+    color:#109d59;
+    font-size:12px;
+    margin-right:40px;
+}
+.upload-music i{
+    display:inline-block;
+    border:1px solid #e0e0e0;
+    width:160px;
+    height:36px;
+    line-height:30px;
+    text-align:center;
+    background:#f5f5f5;
+    color:#808080;
+    transition:background 0.3s;
+    font-size: 16px;
+}
+.upload-music i:hover{
+    cursor:pointer;
+    background:#109d59;
+    border:1px solid #109d59;
+    color:#fff;
+}
+.upload-music input.input-of-btn{
+    position: absolute;
+    width: 160px;
+    top: 5px;
+    left: 302px;
+     visibility: hidden;
+}
+.upload-music .music-name{
+    position: absolute;
+    top: 6px;
+    left: 471px;
+}
+#introduce_music{
+    width:100%;
+    height:80px;
+    letter-spacing:1px;
+    font-size:14px;
+    color:#b3b3b3;
+}
+.submitBtn{
+    width:350px;
+    margin:0 auto;
+}
+.submitBtn #publicBlog{
+    border-radius:30px;
+    background:#f68344;
+    height:50px;
+    line-height:50px;
+    width:160px;
+    color:#fff;
+    border:none;
+    text-indent:1em;
+    transition:background 0.4s;
+}
+.submitBtn #publicBlog:hover{
+    background: #e3753f;
+}
+.submitBtn #save{
+    border-radius:30px;
+    background:#e6e6e6;
+    height:50px;
+    line-height:50px;
+    width:160px;
+    color:#808080;
+    border:none;
+    text-indent:1em;
+    transition:background 0.4s;
+}
+.submitBtn #save:hover{
+    background: #d4d4d4;
+}
+
+/*返回上一页*/
+#backPrevPage:hover{
+    cursor:pointer;
+}
